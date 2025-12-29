@@ -1,26 +1,43 @@
 from utils import parse_csv_to_items, parse_csv_to_activities, calculate_steps
 from gear_optimizer import GearOptimizer, OPTIMAZATION_TARGET
 from export import export_gearset
+import json
 
 items_file_name = "items.csv"
 activity_file_name = "activities.csv"
 recipes_file_name = "recipes.csv"
+user_data_file = "user.json"
 
+with open(user_data_file, 'r') as f:
+    user_data = json.load(f)
+owned_items_names = set()
 
+owned_items_names.update(user_data.get("bank", {}).keys())
+owned_items_names.update(user_data.get("inventory", {}).keys())
+
+if "gear" in user_data:
+    equipped = {v for v in user_data["gear"].values() if v}
+    owned_items_names.update(equipped)
 items = parse_csv_to_items(items_file_name)
+if user_data:
+    items = [item for item in items if item.export_name in owned_items_names]
+
 print(f"{len(items)} items loaded")
 activities = parse_csv_to_activities(activities_file_path=activity_file_name, recipes_file_path=recipes_file_name)
 print(f"{len(activities)} activities loaded")
 
-target_name = "Ectoplasm Fishing"
+#### EDIT THESE ###
 target_name = "Create a Gold Ethernite Ring"
+optimize_target = OPTIMAZATION_TARGET.materials
+#######
+
 activity = next((a for a in activities if a.activity == target_name), None)
 
 if activity:
     print(f"Found {activity.activity} (Base Steps: {activity.base_steps}, Is Underwater: {activity.is_underwater})")
     
     optimizer = GearOptimizer(items)
-    best_gear = optimizer.optimize(activity, player_level=99, player_skill_level=99, optimazation_target=OPTIMAZATION_TARGET.materials)
+    best_gear = optimizer.optimize(activity, player_level=99, player_skill_level=99, optimazation_target=optimize_target)
 
     print(f"\n--- Optimization Result for {target_name} ---")
     single_slots = ["head", "chest", "legs", "feet", "cape", "back", "neck", "hands", "primary", "secondary", "pet", "consumable"]
