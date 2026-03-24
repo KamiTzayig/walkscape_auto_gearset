@@ -1,7 +1,7 @@
 from typing import List, Optional, Dict, Set, Tuple, Any
 from collections import defaultdict, Counter
 from enum import Enum
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, model_validator
 from utils.constants import (
     ConditionType, RequirementType, EquipmentSlot, EquipmentQuality, 
     SkillName, StatName, GATHERING_SKILLS, ARTISAN_SKILLS, RESTRICTED_TOOL_KEYWORDS,
@@ -40,7 +40,24 @@ class DropEntry(BaseModel):
     min_quantity: int
     max_quantity: int
     chance: Optional[float] = None 
-    category: Optional[ChestTableCategory] = None 
+    category: Optional[ChestTableCategory] = None
+    # Raw API drop parameters (from gear.walkscape.app) - exact game values
+    no_drop_chance: Optional[float] = None
+    row_weight: Optional[float] = None
+    table_weight: Optional[float] = None
+    
+    @model_validator(mode='before')
+    @classmethod
+    def compute_chance_from_raw(cls, data):
+        """Auto-compute chance from raw API fields if available and chance not set."""
+        if isinstance(data, dict):
+            ndc = data.get('no_drop_chance')
+            rw = data.get('row_weight')
+            tw = data.get('table_weight')
+            if ndc is not None and rw is not None and tw is not None and tw > 0:
+                if data.get('chance') is None:
+                    data['chance'] = (1.0 - ndc / 100.0) * (rw / tw) * 100.0
+        return data
 
 class FactionReward(BaseModel):
     model_config = ConfigDict(frozen=True)

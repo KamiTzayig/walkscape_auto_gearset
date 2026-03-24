@@ -80,7 +80,7 @@
       ]
     ],
     "base_xp": 28.0,
-    "base_steps": 90,
+    "base_steps": 99,
     "max_efficiency": 0.5
   },
   {
@@ -122,7 +122,7 @@
       ]
     ],
     "base_xp": 39.0,
-    "base_steps": 105,
+    "base_steps": 115,
     "max_efficiency": 0.6
   },
   {
@@ -164,7 +164,7 @@
       ]
     ],
     "base_xp": 53.0,
-    "base_steps": 120,
+    "base_steps": 132,
     "max_efficiency": 0.7
   },
   {
@@ -206,7 +206,7 @@
       ]
     ],
     "base_xp": 64.0,
-    "base_steps": 125,
+    "base_steps": 137,
     "max_efficiency": 0.7
   },
   {
@@ -248,7 +248,7 @@
       ]
     ],
     "base_xp": 77.0,
-    "base_steps": 135,
+    "base_steps": 148,
     "max_efficiency": 0.8
   },
   {
@@ -311,7 +311,7 @@
       ]
     ],
     "base_xp": 90.0,
-    "base_steps": 145,
+    "base_steps": 159,
     "max_efficiency": 0.9
   },
   {
@@ -332,7 +332,7 @@
       ]
     ],
     "base_xp": 81.0,
-    "base_steps": 131,
+    "base_steps": 144,
     "max_efficiency": 0.9
   },
   {
@@ -415,9 +415,9 @@
         }
       ]
     ],
-    "base_xp": 168.0,
-    "base_steps": 195,
-    "max_efficiency": 1.1
+    "base_xp": 116,
+    "base_steps": 166,
+    "max_efficiency": 1.0
   },
   {
     "id": "cut_a_yew_plank",
@@ -2119,9 +2119,9 @@
         }
       ]
     ],
-    "base_xp": 99.0,
+    "base_xp": 80,
     "base_steps": 150,
-    "max_efficiency": 0.7
+    "max_efficiency": 0.65
   },
   {
     "id": "craft_a_kelp_diving_pants",
@@ -2140,9 +2140,9 @@
         }
       ]
     ],
-    "base_xp": 99.0,
+    "base_xp": 80,
     "base_steps": 150,
-    "max_efficiency": 0.7
+    "max_efficiency": 0.75
   },
   {
     "id": "craft_a_kelp_diving_shirt",
@@ -2161,7 +2161,7 @@
         }
       ]
     ],
-    "base_xp": 99.0,
+    "base_xp": 80,
     "base_steps": 150,
     "max_efficiency": 0.7
   },
@@ -2350,7 +2350,7 @@
         }
       ]
     ],
-    "base_xp": 59.0,
+    "base_xp": 49,
     "base_steps": 70,
     "max_efficiency": 0.9
   },
@@ -2437,7 +2437,7 @@
         }
       ]
     ],
-    "base_xp": 153.0,
+    "base_xp": 135,
     "base_steps": 170,
     "max_efficiency": 0.9
   },
@@ -2464,7 +2464,7 @@
         }
       ]
     ],
-    "base_xp": 153.0,
+    "base_xp": 138,
     "base_steps": 175,
     "max_efficiency": 0.9
   },
@@ -2491,7 +2491,7 @@
         }
       ]
     ],
-    "base_xp": 157.0,
+    "base_xp": 136,
     "base_steps": 175,
     "max_efficiency": 0.9
   },
@@ -2518,7 +2518,7 @@
         }
       ]
     ],
-    "base_xp": 166.0,
+    "base_xp": 142,
     "base_steps": 182,
     "max_efficiency": 1.0
   },
@@ -2545,7 +2545,7 @@
         }
       ]
     ],
-    "base_xp": 166.0,
+    "base_xp": 142,
     "base_steps": 182,
     "max_efficiency": 1.0
   },
@@ -2605,7 +2605,7 @@
         }
       ]
     ],
-    "base_xp": 180.0,
+    "base_xp": 148,
     "base_steps": 180,
     "max_efficiency": 0.9
   },
@@ -2626,9 +2626,9 @@
         }
       ]
     ],
-    "base_xp": 160.0,
-    "base_steps": 200,
-    "max_efficiency": 0.9
+    "base_xp": 165,
+    "base_steps": 215,
+    "max_efficiency": 0.95
   },
   {
     "id": "craft_a_hydrilium_diving_leggings",
@@ -2647,9 +2647,9 @@
         }
       ]
     ],
-    "base_xp": 160.0,
-    "base_steps": 200,
-    "max_efficiency": 0.9
+    "base_xp": 170,
+    "base_steps": 220,
+    "max_efficiency": 0.95
   },
   {
     "id": "craft_a_hydrilium_diving_torso",
@@ -2668,9 +2668,9 @@
         }
       ]
     ],
-    "base_xp": 160.0,
-    "base_steps": 200,
-    "max_efficiency": 0.9
+    "base_xp": 175,
+    "base_steps": 225,
+    "max_efficiency": 0.95
   },
   {
     "id": "craft_a_hydrilium_hatchet",
@@ -2695,7 +2695,7 @@
         }
       ]
     ],
-    "base_xp": 180.0,
+    "base_xp": 148,
     "base_steps": 180,
     "max_efficiency": 0.9
   },
@@ -2722,7 +2722,7 @@
         }
       ]
     ],
-    "base_xp": 180.0,
+    "base_xp": 148,
     "base_steps": 180,
     "max_efficiency": 0.9
   },
@@ -3247,7 +3247,7 @@
         }
       ]
     ],
-    "base_xp": 181.0,
+    "base_xp": 212,
     "base_steps": 269,
     "max_efficiency": 1.3
   },
@@ -3274,7 +3274,7 @@
         }
       ]
     ],
-    "base_xp": 181.0,
+    "base_xp": 215,
     "base_steps": 273,
     "max_efficiency": 1.3
   },
@@ -3295,7 +3295,7 @@
         }
       ]
     ],
-    "base_xp": 96.0,
+    "base_xp": 72,
     "base_steps": 110,
     "max_efficiency": 1.3
   },
@@ -3322,7 +3322,7 @@
         }
       ]
     ],
-    "base_xp": 230.0,
+    "base_xp": 257,
     "base_steps": 333,
     "max_efficiency": 1.5
   },
@@ -3349,7 +3349,7 @@
         }
       ]
     ],
-    "base_xp": 234.0,
+    "base_xp": 261,
     "base_steps": 338,
     "max_efficiency": 1.5
   },
@@ -3382,7 +3382,7 @@
         }
       ]
     ],
-    "base_xp": 232.0,
+    "base_xp": 259,
     "base_steps": 335,
     "max_efficiency": 1.5
   },
@@ -3425,7 +3425,7 @@
       ]
     ],
     "base_xp": 12.0,
-    "base_steps": 50,
+    "base_steps": 55,
     "max_efficiency": 0.5
   },
   {
@@ -3540,7 +3540,7 @@
       ]
     ],
     "base_xp": 15.0,
-    "base_steps": 60,
+    "base_steps": 66,
     "max_efficiency": 0.6
   },
   {
@@ -3649,7 +3649,7 @@
       ]
     ],
     "base_xp": 21.5,
-    "base_steps": 75,
+    "base_steps": 83,
     "max_efficiency": 0.7
   },
   {
@@ -3739,7 +3739,7 @@
       ]
     ],
     "base_xp": 28.0,
-    "base_steps": 85,
+    "base_steps": 93,
     "max_efficiency": 0.8
   },
   {
@@ -3987,9 +3987,9 @@
         }
       ]
     ],
-    "base_xp": 168.0,
-    "base_steps": 195,
-    "max_efficiency": 1.1
+    "base_xp": 52,
+    "base_steps": 180,
+    "max_efficiency": 1.2
   },
   {
     "id": "make_a_farganite_sword",
@@ -5245,7 +5245,7 @@
     "base_steps": 1400,
     "max_efficiency": 1.4
   },
-{
+  {
     "id": "craft_an_arrow",
     "wiki_slug": "Arrow",
     "name": "Craft an arrow",
@@ -5256,32 +5256,2012 @@
     "output_quantity": 1,
     "materials": [
       [
-        { "item_id": "copper_ore", "amount": 2 }
+        {
+          "item_id": "copper_ore",
+          "amount": 2
+        }
       ]
     ],
     "base_xp": 12.0,
     "base_steps": 50,
     "max_efficiency": 0.5
-},
-{
-  "id": "cook_a_chicken",
-  "wiki_slug": "Cooked_chicken",
-  "name": "Cook a chicken",
-  "skill": "cooking",
-  "level": 1,
-  "service": "basic_oven",
-  "output_item_id": "cooked_chicken",
-  "output_quantity": 1,
-  "materials": [
-    [
-      {
-        "item_id": "raw_chicken",
-        "amount": 1
-      }
-    ]
-  ],
-  "base_xp": 15.0,
-  "base_steps": 45,
-  "max_efficiency": 0.5
-}
+  },
+  {
+    "id": "cook_a_chicken",
+    "wiki_slug": "Cooked_chicken",
+    "name": "Cook a chicken",
+    "skill": "cooking",
+    "level": 1,
+    "service": "basic_oven",
+    "output_item_id": "cooked_chicken",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "raw_chicken",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 15.0,
+    "base_steps": 45,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "cook_meat",
+    "wiki_slug": "Cook_meat",
+    "name": "Cook meat",
+    "skill": "cooking",
+    "level": 12,
+    "service": "basic_None",
+    "output_item_id": "cooked_meat",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "animal_meat",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 26,
+    "base_steps": 55,
+    "max_efficiency": 0.6
+  },
+  {
+    "id": "craft_a_bamboo_hunting_bow",
+    "wiki_slug": "Craft_a_bamboo_hunting_bow",
+    "name": "Craft a bamboo hunting bow",
+    "skill": "carpentry",
+    "level": 45,
+    "service": "basic_sawmill",
+    "output_item_id": "bamboo_hunting_bow",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bamboo_logs",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "simple_bowstring",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 156,
+    "base_steps": 225,
+    "max_efficiency": 0.9
+  },
+  {
+    "id": "craft_a_birch_hunting_bow",
+    "wiki_slug": "Craft_a_birch_hunting_bow",
+    "name": "Craft a birch hunting bow",
+    "skill": "carpentry",
+    "level": 1,
+    "service": "basic_sawmill",
+    "output_item_id": "birch_hunting_bow",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "birch_logs",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "simple_bowstring",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 50,
+    "base_steps": 135,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "craft_a_boxtrap",
+    "wiki_slug": "Craft_a_boxtrap",
+    "name": "Craft a boxtrap",
+    "skill": "carpentry",
+    "level": 35,
+    "service": "",
+    "output_item_id": "boxtrap",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "birch_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "pine_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "spruce_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "oak_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "maple_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "teak_plank",
+          "amount": 2
+        },
+        {
+          "item_id": "willow_plank",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 26,
+    "base_steps": 56,
+    "max_efficiency": 0.75
+  },
+  {
+    "id": "craft_a_golden_sewing_needle",
+    "wiki_slug": "Craft_a_golden_sewing_needle",
+    "name": "Craft a golden sewing needle",
+    "skill": "crafting",
+    "level": 41,
+    "service": "basic_workshop",
+    "output_item_id": "golden_sewing_needle",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "simple_sewing_needle",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "gold_bar",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 122,
+    "base_steps": 184,
+    "max_efficiency": 0.95
+  },
+  {
+    "id": "craft_a_kelp_drift_net",
+    "wiki_slug": "Craft_a_kelp_drift_net",
+    "name": "Craft a kelp drift net",
+    "skill": "crafting",
+    "level": 30,
+    "service": "basic_workshop",
+    "output_item_id": "kelp_drift_net",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "kelp",
+          "amount": 3
+        }
+      ]
+    ],
+    "base_xp": 40,
+    "base_steps": 63,
+    "max_efficiency": 0.7
+  },
+  {
+    "id": "craft_a_silver_sewing_needle",
+    "wiki_slug": "Craft_a_silver_sewing_needle",
+    "name": "Craft a silver sewing needle",
+    "skill": "crafting",
+    "level": 18,
+    "service": "basic_workshop",
+    "output_item_id": "silver_sewing_needle",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "simple_sewing_needle",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "silver_bar",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 78,
+    "base_steps": 142,
+    "max_efficiency": 0.7
+  },
+  {
+    "id": "craft_a_simple_bowstring",
+    "wiki_slug": "Craft_a_simple_bowstring",
+    "name": "Craft a simple bowstring",
+    "skill": "crafting",
+    "level": 1,
+    "service": "",
+    "output_item_id": "simple_bowstring",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "hemp",
+          "amount": 1
+        },
+        {
+          "item_id": "flax",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 12,
+    "base_steps": 55,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "craft_a_spectral_hunting_bow",
+    "wiki_slug": "Craft_a_spectral_hunting_bow",
+    "name": "Craft a spectral hunting bow",
+    "skill": "carpentry",
+    "level": 55,
+    "service": "advanced_None",
+    "output_item_id": "spectral_hunting_bow",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bones",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "ectoplasm",
+          "amount": 10
+        }
+      ]
+    ],
+    "base_xp": 240,
+    "base_steps": 280,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "craft_a_spectral_sewing_needle",
+    "wiki_slug": "Craft_a_spectral_sewing_needle",
+    "name": "Craft a spectral sewing needle",
+    "skill": "crafting",
+    "level": 58,
+    "service": "advanced_None",
+    "output_item_id": "spectral_sewing_needle",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bones",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "item_id": "ectoplasm",
+          "amount": 15
+        }
+      ]
+    ],
+    "base_xp": 173,
+    "base_steps": 258,
+    "max_efficiency": 1.25
+  },
+  {
+    "id": "craft_a_strong_bowstring",
+    "wiki_slug": "Craft_a_strong_bowstring",
+    "name": "Craft a strong bowstring",
+    "skill": "crafting",
+    "level": 55,
+    "service": "advanced_workshop",
+    "output_item_id": "strong_bowstring",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "cattail",
+          "amount": 1
+        },
+        {
+          "item_id": "ironweed",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 66,
+    "base_steps": 105,
+    "max_efficiency": 1.25
+  },
+  {
+    "id": "craft_an_iron_chefs_hat",
+    "wiki_slug": "Craft_an_iron_chef's_hat",
+    "name": "Craft an iron chef's hat",
+    "skill": "tailoring",
+    "level": 61,
+    "service": "advanced_loom",
+    "output_item_id": "iron_chefs_hat",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "chefs_hat",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "ironweed_twine",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "tough_linen_cloth",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 512,
+    "base_steps": 560,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "craft_an_oak_hunting_bow",
+    "wiki_slug": "Craft_an_oak_hunting_bow",
+    "name": "Craft an oak hunting bow",
+    "skill": "carpentry",
+    "level": 25,
+    "service": "basic_sawmill",
+    "output_item_id": "oak_hunting_bow",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "oak_logs",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "simple_bowstring",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 93,
+    "base_steps": 180,
+    "max_efficiency": 0.7
+  },
+  {
+    "id": "craft_bright_camo_face_paint",
+    "wiki_slug": "Craft_bright_camo_face_paint",
+    "name": "Craft bright camo face paint",
+    "skill": "crafting",
+    "level": 51,
+    "service": "advanced_workshop",
+    "output_item_id": "bright_camo_face_paint",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "camo_face_paint",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "sunblossom",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "widows_kiss",
+          "amount": 3
+        }
+      ]
+    ],
+    "base_xp": 275,
+    "base_steps": 470,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "craft_bronze_arrows",
+    "wiki_slug": "Craft_bronze_arrows",
+    "name": "Craft bronze arrows",
+    "skill": "carpentry",
+    "level": 12,
+    "service": "basic_sawmill",
+    "output_item_id": "bronze_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "bronze_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "pine_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 19,
+    "base_steps": 52,
+    "max_efficiency": 0.25
+  },
+  {
+    "id": "craft_comfy_fishing_chair",
+    "wiki_slug": "Craft_comfy_fishing_chair",
+    "name": "Craft comfy fishing chair",
+    "skill": "carpentry",
+    "level": 38,
+    "service": "basic_sawmill",
+    "output_item_id": "comfy_fishing_chair",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "spruce_plank",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "sturdy_fishing_rod_rest",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 198,
+    "base_steps": 421,
+    "max_efficiency": 0.85
+  },
+  {
+    "id": "craft_copper_arrows",
+    "wiki_slug": "Craft_copper_arrows",
+    "name": "Craft copper arrows",
+    "skill": "carpentry",
+    "level": 2,
+    "service": "basic_sawmill",
+    "output_item_id": "copper_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "copper_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "birch_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 14,
+    "base_steps": 45,
+    "max_efficiency": 0.2
+  },
+  {
+    "id": "craft_extra_crafty_pants",
+    "wiki_slug": "Craft_extra_crafty_pants",
+    "name": "Craft extra crafty pants",
+    "skill": "tailoring",
+    "level": 31,
+    "service": "basic_loom",
+    "output_item_id": "extra_crafty_pants",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "crafting_pants",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "slipstick",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "simple_wrench",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "twine",
+          "amount": 2
+        },
+        {
+          "item_id": "kelp_twine",
+          "amount": 2
+        },
+        {
+          "item_id": "ironweed_twine",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 249,
+    "base_steps": 420,
+    "max_efficiency": 0.8
+  },
+  {
+    "id": "craft_farganite_arrows",
+    "wiki_slug": "Craft_farganite_arrows",
+    "name": "Craft farganite arrows",
+    "skill": "carpentry",
+    "level": 52,
+    "service": "advanced_sawmill",
+    "output_item_id": "farganite_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "farganite_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "mangrove_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 49,
+    "base_steps": 80,
+    "max_efficiency": 0.6
+  },
+  {
+    "id": "craft_gem_tipped_pliers",
+    "wiki_slug": "Craft_gem_tipped_pliers",
+    "name": "Craft gem tipped pliers",
+    "skill": "crafting",
+    "level": 33,
+    "service": "basic_workshop",
+    "output_item_id": "gem_tipped_pliers",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "pretty_pliers",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "topaz",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "wrentmarine",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 233,
+    "base_steps": 333,
+    "max_efficiency": 0.8
+  },
+  {
+    "id": "craft_golden_cutting_mat",
+    "wiki_slug": "Craft_golden_cutting_mat",
+    "name": "Craft golden cutting mat",
+    "skill": "crafting",
+    "level": 46,
+    "service": "basic_workshop",
+    "output_item_id": "golden_cutting_mat",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "durable_fabric_cutting_mat",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "gold_bar",
+          "amount": 3
+        }
+      ]
+    ],
+    "base_xp": 480,
+    "base_steps": 660,
+    "max_efficiency": 0.9
+  },
+  {
+    "id": "craft_iron_arrows",
+    "wiki_slug": "Craft_iron_arrows",
+    "name": "Craft iron arrows",
+    "skill": "carpentry",
+    "level": 22,
+    "service": "basic_sawmill",
+    "output_item_id": "iron_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "iron_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "spruce_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 26,
+    "base_steps": 60,
+    "max_efficiency": 0.3
+  },
+  {
+    "id": "craft_steel_arrows",
+    "wiki_slug": "Craft_steel_arrows",
+    "name": "Craft steel arrows",
+    "skill": "carpentry",
+    "level": 32,
+    "service": "basic_sawmill",
+    "output_item_id": "steel_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "steel_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "maple_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 33,
+    "base_steps": 68,
+    "max_efficiency": 0.4
+  },
+  {
+    "id": "craft_tarsilium_arrows",
+    "wiki_slug": "Craft_tarsilium_arrows",
+    "name": "Craft tarsilium arrows",
+    "skill": "carpentry",
+    "level": 42,
+    "service": "basic_sawmill",
+    "output_item_id": "tarsilium_arrows",
+    "output_quantity": 5,
+    "materials": [
+      [
+        {
+          "item_id": "tarsilium_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "willow_logs",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "feather",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 40,
+    "base_steps": 73,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "craft_tinted_woodworking_glasses",
+    "wiki_slug": "Craft_tinted_woodworking_glasses",
+    "name": "Craft tinted woodworking glasses",
+    "skill": "smithing",
+    "level": 44,
+    "service": "basic_forge",
+    "output_item_id": "tinted_woodworking_glasses",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "tarsilium_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "woodworking_glasses",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "coal",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "item_id": "volcanic_ash",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 180,
+    "base_steps": 260,
+    "max_efficiency": 0.9
+  },
+  {
+    "id": "create_an_amulet_of_shark_tooth",
+    "wiki_slug": "Create_an_amulet_of_shark_tooth",
+    "name": "Create an amulet of shark tooth",
+    "skill": "trinketry",
+    "level": 36,
+    "service": "basic_trinketry_bench",
+    "output_item_id": "amulet_of_shark_tooth",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "shark_tooth_trinket",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "gold_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "silver_bar",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 4250,
+    "base_steps": 3500,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "create_an_amulet_of_spider",
+    "wiki_slug": "Create_an_amulet_of_spider",
+    "name": "Create an amulet of spider",
+    "skill": "trinketry",
+    "level": 39,
+    "service": "basic_trinketry_bench",
+    "output_item_id": "amulet_of_spider",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "spider_trinket",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "gold_bar",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "silver_bar",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 4250,
+    "base_steps": 3500,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "make_a_basic_leather",
+    "wiki_slug": "Make_a_basic_leather",
+    "name": "Make a basic leather",
+    "skill": "tailoring",
+    "level": 5,
+    "service": "basic_loom",
+    "output_item_id": "basic_leather",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "hide_scraps",
+          "amount": 5
+        },
+        {
+          "item_id": "basic_hide",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 10,
+    "base_steps": 60,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "make_a_grassknot_tunic",
+    "wiki_slug": "Make_a_grassknot_tunic",
+    "name": "Make a grassknot tunic",
+    "skill": "tailoring",
+    "level": 17,
+    "service": "basic_loom",
+    "output_item_id": "grassknot_tunic",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "grass",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 76,
+    "base_steps": 180,
+    "max_efficiency": 0.6
+  },
+  {
+    "id": "make_a_journeyman_vest",
+    "wiki_slug": "Make_a_journeyman_vest",
+    "name": "Make a journeyman vest",
+    "skill": "tailoring",
+    "level": 42,
+    "service": "basic_loom",
+    "output_item_id": "journeyman_vest",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "animal_fur",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 261,
+    "base_steps": 390,
+    "max_efficiency": 1.1
+  },
+  {
+    "id": "make_a_rootweave_tunic",
+    "wiki_slug": "Make_a_rootweave_tunic",
+    "name": "Make a rootweave tunic",
+    "skill": "tailoring",
+    "level": 37,
+    "service": "basic_loom",
+    "output_item_id": "rootweave_tunic",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "root",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 243,
+    "base_steps": 379,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "make_a_shadowquill_plastron",
+    "wiki_slug": "Make_a_shadowquill_plastron",
+    "name": "Make a shadowquill plastron",
+    "skill": "tailoring",
+    "level": 32,
+    "service": "basic_loom",
+    "output_item_id": "shadowquill_plastron",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "dark_feather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 146,
+    "base_steps": 236,
+    "max_efficiency": 0.9
+  },
+  {
+    "id": "make_a_spectral_vest",
+    "wiki_slug": "Make_a_spectral_vest",
+    "name": "Make a spectral vest",
+    "skill": "tailoring",
+    "level": 58,
+    "service": "advanced_None",
+    "output_item_id": "spectral_vest",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bones",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "ectoplasm",
+          "amount": 10
+        }
+      ]
+    ],
+    "base_xp": 318,
+    "base_steps": 486,
+    "max_efficiency": 1.4
+  },
+  {
+    "id": "make_a_spikescale_tunic",
+    "wiki_slug": "Make_a_spikescale_tunic",
+    "name": "Make a spikescale tunic",
+    "skill": "tailoring",
+    "level": 27,
+    "service": "basic_loom",
+    "output_item_id": "spikescale_tunic",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "lizard_tail",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 132,
+    "base_steps": 220,
+    "max_efficiency": 0.8
+  },
+  {
+    "id": "make_a_tatty_garb",
+    "wiki_slug": "Make_a_tatty_garb",
+    "name": "Make a tatty garb",
+    "skill": "tailoring",
+    "level": 12,
+    "service": "basic_loom",
+    "output_item_id": "tatty_garb",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 50,
+    "base_steps": 150,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "make_aerofibril_bracers",
+    "wiki_slug": "Make_aerofibril_bracers",
+    "name": "Make aerofibril bracers",
+    "skill": "tailoring",
+    "level": 43,
+    "service": "basic_loom",
+    "output_item_id": "aerofibril_bracers",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "aerodynamic_thread",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 192,
+    "base_steps": 280,
+    "max_efficiency": 1.1
+  },
+  {
+    "id": "make_aerofibril_shorts",
+    "wiki_slug": "Make_aerofibril_shorts",
+    "name": "Make aerofibril shorts",
+    "skill": "tailoring",
+    "level": 45,
+    "service": "basic_loom",
+    "output_item_id": "aerofibril_shorts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "aerodynamic_thread",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 288,
+    "base_steps": 420,
+    "max_efficiency": 1.15
+  },
+  {
+    "id": "make_an_aerofibril_plastron",
+    "wiki_slug": "Make_an_aerofibril_plastron",
+    "name": "Make an aerofibril plastron",
+    "skill": "tailoring",
+    "level": 47,
+    "service": "basic_loom",
+    "output_item_id": "aerofibril_plastron",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "aerodynamic_thread",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 288,
+    "base_steps": 420,
+    "max_efficiency": 1.2
+  },
+  {
+    "id": "make_an_apprentice_vest",
+    "wiki_slug": "Make_an_apprentice_vest",
+    "name": "Make an apprentice vest",
+    "skill": "tailoring",
+    "level": 22,
+    "service": "basic_loom",
+    "output_item_id": "apprentice_vest",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 100,
+    "base_steps": 200,
+    "max_efficiency": 0.7
+  },
+  {
+    "id": "make_an_elderhide_leather",
+    "wiki_slug": "Make_an_elderhide_leather",
+    "name": "Make an elderhide leather",
+    "skill": "tailoring",
+    "level": 50,
+    "service": "advanced_loom",
+    "output_item_id": "elderhide_leather",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "elder_hide_scraps",
+          "amount": 5
+        },
+        {
+          "item_id": "elder_hide",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 30,
+    "base_steps": 104,
+    "max_efficiency": 1.5
+  },
+  {
+    "id": "make_an_elderhide_tunic",
+    "wiki_slug": "Make_an_elderhide_tunic",
+    "name": "Make an elderhide tunic",
+    "skill": "tailoring",
+    "level": 54,
+    "service": "advanced_loom",
+    "output_item_id": "elderhide_tunic",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "elderhide_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 308,
+    "base_steps": 450,
+    "max_efficiency": 1.3
+  },
+  {
+    "id": "make_apprentice_breeches",
+    "wiki_slug": "Make_apprentice_breeches",
+    "name": "Make apprentice breeches",
+    "skill": "tailoring",
+    "level": 20,
+    "service": "basic_loom",
+    "output_item_id": "apprentice_breeches",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 100,
+    "base_steps": 200,
+    "max_efficiency": 0.65
+  },
+  {
+    "id": "make_apprentice_handwear",
+    "wiki_slug": "Make_apprentice_handwear",
+    "name": "Make apprentice handwear",
+    "skill": "tailoring",
+    "level": 18,
+    "service": "basic_loom",
+    "output_item_id": "apprentice_handwear",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 50,
+    "base_steps": 100,
+    "max_efficiency": 0.6
+  },
+  {
+    "id": "make_crab_rolls",
+    "wiki_slug": "Make_crab_rolls",
+    "name": "Make crab rolls",
+    "skill": "cooking",
+    "level": 16,
+    "service": "basic_None",
+    "output_item_id": "crab_rolls",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "raw_crab",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "bread",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 43,
+    "base_steps": 82,
+    "max_efficiency": 0.65
+  },
+  {
+    "id": "make_elderhide_chaps",
+    "wiki_slug": "Make_elderhide_chaps",
+    "name": "Make elderhide chaps",
+    "skill": "tailoring",
+    "level": 53,
+    "service": "advanced_loom",
+    "output_item_id": "elderhide_chaps",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "elderhide_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 308,
+    "base_steps": 450,
+    "max_efficiency": 1.25
+  },
+  {
+    "id": "make_elderhide_mitts",
+    "wiki_slug": "Make_elderhide_mitts",
+    "name": "Make elderhide mitts",
+    "skill": "tailoring",
+    "level": 52,
+    "service": "advanced_loom",
+    "output_item_id": "elderhide_mitts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "elderhide_leather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 308,
+    "base_steps": 450,
+    "max_efficiency": 1.2
+  },
+  {
+    "id": "make_grassknot_chaps",
+    "wiki_slug": "Make_grassknot_chaps",
+    "name": "Make grassknot chaps",
+    "skill": "tailoring",
+    "level": 15,
+    "service": "basic_loom",
+    "output_item_id": "grassknot_chaps",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "grass",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 76,
+    "base_steps": 180,
+    "max_efficiency": 0.55
+  },
+  {
+    "id": "make_grassknot_mitts",
+    "wiki_slug": "Make_grassknot_mitts",
+    "name": "Make grassknot mitts",
+    "skill": "tailoring",
+    "level": 13,
+    "service": "basic_loom",
+    "output_item_id": "grassknot_mitts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "grass",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 38,
+    "base_steps": 90,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "make_jellied_stream_eel",
+    "wiki_slug": "Make_jellied_stream_eel",
+    "name": "Make jellied stream eel",
+    "skill": "cooking",
+    "level": 55,
+    "service": "advanced_None",
+    "output_item_id": "jellied_stream_eel",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "raw_stream_eel",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "pepper",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "item_id": "fishbone",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 329,
+    "base_steps": 270,
+    "max_efficiency": 1.5
+  },
+  {
+    "id": "make_journeyman_breeches",
+    "wiki_slug": "Make_journeyman_breeches",
+    "name": "Make journeyman breeches",
+    "skill": "tailoring",
+    "level": 40,
+    "service": "basic_loom",
+    "output_item_id": "journeyman_breeches",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "animal_fur",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 174,
+    "base_steps": 260,
+    "max_efficiency": 1.05
+  },
+  {
+    "id": "make_journeyman_handwear",
+    "wiki_slug": "Make_journeyman_handwear",
+    "name": "Make journeyman handwear",
+    "skill": "tailoring",
+    "level": 38,
+    "service": "basic_loom",
+    "output_item_id": "journeyman_handwear",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "animal_fur",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 174,
+    "base_steps": 260,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "make_linen_cloth",
+    "wiki_slug": "Make_linen_cloth",
+    "name": "Make linen cloth",
+    "skill": "tailoring",
+    "level": 1,
+    "service": "basic_None",
+    "output_item_id": "linen_cloth",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "hemp",
+          "amount": 2
+        },
+        {
+          "item_id": "flax",
+          "amount": 2
+        },
+        {
+          "item_id": "bamboo_logs",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 5,
+    "base_steps": 50,
+    "max_efficiency": 0.5
+  },
+  {
+    "id": "make_rootweave_chaps",
+    "wiki_slug": "Make_rootweave_chaps",
+    "name": "Make rootweave chaps",
+    "skill": "tailoring",
+    "level": 35,
+    "service": "basic_loom",
+    "output_item_id": "rootweave_chaps",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "root",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 162,
+    "base_steps": 254,
+    "max_efficiency": 0.95
+  },
+  {
+    "id": "make_rootweave_mitts",
+    "wiki_slug": "Make_rootweave_mitts",
+    "name": "Make rootweave mitts",
+    "skill": "tailoring",
+    "level": 33,
+    "service": "basic_loom",
+    "output_item_id": "rootweave_mitts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "root",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 162,
+    "base_steps": 254,
+    "max_efficiency": 0.9
+  },
+  {
+    "id": "make_shadowquill_bracers",
+    "wiki_slug": "Make_shadowquill_bracers",
+    "name": "Make shadowquill bracers",
+    "skill": "tailoring",
+    "level": 28,
+    "service": "basic_loom",
+    "output_item_id": "shadowquill_bracers",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "dark_feather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 73,
+    "base_steps": 118,
+    "max_efficiency": 0.8
+  },
+  {
+    "id": "make_shadowquill_shorts",
+    "wiki_slug": "Make_shadowquill_shorts",
+    "name": "Make shadowquill shorts",
+    "skill": "tailoring",
+    "level": 30,
+    "service": "basic_loom",
+    "output_item_id": "shadowquill_shorts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "dark_feather",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 146,
+    "base_steps": 236,
+    "max_efficiency": 0.85
+  },
+  {
+    "id": "make_spectral_breeches",
+    "wiki_slug": "Make_spectral_breeches",
+    "name": "Make spectral breeches",
+    "skill": "tailoring",
+    "level": 57,
+    "service": "advanced_None",
+    "output_item_id": "spectral_breeches",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bones",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "ectoplasm",
+          "amount": 10
+        }
+      ]
+    ],
+    "base_xp": 318,
+    "base_steps": 486,
+    "max_efficiency": 1.35
+  },
+  {
+    "id": "make_spectral_handwear",
+    "wiki_slug": "Make_spectral_handwear",
+    "name": "Make spectral handwear",
+    "skill": "tailoring",
+    "level": 56,
+    "service": "advanced_None",
+    "output_item_id": "spectral_handwear",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bones",
+          "amount": 3
+        }
+      ],
+      [
+        {
+          "item_id": "ectoplasm",
+          "amount": 10
+        }
+      ]
+    ],
+    "base_xp": 212,
+    "base_steps": 323,
+    "max_efficiency": 1.3
+  },
+  {
+    "id": "make_spicy_moray",
+    "wiki_slug": "Make_spicy_moray",
+    "name": "Make spicy moray",
+    "skill": "cooking",
+    "level": 60,
+    "service": "advanced_None",
+    "output_item_id": "spicy_moray",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "raw_moray",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "pepper",
+          "amount": 5
+        }
+      ],
+      [
+        {
+          "item_id": "wooden_stick",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 368,
+    "base_steps": 284,
+    "max_efficiency": 1.6
+  },
+  {
+    "id": "make_spikescale_chaps",
+    "wiki_slug": "Make_spikescale_chaps",
+    "name": "Make spikescale chaps",
+    "skill": "tailoring",
+    "level": 25,
+    "service": "basic_loom",
+    "output_item_id": "spikescale_chaps",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "lizard_tail",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 132,
+    "base_steps": 220,
+    "max_efficiency": 0.75
+  },
+  {
+    "id": "make_spikescale_mitts",
+    "wiki_slug": "Make_spikescale_mitts",
+    "name": "Make spikescale mitts",
+    "skill": "tailoring",
+    "level": 23,
+    "service": "basic_loom",
+    "output_item_id": "spikescale_mitts",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "basic_leather",
+          "amount": 1
+        }
+      ],
+      [
+        {
+          "item_id": "lizard_tail",
+          "amount": 1
+        }
+      ]
+    ],
+    "base_xp": 66,
+    "base_steps": 110,
+    "max_efficiency": 0.7
+  },
+  {
+    "id": "make_tatty_handwraps",
+    "wiki_slug": "Make_tatty_handwraps",
+    "name": "Make tatty handwraps",
+    "skill": "tailoring",
+    "level": 8,
+    "service": "basic_loom",
+    "output_item_id": "tatty_handwraps",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 50,
+    "base_steps": 150,
+    "max_efficiency": 0.4
+  },
+  {
+    "id": "make_tatty_skirt",
+    "wiki_slug": "Make_tatty_skirt",
+    "name": "Make tatty skirt",
+    "skill": "tailoring",
+    "level": 10,
+    "service": "basic_loom",
+    "output_item_id": "tatty_skirt",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "linen_cloth",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 50,
+    "base_steps": 150,
+    "max_efficiency": 0.45
+  },
+  {
+    "id": "make_tough_linen",
+    "wiki_slug": "Make_tough_linen",
+    "name": "Make tough linen",
+    "skill": "tailoring",
+    "level": 60,
+    "service": "advanced_loom",
+    "output_item_id": "tough_linen_cloth",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "ironweed",
+          "amount": 2
+        },
+        {
+          "item_id": "cattail",
+          "amount": 2
+        }
+      ]
+    ],
+    "base_xp": 35,
+    "base_steps": 150,
+    "max_efficiency": 1.5
+  },
+  {
+    "id": "weave_into_ectoplasm",
+    "wiki_slug": "Weave_into_ectoplasm",
+    "name": "Weave into ectoplasm",
+    "skill": "tailoring",
+    "level": 55,
+    "service": "advanced_None",
+    "output_item_id": "ectoplasm",
+    "output_quantity": 2,
+    "materials": [
+      [
+        {
+          "item_id": "ectoplasm_scraps",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 111,
+    "base_steps": 190,
+    "max_efficiency": 1.2
+  },
+  {
+    "id": "woodwork_a_bamboo_toolbox",
+    "wiki_slug": "Woodwork_a_bamboo_toolbox",
+    "name": "Woodwork a bamboo toolbox",
+    "skill": "carpentry",
+    "level": 47,
+    "service": "basic_sawmill",
+    "output_item_id": "bamboo_toolbox",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "bamboo_plank",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 242,
+    "base_steps": 484,
+    "max_efficiency": 1.0
+  },
+  {
+    "id": "woodwork_a_pine_toolbox",
+    "wiki_slug": "Woodwork_a_pine_toolbox",
+    "name": "Woodwork a pine toolbox",
+    "skill": "carpentry",
+    "level": 12,
+    "service": "basic_sawmill",
+    "output_item_id": "pine_toolbox",
+    "output_quantity": 1,
+    "materials": [
+      [
+        {
+          "item_id": "pine_plank",
+          "amount": 5
+        }
+      ]
+    ],
+    "base_xp": 121,
+    "base_steps": 242,
+    "max_efficiency": 0.6
+  }
 ]

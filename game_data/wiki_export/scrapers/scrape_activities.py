@@ -747,11 +747,21 @@ def main():
     item_vals, container_evs = load_ev_values()
     all_data = calculate_activity_evs(all_data, item_vals, container_evs=container_evs)
     
-    print(f"\nStep 2: Exporting {len(all_data)} activities to {OUTPUT_FILE}...")
+    print(f"\nStep 3: Exporting {len(all_data)} activities to {OUTPUT_FILE}...")
     
     data = [a.model_dump(mode='json') for a in all_data]
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    
+    print("\nStep 4: Overlaying gear API data for exact drop rates...")
+    try:
+        from overlay_gear_api import overlay
+        overlay()
+    except Exception as e:
+        import traceback
+        print(f"Warning: Could not overlay API data: {e}")
+        traceback.print_exc()
+        print("Continuing with wiki data only...")
         
     print("Done.")
 
