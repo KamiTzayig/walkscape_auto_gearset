@@ -2,7 +2,7 @@ import streamlit as st
 import json
 from streamlit_js_eval import streamlit_js_eval
 
-from ui_utils import load_data
+from ui_utils import load_data, _data_files_hash
 from drop_calculator import DropCalculator
 from models import Equipment, Activity, Recipe, Location, Service, Collectible, Pet, Material, Consumable
 
@@ -43,6 +43,7 @@ def init_session_state():
 
     if 'saved_loadouts' not in st.session_state: st.session_state['saved_loadouts'] = {}
     if 'crafting_tree_root' not in st.session_state: st.session_state['crafting_tree_root'] = None
+    if 'tree_snapshots' not in st.session_state: st.session_state['tree_snapshots'] = []
 
 def main():
     init_session_state()
@@ -92,21 +93,72 @@ def main():
             print("Error parsing browser data:", e)
 
     # Load Base Data globally
-    all_items_raw, activities, recipes, locations, services, all_collectibles_raw, all_pets, all_consumables, all_containers, all_materials = load_data()   
-    
+    _items, _activities, _recipes, _locations, _services, _collectibles, _pets, _consumables, _containers, _materials = load_data(file_hash=_data_files_hash())
+    # IMPORTANT: copy lists before mutating so we don't corrupt the @st.cache_data cache
+    all_items_raw = list(_items)
+    activities = list(_activities)
+    recipes = list(_recipes)
+    locations = list(_locations)
+    services = list(_services)
+    all_collectibles_raw = list(_collectibles)
+    all_pets = list(_pets)
+    all_consumables = list(_consumables)
+    all_containers = list(_containers)
+    all_materials = list(_materials)
+
     # --- 2. Inject Custom Entities into Base Data ---
+    # Build lookup sets for conflict detection.
+    _loaded_activity_ids = {a.id for a in activities}
+    _loaded_recipe_ids   = {r.id for r in recipes}
+
     if st.session_state.get('custom_entities'):
         for item in st.session_state['custom_entities']:
             etype = item.get("entity_type")
             data = item.get("data")
             try:
-                if etype == "Equipment": all_items_raw.append(Equipment(**data))
-                elif etype == "Material": all_materials.append(Material(**data))
-                elif etype == "Consumable": all_consumables.append(Consumable(**data))
-                elif etype == "Activity": activities.append(Activity(**data))
-                elif etype == "Recipe": recipes.append(Recipe(**data))
-                elif etype == "Location": locations.append(Location(**data))
-                elif etype == "Pet": all_pets.append(Pet(**data))
+                if etype == "Equipment":
+                    all_items_raw.append(Equipment(**data))
+                elif etype == "Material":
+                    all_materials.append(Material(**data))
+                elif etype == "Consumable":
+                    all_consumables.append(Consumable(**data))
+                elif etype == "Activity":
+                    cid = data.get("id", "")
+                    if cid in _loaded_activity_ids:
+                        # Merge: apply custom data on top of the loaded activity so that
+                        # unset fields (e.g. base_steps=0 default) don't wipe valid loaded values.
+                        loaded_act = next(a for a in activities if a.id == cid)
+                        base = loaded_act.model_dump(mode="json")
+                        # Only override with non-default custom values to avoid silent zeroing.
+                        for k, v in data.items():
+                            if k == "base_steps" and v == 0:
+                                continue  # 0 is the Pydantic default, not an intentional override
+                            base[k] = v
+                        merged = Activity(**base)
+                        idx = next(i for i, a in enumerate(activities) if a.id == cid)
+                        activities[idx] = merged
+                        if merged.base_steps != loaded_act.base_steps:
+                            st.warning(
+                                f"⚠️ Custom activity **{cid}** overrides the loaded entry "
+                                f"(base_steps: {loaded_act.base_steps} → {merged.base_steps}). "
+                                "Check the Data Entry tab if this is unintentional."
+                            )
+                    else:
+                        activities.append(Activity(**data))
+                elif etype == "Recipe":
+                    cid = data.get("id", "")
+                    if cid in _loaded_recipe_ids:
+                        loaded_rec = next(r for r in recipes if r.id == cid)
+                        base = loaded_rec.model_dump(mode="json")
+                        base.update(data)
+                        idx = next(i for i, r in enumerate(recipes) if r.id == cid)
+                        recipes[idx] = Recipe(**base)
+                    else:
+                        recipes.append(Recipe(**data))
+                elif etype == "Location":
+                    locations.append(Location(**data))
+                elif etype == "Pet":
+                    all_pets.append(Pet(**data))
             except Exception as e:
                 print(f"Failed to load custom {etype} ({data.get('id')}): {e}")
 

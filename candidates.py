@@ -165,7 +165,7 @@ class CandidateSelector:
             rejection_reason = None
             
             # 0. Check Blacklist
-            if item.id in blacklisted_ids and item not in locked_item_objects:
+            if item.id.lower() in blacklisted_ids and item not in locked_item_objects:
                 is_locked = any(l.id == item.id for l in locked_item_objects)
                 if not is_locked: continue
 

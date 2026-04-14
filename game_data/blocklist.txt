@@ -1,0 +1,53 @@
+# ============================================================================
+# Gear Blocklist for Tree Optimizer "All Gear minus Blocklist" mode
+# ============================================================================
+#
+# One item ID per line. Lines starting with # are comments and ignored.
+# Blank lines are also ignored. Inline comments after # are supported.
+#
+# To INCLUDE an item in optimization, remove or comment out its line.
+# To EXCLUDE an item, add its ID here.
+#
+# By default this file contains all Ethereal (Eternal quality) items.
+# ============================================================================
+
+amulet_of_bat_ethereal  # Amulet of bat (Eternal)
+amulet_of_beaver_ethereal  # Amulet of beaver (Eternal)
+amulet_of_circular_root_ethereal  # Amulet of circular root (Eternal)
+amulet_of_cooling_ice_ethereal  # Amulet of cooling ice (Eternal)
+amulet_of_eel_ethereal  # Amulet of eel (Eternal)
+amulet_of_finding_ethereal  # Amulet of finding (Eternal)
+amulet_of_heron_ethereal  # Amulet of heron (Eternal)
+amulet_of_lucky_rabbits_foot_ethereal  # Amulet of lucky rabbit's foot (Eternal)
+amulet_of_measuring_spoon_ethereal  # Amulet of measuring spoon (Eternal)
+amulet_of_pink_pearl_ethereal  # Amulet of pink pearl (Eternal)
+amulet_of_shark_tooth_ethereal  # Amulet of shark tooth (Eternal)
+amulet_of_shrimp_ethereal  # Amulet of shrimp (Eternal)
+amulet_of_spider_ethereal  # Amulet of spider (Eternal)
+amulet_of_the_animal_kingdom_ethereal  # Amulet of the animal kingdom (Eternal)
+
+gold_ethernite_ring_ethereal  # Gold ethernite ring (Eternal)
+gold_jade_ring_ethereal  # Gold jade ring (Eternal)
+gold_opal_ring_ethereal  # Gold opal ring (Eternal)
+gold_ring_ethereal  # Gold ring (Eternal)
+gold_ruby_ring_ethereal  # Gold ruby ring (Eternal)
+gold_star_pearl_ring_ethereal  # Gold star pearl ring (Eternal)
+gold_sun_stone_ring_ethereal  # Gold sun stone ring (Eternal)
+gold_topaz_ring_ethereal  # Gold topaz ring (Eternal)
+gold_wrentmarine_ring_ethereal  # Gold wrentmarine ring (Eternal)
+
+silver_ethernite_ring_ethereal  # Silver ethernite ring (Eternal)
+silver_jade_ring_ethereal  # Silver jade ring (Eternal)
+silver_opal_ring_ethereal  # Silver opal ring (Eternal)
+silver_ring_ethereal  # Silver ring (Eternal)
+silver_ruby_ring_ethereal  # Silver ruby ring (Eternal)
+silver_star_pearl_ring_ethereal  # Silver star pearl ring (Eternal)
+silver_sun_stone_ring_ethereal  # Silver sun stone ring (Eternal)
+silver_topaz_ring_ethereal  # Silver topaz ring (Eternal)
+silver_wrentmarine_ring_ethereal  # Silver wrentmarine ring (Eternal)
+
+FLOWING_POCKETWATCH
+ALGAE_RING
+RING_OF_ASH
+WHOLLY_RING
+TRELLIN_BEAVER

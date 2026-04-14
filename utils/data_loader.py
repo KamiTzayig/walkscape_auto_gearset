@@ -1,5 +1,6 @@
 import json
-from typing import List, Tuple
+import os
+from typing import List, Set, Tuple
 from models import Equipment, Activity, Recipe, Location, Service, Collectible, Pet, Material
 
 
@@ -58,3 +59,22 @@ def load_game_data(
 
 
     return all_items, all_activities, all_recipes, all_locations, all_services, all_collectibles, all_materials
+
+
+def load_blocklist(
+    path: str = "game_data/blocklist.txt",
+) -> Set[str]:
+    """Load blocked item IDs from a human-readable text file.
+
+    Lines starting with ``#`` are comments, blank lines are ignored,
+    and inline ``# comments`` after the ID are stripped.
+    """
+    blocked: Set[str] = set()
+    if not os.path.exists(path):
+        return blocked
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.split("#", 1)[0].strip()
+            if line:
+                blocked.add(line.lower())
+    return blocked

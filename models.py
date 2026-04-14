@@ -1,7 +1,7 @@
 from typing import List, Optional, Dict, Set, Tuple, Any
 from collections import defaultdict, Counter
 from enum import Enum
-from pydantic import BaseModel, Field, ConfigDict, model_validator
+from pydantic import BaseModel, Field, ConfigDict, PrivateAttr, model_validator
 from utils.constants import (
     ConditionType, RequirementType, EquipmentSlot, EquipmentQuality, 
     SkillName, StatName, GATHERING_SKILLS, ARTISAN_SKILLS, RESTRICTED_TOOL_KEYWORDS,
@@ -508,4 +508,9 @@ class CraftingNode(BaseModel):
     selected_pet_level: Optional[int] = None
     selected_consumable_id: Optional[str] = None
     selected_activity_inputs: Dict[int, str] = Field(default_factory=dict)
-    use_pet_ability: bool = False 
+    use_pet_ability: bool = False
+
+    # Flags set by tree optimizer (not persisted but safe for in-process use)
+    _tree_opt_done: bool = PrivateAttr(default=False)
+    _collapsed_input: bool = PrivateAttr(default=False)
+    _tree_opt_score: Optional[float] = PrivateAttr(default=None)
