@@ -152,17 +152,11 @@ class DropCalculator:
                             
                         self._add_row(rows, q_id, prob, steps_per_roll, avg_quantity)
             else:
-                # Material or Consumable Output
                 if is_fine_materials:
                     fine_id = self.fine_material_map.get(base_id, f"{base_id}_fine")
                     self._add_row(rows, fine_id, 1.0, steps_per_roll, avg_quantity)
                 else:
-                    fine_id = self.fine_material_map.get(base_id)
-                    if fine_id and fine_conversion_rate > 0:
-                        self._add_row(rows, base_id, 1.0 - fine_conversion_rate, steps_per_roll, avg_quantity)
-                        self._add_row(rows, fine_id, fine_conversion_rate, steps_per_roll, avg_quantity)
-                    else:
-                        self._add_row(rows, base_id, 1.0, steps_per_roll, avg_quantity)
+                    self._add_row(rows, base_id, 1.0, steps_per_roll, avg_quantity)
 
             # Recipe Specific Chest Drop (1/250 Base Chance)
             activity_skill = getattr(activity, "primary_skill", getattr(activity, "skill", ""))
