@@ -7,8 +7,11 @@
             "targets": [
                 {"name": "xp", "weight": 100}
             ]
-        },
-        {
+        }
+     
+       
+    ],
+    "test": [{
             "run_name": "Composite profit & XP",
             "targets": [
                 {"name": "net_profit_per_step", "weight": 100},
@@ -20,6 +23,12 @@
             "run_name": "Pure Profit",
             "targets": [
                 {"name": "net_profit_per_step", "weight": 100}
+            ]
+        },
+       {
+            "run_name": "Pure XP",
+            "targets": [
+                {"name": "xp", "weight": 100}
             ]
         }
     ]
