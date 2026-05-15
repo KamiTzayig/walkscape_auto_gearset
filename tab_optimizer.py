@@ -7,7 +7,7 @@ from collections import defaultdict
 
 from utils.constants import StatName, PERCENTAGE_STATS, QUALITY_NAMES, BUFF_PET_ABILITIES
 from utils.export import export_gearset
-from calculations import calculate_passive_stats, calculate_score, analyze_score, calculate_quality_probabilities
+from calculations import calculate_passive_stats, calculate_score, analyze_score, calculate_quality_probabilities, _calculate_single_target_score
 from gear_optimizer import GearOptimizer, OPTIMAZATION_TARGET
 from models import EquipmentSlot, GearSet, Recipe, Activity, RequirementType, CraftingNode
 
@@ -834,18 +834,37 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         </div>
                         """
                 
+                shown_targets = {item["target"].lower() for item in breakdown} if breakdown else set()
+
+                always_show = [
+                    (OPTIMAZATION_TARGET.xp, "Xp"),
+                    (OPTIMAZATION_TARGET.net_profit_per_step, "Net Profit Per Step"),
+                    (OPTIMAZATION_TARGET.reward_rolls, "Reward Rolls")
+                ]
+                if saved_is_recipe:
+                    always_show.append((OPTIMAZATION_TARGET.materials_from_input, "Materials From Input"))
+
+                additional_metrics_html = ""
+                for t_enum, t_name in always_show:
+                    if t_name.lower() not in shown_targets:
+                        raw_val = _calculate_single_target_score(t_enum, saved_activity, saved_skill_lvl, stats, context)
+                        display_text = format_target_metric(t_name, raw_val, saved_activity.base_steps)
+                        additional_metrics_html += f"<div style='font-size: 0.95rem; color: #e2e8f0;'><span style='color: #94a3b8;'>{t_name}*:</span> <span style='font-weight: 600; color: #93c5fd;'>{display_text}</span></div>"
+
                 raw_scores_html = ""
-                if breakdown:
+                if breakdown or additional_metrics_html:
                     raw_scores_html = "<div style='margin-top: 12px; padding-top: 12px; border-top: 1px dashed #30363d; display: flex; gap: 18px; flex-wrap: wrap;'>"
                     for item in breakdown:
                         t_name = item["target"]
                         raw_val = item["raw_value"]
-                        
-                        # Use our new helper function
                         display_text = format_target_metric(t_name, raw_val, saved_activity.base_steps)
-                        
                         raw_scores_html += f"<div style='font-size: 0.95rem; color: #e2e8f0;'><span style='color: #94a3b8;'>{t_name}:</span> <span style='font-weight: 600; color: #93c5fd;'>{display_text}</span></div>"
+                    
+                    raw_scores_html += additional_metrics_html
                     raw_scores_html += "</div>"
+                    
+                    if additional_metrics_html:
+                        raw_scores_html += "<div style='font-size: 0.75rem; color: #64748b; margin-top: 8px;'>* Metric always shown for reference</div>"
 
                 st.html(f"""
                 <div style="background-color: #0e1117; padding: 15px; border-radius: 10px; border: 1px solid #30363d;">
