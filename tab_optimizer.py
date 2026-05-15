@@ -1358,10 +1358,10 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     nmc_mult = 1.0 - nmc_val
                     
                     c1, c2, c3, c4 = st.columns(4)
-                    c1.metric("Optimized Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
-                    c2.metric("DA Multiplier", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
-                    c3.metric("DR Multiplier", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
-                    c4.metric("NMC Cost Factor", f"{nmc_mult*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
+                    c1.metric("Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
+                    c2.metric("DA", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
+                    c3.metric("DR", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
+                    c4.metric("NMC", f"{nmc_mult:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
                     
                     st.divider()
                     
@@ -1393,7 +1393,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                             "Item": item_id.replace("_", " ").title(),
                             "Base Value (Coins)": f"{ev:.2f}",
                             "Expected Steps": f"{steps_for_drop:.2f}",
-                            "EV per Step": f"{ev_per_step:.5f}"
+                            "EV per 1K Steps": f"{ev_per_step*1000:.5f}"
                         })
                         
                     if revenue_rows:
@@ -1401,7 +1401,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     else:
                         st.info("No drops generate revenue.")
                         
-                    st.markdown(f"**Total Revenue EV:** `{output_ev_per_step:.5f}` Coins / Step")
+                    st.markdown(f"**Total Revenue EV:** `{output_ev_per_step:.5f}` Coins / 1k Step")
                     
                     st.divider()
                     
@@ -1414,11 +1414,11 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         st.markdown(f"- **Base Input Cost:** `{base_input_cost:.2f}` Coins per action")
                         st.markdown("- **Cost Formula:** `(Base Cost * DA Multiplier * NMC Cost Factor) / Steps`")
                         st.markdown(f"- **Math:** `({base_input_cost:.2f} * {da_mult:.2f} * {nmc_mult:.2f}) / {final_steps}`")
-                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step:.5f}` Coins / Step")
+                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step*1000:.5f}` Coins / 1K Steps")
                     else:
                         input_cost_per_step = 0.0
                         st.success("This activity has no input material costs!")
-                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step:.5f}` Coins / Step")
+                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step * 1000:.5f}` Coins / 1K Steps")
                         
                     st.divider()
                     
@@ -1427,11 +1427,10 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     net_profit = output_ev_per_step - input_cost_per_step
                     
                     st.markdown("**Formula:** `Total Revenue EV - Total Cost EV`")
-                    st.markdown(f"**Math:** `{output_ev_per_step:.5f} - {input_cost_per_step:.5f}`")
+                    st.markdown(f"**Math:** `{output_ev_per_step*1000:.5f} - {input_cost_per_step*1000:.5f}`")
                     
                     color = "#4ade80" if net_profit >= 0 else "#ef4444"
-                    st.markdown(f"<h3 style='color: {color}; margin-bottom: 0px;'>{net_profit:.5f} Coins / Step</h3>", unsafe_allow_html=True)
-                    st.markdown(f"<span style='color: {color}; font-size: 1.1em;'>({net_profit * 1000:.2f} Coins per 1,000 steps)</span>", unsafe_allow_html=True)
+                    st.markdown(f"<h3 style='color: {color}; margin-bottom: 0px;'>{net_profit*1000:.5f} Coins / 1K Steps</h3>", unsafe_allow_html=True)
                 st.markdown("---")
                 with st.expander("🧪 Laboratory / Debugger", expanded=True):
                     tab_exp, tab_cand, tab_math = st.tabs(["Item Swapper", "🕵️ Candidate Inspector", "🧮 Score Math"])
