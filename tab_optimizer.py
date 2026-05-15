@@ -1345,6 +1345,94 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     st.info("No drop data available for this activity.")
                 
                 st.markdown("---")
+                with st.expander("💰 Net Profit Calculation Breakdown", expanded=False):
+                    st.markdown("### 🧮 How is Net Profit Per Step Calculated?")
+                    st.caption("This breakdown reveals the exact math used to determine your net profit, accounting for all drop expected values (EV), input costs, and player multipliers.")
+                    
+                    # 1. Multipliers
+                    da_val = min(1.0, stats.get("double_action", 0.0))
+                    dr_val = min(1.0, stats.get("double_rewards", 0.0))
+                    nmc_val = min(0.99, stats.get("no_materials_consumed", 0.0))
+                    da_mult = 1.0 + da_val
+                    dr_mult = 1.0 + dr_val
+                    nmc_mult = 1.0 - nmc_val
+                    
+                    c1, c2, c3, c4 = st.columns(4)
+                    c1.metric("Optimized Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
+                    c2.metric("DA Multiplier", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
+                    c3.metric("DR Multiplier", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
+                    c4.metric("NMC Cost Factor", f"{nmc_mult*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
+                    
+                    st.divider()
+                    
+                    # 2. Revenue Calculation
+                    st.markdown("#### 📈 Expected Revenue (Outputs)")
+                    is_fine = context.get("is_fine_materials", False)
+                    is_upg = context.get("is_equipment_upgrade", False)
+                    
+                    drop_table = drop_calc.get_drop_table(
+                        saved_activity, stats, saved_skill_lvl,
+                        is_fine_materials=is_fine,
+                        is_equipment_upgrade=is_upg
+                    )
+                    
+                    output_ev_per_step = 0.0
+                    revenue_rows = []
+                    for d in drop_table:
+                        item_id = d["Item"]
+                        steps_for_drop = d["Steps"]
+                        if steps_for_drop <= 0 or steps_for_drop == float('inf'):
+                            continue
+                        
+                        # Get EV (falls back to direct item value if it's not a container like a chest/pouch)
+                        ev = drop_calc.container_evs.get(item_id, drop_calc.item_values.get(item_id, 0.0))
+                        ev_per_step = ev / steps_for_drop
+                        output_ev_per_step += ev_per_step
+                        
+                        revenue_rows.append({
+                            "Item": item_id.replace("_", " ").title(),
+                            "Base Value (Coins)": f"{ev:.2f}",
+                            "Expected Steps": f"{steps_for_drop:.2f}",
+                            "EV per Step": f"{ev_per_step:.5f}"
+                        })
+                        
+                    if revenue_rows:
+                        st.dataframe(pd.DataFrame(revenue_rows), use_container_width=True, hide_index=True)
+                    else:
+                        st.info("No drops generate revenue.")
+                        
+                    st.markdown(f"**Total Revenue EV:** `{output_ev_per_step:.5f}` Coins / Step")
+                    
+                    st.divider()
+                    
+                    # 3. Cost Calculation
+                    st.markdown("#### 📉 Expected Costs (Inputs)")
+                    base_input_cost = context.get("base_input_cost", 0.0)
+                    
+                    if base_input_cost > 0:
+                        input_cost_per_step = (base_input_cost * da_mult * nmc_mult) / final_steps
+                        st.markdown(f"- **Base Input Cost:** `{base_input_cost:.2f}` Coins per action")
+                        st.markdown("- **Cost Formula:** `(Base Cost * DA Multiplier * NMC Cost Factor) / Steps`")
+                        st.markdown(f"- **Math:** `({base_input_cost:.2f} * {da_mult:.2f} * {nmc_mult:.2f}) / {final_steps}`")
+                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step:.5f}` Coins / Step")
+                    else:
+                        input_cost_per_step = 0.0
+                        st.success("This activity has no input material costs!")
+                        st.markdown(f"**Total Cost EV:** `{input_cost_per_step:.5f}` Coins / Step")
+                        
+                    st.divider()
+                    
+                    # 4. Final Calculation
+                    st.markdown("#### 💰 Final Net Profit")
+                    net_profit = output_ev_per_step - input_cost_per_step
+                    
+                    st.markdown("**Formula:** `Total Revenue EV - Total Cost EV`")
+                    st.markdown(f"**Math:** `{output_ev_per_step:.5f} - {input_cost_per_step:.5f}`")
+                    
+                    color = "#4ade80" if net_profit >= 0 else "#ef4444"
+                    st.markdown(f"<h3 style='color: {color}; margin-bottom: 0px;'>{net_profit:.5f} Coins / Step</h3>", unsafe_allow_html=True)
+                    st.markdown(f"<span style='color: {color}; font-size: 1.1em;'>({net_profit * 1000:.2f} Coins per 1,000 steps)</span>", unsafe_allow_html=True)
+                st.markdown("---")
                 with st.expander("🧪 Laboratory / Debugger", expanded=True):
                     tab_exp, tab_cand, tab_math = st.tabs(["Item Swapper", "🕵️ Candidate Inspector", "🧮 Score Math"])
                     
