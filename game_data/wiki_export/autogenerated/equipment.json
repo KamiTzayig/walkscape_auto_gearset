@@ -1576,6 +1576,7 @@
     "name": "Chef's hat",
     "value": 25,
     "keywords": [
+      "Upgradeable",
       "exact_item_chefs_hat"
     ],
     "uuid": "item-chef's_hat-953024d6-2424-4f56-b39d-46b48568dbad",
@@ -1951,6 +1952,7 @@
     "name": "Crafting pants",
     "value": 4,
     "keywords": [
+      "Upgradeable",
       "exact_item_crafting_pants"
     ],
     "uuid": "item-crafting_pants-c5e5c5f4-692a-4ad8-bdaf-1eb23f0fde21",
@@ -8640,6 +8642,7 @@
     "name": "Steel-toe boots",
     "value": 4,
     "keywords": [
+      "Upgradeable",
       "exact_item_steel_toe_boots"
     ],
     "uuid": "item-steel-toe_boots-a7736eff-1cb0-4f51-aacd-ebe8488530f0",
@@ -9847,6 +9850,7 @@
     "name": "Woodworking glasses",
     "value": 32,
     "keywords": [
+      "Upgradeable",
       "exact_item_woodworking_glasses"
     ],
     "uuid": "item-woodworking_glasses-90329e20-0a3a-48d5-aad2-9034bfcf8fca",
@@ -37739,6 +37743,7 @@
     "value": 22,
     "keywords": [
       "Basket",
+      "Upgradeable",
       "exact_item_big_basket"
     ],
     "uuid": "item-big_basket-df56bfb3-7783-4e00-bb71-5622d9319302",
@@ -38059,6 +38064,7 @@
     "name": "Camo face paint",
     "value": 4,
     "keywords": [
+      "Upgradeable",
       "exact_item_camo_face_paint"
     ],
     "uuid": "27d7a951-c565-45eb-b806-048106e77ecd",
@@ -38856,6 +38862,7 @@
     "value": 7,
     "keywords": [
       "Cutting mat",
+      "Upgradeable",
       "exact_item_durable_fabric_cutting_mat"
     ],
     "uuid": "af58d8ca-2d71-48c4-9143-c0bf19306d8b",
@@ -39490,6 +39497,7 @@
     "keywords": [
       "Bellows",
       "Smithing tool",
+      "Upgradeable",
       "exact_item_forge_bellows"
     ],
     "uuid": "item-forge_bellows-23dc6a53-66d9-4169-b05c-18dc40841a41",
@@ -40867,6 +40875,7 @@
     "value": 8,
     "keywords": [
       "Basket",
+      "Upgradeable",
       "exact_item_log_basket"
     ],
     "uuid": "item-log_basket-54f1c985-93ba-413f-a09e-fa863451459b",
@@ -40913,6 +40922,7 @@
     "value": 52,
     "keywords": [
       "Log splitter",
+      "Upgradeable",
       "exact_item_log_splitter"
     ],
     "uuid": "item-log_splitter-75196d7d-1f1a-4a6b-88fd-d71effcae23f",
@@ -41587,6 +41597,7 @@
     "value": 32,
     "keywords": [
       "Magnetic",
+      "Upgradeable",
       "exact_item_miners_magnet"
     ],
     "uuid": "item-miner's_magnet-2dba74e3-f318-4aa3-8369-f1c2f66406f4",
@@ -42185,6 +42196,7 @@
     "value": 10,
     "keywords": [
       "Pliers",
+      "Upgradeable",
       "exact_item_pretty_pliers"
     ],
     "uuid": "aeea5b33-bea8-4d87-a7b1-b32f3dc74d12",
@@ -43620,6 +43632,7 @@
     "value": 5,
     "keywords": [
       "Chisel",
+      "Upgradeable",
       "exact_item_simple_chisel"
     ],
     "uuid": "item-simple_chisel-d871d278-5795-44ec-8d0c-c41c8715e3b8",
@@ -43697,6 +43710,7 @@
     "keywords": [
       "Smithing hammer",
       "Smithing tool",
+      "Upgradeable",
       "exact_item_simple_hammer"
     ],
     "uuid": "item-simple_hammer-738f4d46-5fe8-4329-923e-d03bbdd35b23",
@@ -43751,6 +43765,7 @@
     "value": 4,
     "keywords": [
       "Cooking pan",
+      "Upgradeable",
       "exact_item_simple_pan"
     ],
     "uuid": "item-simple_pan-1403d8b1-48b8-4c3b-ba0c-6f7a90b56f23",
@@ -43779,6 +43794,7 @@
     "keywords": [
       "Carpentry tool",
       "Saw",
+      "Upgradeable",
       "exact_item_simple_saw"
     ],
     "uuid": "item-simple_saw-2ea8dfc5-c0b7-48a0-9aaa-664ec3001318",
@@ -43806,6 +43822,7 @@
     "value": 5,
     "keywords": [
       "Needle",
+      "Upgradeable",
       "exact_item_simple_sewing_needle"
     ],
     "uuid": "2388eeb4-1996-4ce9-aa73-cce9cbecb127",
@@ -43868,6 +43885,7 @@
     "value": 5,
     "keywords": [
       "Crafting tool",
+      "Upgradeable",
       "Wrench",
       "exact_item_simple_wrench"
     ],
@@ -43953,6 +43971,7 @@
     "value": 7,
     "keywords": [
       "Ruler",
+      "Upgradeable",
       "exact_item_slipstick"
     ],
     "uuid": "item-slide_ruler-120122f9-e262-4dcf-a7bf-7a0f5a2333a8",
@@ -44055,6 +44074,7 @@
     "value": 10,
     "keywords": [
       "Fishing rod rest",
+      "Upgradeable",
       "exact_item_sturdy_fishing_rod_rest"
     ],
     "uuid": "8dc66622-7c44-4b11-8db2-9e44da5bc21c",
@@ -44506,6 +44526,7 @@
     "name": "Walking stick",
     "value": 4,
     "keywords": [
+      "Upgradeable",
       "exact_item_walking_stick"
     ],
     "uuid": "item-walking_stick-5c39714f-931f-425c-b244-39da97b4a40c",
@@ -46168,7 +46189,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 15.0,
+        "value": 7.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46203,7 +46224,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 19.0,
+        "value": 9.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46214,7 +46235,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 15.0,
+        "value": 30.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46282,7 +46303,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 24.0,
+        "value": 12.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46293,7 +46314,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 23.0,
+        "value": 46.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46361,7 +46382,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 30.0,
+        "value": 15.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46372,7 +46393,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 30.0,
+        "value": 60.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46440,7 +46461,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 37.0,
+        "value": 18.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46451,7 +46472,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 36.0,
+        "value": 72.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46519,7 +46540,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 45.0,
+        "value": 22.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -46530,7 +46551,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 41.0,
+        "value": 82.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48640,7 +48661,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 4.0,
+        "value": 2.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48675,7 +48696,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 5.0,
+        "value": 3.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48686,7 +48707,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 6.0,
+        "value": 12.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48743,7 +48764,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 6.0,
+        "value": 4.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48754,7 +48775,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 10.0,
+        "value": 20.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48811,7 +48832,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 8.0,
+        "value": 5.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48822,7 +48843,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 11.0,
+        "value": 22.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48890,7 +48911,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 10.0,
+        "value": 6.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48901,7 +48922,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 12.0,
+        "value": 24.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48969,7 +48990,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 12.0,
+        "value": 7.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -48980,7 +49001,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 13.0,
+        "value": 26.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63525,7 +63546,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 8.0,
+        "value": 4.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63560,7 +63581,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 10.0,
+        "value": 5.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63571,7 +63592,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 8.0,
+        "value": 16.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63628,7 +63649,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 12.0,
+        "value": 6.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63639,7 +63660,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 14.0,
+        "value": 28.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63696,7 +63717,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 15.0,
+        "value": 7.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63707,7 +63728,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 20.0,
+        "value": 40.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63775,7 +63796,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 19.0,
+        "value": 9.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63786,7 +63807,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 25.0,
+        "value": 50.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63854,7 +63875,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 23.0,
+        "value": 11.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -63865,7 +63886,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 29.0,
+        "value": 58.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69025,7 +69046,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 10.0,
+        "value": 20.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69137,7 +69158,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 19.0,
+        "value": 38.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69238,7 +69259,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 14.0,
+        "value": 7.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69249,7 +69270,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 27.0,
+        "value": 54.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69350,7 +69371,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 32.0,
+        "value": 16.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69361,7 +69382,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 34.0,
+        "value": 68.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69462,7 +69483,7 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 50.0,
+        "value": 25.0,
         "conditions": [
           {
             "type": "skill_activity",
@@ -69473,7 +69494,7 @@
       },
       {
         "stat": "chest_finding",
-        "value": 40.0,
+        "value": 80.0,
         "conditions": [
           {
             "type": "skill_activity",
