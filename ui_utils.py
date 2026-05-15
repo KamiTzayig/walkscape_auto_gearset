@@ -254,7 +254,9 @@ def synthesize_activity_from_recipe(recipe: Recipe, service: Service) -> Activit
         requirements=tuple(combined_reqs),
         modifiers=service.modifiers,
         output_item_id=recipe.output_item_id,
-        output_quantity=recipe.output_quantity
+        output_quantity=recipe.output_quantity,
+        materials=recipe.materials
+
     )
 
 def extract_modifier_stats(modifiers: List[Modifier]) -> Dict[str, float]:

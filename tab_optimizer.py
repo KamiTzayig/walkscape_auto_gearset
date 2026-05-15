@@ -612,7 +612,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                             self.max_efficiency = r.max_efficiency
                             self.locations = []
                             self.requirements = []
-                            self.materials = []
+                            self.materials = r.materials
                             self.output_item_id = r.output_item_id
                             self.output_quantity = r.output_quantity
 
@@ -1357,12 +1357,28 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     dr_mult = 1.0 + dr_val
                     nmc_mult = 1.0 - nmc_val
                     
+                    st.markdown(
+                        """
+                        <style>
+                        /* Shrink the main number (Value) */
+                        [data-testid="stMetricValue"] {
+                            font-size: 1.4rem !important; /* Adjust this down or up as needed */
+                        }
+                        /* Shrink the title (Label) */
+                        [data-testid="stMetricLabel"] {
+                            font-size: 0.9rem !important;
+                        }
+                        </style>
+                        """,
+                        unsafe_allow_html=True,
+                    )
+
+                    # 2. Render your columns and metrics exactly as you had them
                     c1, c2, c3, c4 = st.columns(4)
                     c1.metric("DA", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
                     c2.metric("DR", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
                     c3.metric("NMC", f"{nmc_val*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
                     c4.metric("Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
-                    
                     st.divider()
                     
                     # 2. Revenue Calculation
@@ -1455,7 +1471,6 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         # Display the breakdown table
                         if cost_rows:
                             st.dataframe(pd.DataFrame(cost_rows), use_container_width=True, hide_index=True)
-                        st.divider()
     
                         # Final EV per step calculations
                         input_cost_per_step = (base_input_cost * da_mult * nmc_mult) / final_steps
