@@ -1361,7 +1361,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     c1.metric("Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
                     c2.metric("DA", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
                     c3.metric("DR", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
-                    c4.metric("NMC", f"{nmc_mult:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
+                    c4.metric("NMC", f"{nmc_val*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
                     
                     st.divider()
                     
@@ -1401,7 +1401,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     else:
                         st.info("No drops generate revenue.")
                         
-                    st.markdown(f"**Total Revenue EV:** `{output_ev_per_step:.5f}` Coins / 1k Step")
+                    st.markdown(f"**Total Revenue EV:** `{output_ev_per_step*1000:.5f}` Coins / 1k Step")
                     
                     st.divider()
                     
@@ -1412,7 +1412,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     if base_input_cost > 0:
                         input_cost_per_step = (base_input_cost * da_mult * nmc_mult) / final_steps
                         st.markdown(f"- **Base Input Cost:** `{base_input_cost:.2f}` Coins per action")
-                        st.markdown("- **Cost Formula:** `(Base Cost * DA Multiplier * NMC Cost Factor) / Steps`")
+                        st.markdown("- **Cost Formula:** `(Base Cost * DA Multiplier * (1-NMC) / Steps`")
                         st.markdown(f"- **Math:** `({base_input_cost:.2f} * {da_mult:.2f} * {nmc_mult:.2f}) / {final_steps}`")
                         st.markdown(f"**Total Cost EV:** `{input_cost_per_step*1000:.5f}` Coins / 1K Steps")
                     else:
