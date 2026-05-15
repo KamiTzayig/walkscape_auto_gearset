@@ -1358,10 +1358,10 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     nmc_mult = 1.0 - nmc_val
                     
                     c1, c2, c3, c4 = st.columns(4)
-                    c1.metric("Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
-                    c2.metric("DA", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
-                    c3.metric("DR", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
-                    c4.metric("NMC", f"{nmc_val*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
+                    c1.metric("DA", f"{da_mult:.2f}x", help=f"1.0 + Double Action ({da_val*100:.1f}%)")
+                    c2.metric("DR", f"{dr_mult:.2f}x", help=f"1.0 + Double Rewards ({dr_val*100:.1f}%)")
+                    c3.metric("NMC", f"{nmc_val*100:.1f}%", help=f"Multiplier applied to input costs. (NMC: {nmc_val*100:.1f}%)")
+                    c4.metric("Steps", f"{final_steps}", help="The base steps divided by Work Efficiency and flat/percent reductions.")
                     
                     st.divider()
                     
@@ -1410,9 +1410,58 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                     base_input_cost = context.get("base_input_cost", 0.0)
                     
                     if base_input_cost > 0:
+                        cost_rows = []
+                        
+                        # Breakdown for Recipes
+                        if saved_is_recipe and getattr(saved_activity, 'materials', None):
+                            is_fine_materials = context.get("is_fine_materials", False)
+                            for mat_group in saved_activity.materials:
+                                mat_item = mat_group[0]
+                                base_id = mat_item.item_id.replace("_fine", "")
+                                mat_id = base_id
+                                
+                                # Check if fine variant exists and is being used
+                                if is_fine_materials and f"{base_id}_fine" in drop_calc.item_values:
+                                    mat_id = f"{base_id}_fine"
+                                
+                                amt = mat_item.amount
+                                unit_cost = drop_calc.item_values.get(mat_id, 0.0)
+                                total_cost = amt * unit_cost
+                                
+                                cost_rows.append({
+                                    "Input Material": mat_id.replace("_", " ").title(),
+                                    "Quantity": amt,
+                                    "Unit Value (Coins)": f"{unit_cost:.2f}",
+                                    "Total Base Cost": f"{total_cost:.2f}"
+                                })
+                                
+                        # Breakdown for Activities with required items
+                        elif getattr(saved_activity, 'requirements', None) and saved_materials:
+                            input_reqs = [r for r in saved_activity.requirements if getattr(r.type, 'value', r.type) in ('keyword_count', 'input_keyword', 'item')]
+                            for i, req in enumerate(input_reqs):
+                                if i < len(saved_materials):
+                                    mat = saved_materials[i]
+                                    amt = req.value
+                                    unit_cost = drop_calc.item_values.get(mat.id, 0.0)
+                                    total_cost = amt * unit_cost
+                                    
+                                    cost_rows.append({
+                                        "Input Material": mat.name,
+                                        "Quantity": amt,
+                                        "Unit Value (Coins)": f"{unit_cost:.2f}",
+                                        "Total Base Cost": f"{total_cost:.2f}"
+                                    })
+                        
+                        # Display the breakdown table
+                        if cost_rows:
+                            st.dataframe(pd.DataFrame(cost_rows), use_container_width=True, hide_index=True)
+                        st.divider()
+    
+                        # Final EV per step calculations
                         input_cost_per_step = (base_input_cost * da_mult * nmc_mult) / final_steps
-                        st.markdown(f"- **Base Input Cost:** `{base_input_cost:.2f}` Coins per action")
-                        st.markdown("- **Cost Formula:** `(Base Cost * DA Multiplier * (1-NMC) / Steps`")
+                        
+                        st.markdown(f"- **Total Base Input Cost:** `{base_input_cost:.2f}` Coins per action")
+                        st.markdown("- **Cost Formula:** `(Total Base Cost * DA Multiplier * (1-NMC)) / Steps`")
                         st.markdown(f"- **Math:** `({base_input_cost:.2f} * {da_mult:.2f} * {nmc_mult:.2f}) / {final_steps}`")
                         st.markdown(f"**Total Cost EV:** `{input_cost_per_step*1000:.5f}` Coins / 1K Steps")
                     else:
