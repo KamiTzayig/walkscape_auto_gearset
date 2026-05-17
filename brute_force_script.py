@@ -89,15 +89,35 @@ def process_job(job):
     extra_passive_stats = {}
     selected_input_materials = []
 
-    # 1. Resolve Raw Activity/Recipe
+# 1. Resolve Raw Activity/Recipe
     if obj_type == "recipe":
         base_obj = next((r for r in recipes if r.id == obj_id), None)
         srv = next((s for s in services if s.id == service_id), None) if service_id else None
         
-        final_activity = synthesize_activity_from_recipe(base_obj, srv)
-        location_id = srv.location if srv else None
-        if srv and srv.modifiers:
-            extra_passive_stats = extract_modifier_stats(srv.modifiers)
+        if srv:
+            final_activity = synthesize_activity_from_recipe(base_obj, srv)
+            location_id = srv.location
+            if srv.modifiers:
+                extra_passive_stats = extract_modifier_stats(srv.modifiers)
+        else:
+            class WrappedRecipe:
+                def __init__(self, r):
+                    self.id = r.id
+                    self.name = r.name
+                    self.primary_skill = r.skill
+                    self.level = r.level
+                    self.base_xp = r.base_xp
+                    self.base_steps = r.base_steps
+                    self.max_efficiency = r.max_efficiency
+                    self.locations = []
+                    self.requirements = []
+                    self.materials = r.materials
+                    self.output_item_id = r.output_item_id
+                    self.output_quantity = r.output_quantity
+
+            final_activity = WrappedRecipe(base_obj)
+            # location_id remains whatever was passed in the job (usually None for recipes without services)
+            
     else:
         final_activity = next((a for a in activities if a.id == obj_id), None)
 
@@ -400,7 +420,7 @@ if __name__ == "__main__":
 
     jobs = generate_jobs(config)
     
-    jobs = jobs[:5]
+    # jobs = jobs[:5]
     # print(" ,".join([job["id"] for job in jobs]))
     print(f"Executing {len(jobs)} optimization permutations.")
     

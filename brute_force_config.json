@@ -3,9 +3,9 @@
     "use_theoretical_max": false,
     "runs": [
         {
-            "run_name": "Pure XP",
+            "run_name": "Pure Profit",
             "targets": [
-                {"name": "xp", "weight": 100}
+                {"name": "net_profit_per_step", "weight": 100}
             ]
         }
      

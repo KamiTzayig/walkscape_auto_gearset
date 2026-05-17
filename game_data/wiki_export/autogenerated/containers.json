@@ -186,8 +186,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 65.66667679999999,
-    "materials_expected_value": 55.186676799999994
+    "total_expected_value": 65.5979348,
+    "materials_expected_value": 55.1179348
   },
   {
     "id": "carpentry_chest",
@@ -426,8 +426,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 102.84670779999999,
-    "materials_expected_value": 91.1467078
+    "total_expected_value": 102.6907832,
+    "materials_expected_value": 90.99078320000001
   },
   {
     "id": "cooking_chest",
@@ -686,8 +686,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 70.61480159999998,
-    "materials_expected_value": 62.05100159999999
+    "total_expected_value": 70.54270799999998,
+    "materials_expected_value": 61.97890799999999
   },
   {
     "id": "crafting_chest",
@@ -956,8 +956,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 102.11601959999999,
-    "materials_expected_value": 91.0602996
+    "total_expected_value": 102.0605818,
+    "materials_expected_value": 91.0048618
   },
   {
     "id": "fishing_chest",
@@ -1186,8 +1186,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 72.3799726,
-    "materials_expected_value": 61.47821259999999
+    "total_expected_value": 72.36226540000001,
+    "materials_expected_value": 61.460505399999995
   },
   {
     "id": "foraging_chest",
@@ -1446,8 +1446,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 78.36600399999999,
-    "materials_expected_value": 68.146844
+    "total_expected_value": 78.29138079999998,
+    "materials_expected_value": 68.0722208
   },
   {
     "id": "hunting_chest",
@@ -1686,8 +1686,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 64.07186399999999,
-    "materials_expected_value": 54.311104
+    "total_expected_value": 63.99881019999999,
+    "materials_expected_value": 54.238050199999996
   },
   {
     "id": "mining_chest",
@@ -1916,8 +1916,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 88.57015379999997,
-    "materials_expected_value": 77.6581538
+    "total_expected_value": 88.66811959999997,
+    "materials_expected_value": 77.75611959999999
   },
   {
     "id": "smithing_chest",
@@ -2156,8 +2156,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 96.323185,
-    "materials_expected_value": 83.40938499999999
+    "total_expected_value": 96.3961764,
+    "materials_expected_value": 83.48237639999999
   },
   {
     "id": "tailoring_chest",
@@ -2366,8 +2366,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 74.5785878,
-    "materials_expected_value": 65.5314678
+    "total_expected_value": 74.50396459999999,
+    "materials_expected_value": 65.4568446
   },
   {
     "id": "trinketry_chest",
@@ -2666,8 +2666,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 316.2521022384281,
-    "materials_expected_value": 304.139622238428
+    "total_expected_value": 315.3929293794201,
+    "materials_expected_value": 303.28044937941996
   },
   {
     "id": "woodcutting_chest",
@@ -2896,8 +2896,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 82.72643139999995,
-    "materials_expected_value": 69.12519139999999
+    "total_expected_value": 82.66698579999995,
+    "materials_expected_value": 69.06574579999999
   },
   {
     "id": "chest_of_erdwise",
@@ -3106,8 +3106,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 107.30744160000002,
-    "materials_expected_value": 96.3045616
+    "total_expected_value": 106.81185760000004,
+    "materials_expected_value": 95.80897760000002
   },
   {
     "id": "chest_of_jarvonia",
@@ -3296,8 +3296,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 71.4579258,
-    "materials_expected_value": 60.7250458
+    "total_expected_value": 71.72363760000002,
+    "materials_expected_value": 60.9907576
   },
   {
     "id": "chest_of_syrenthia",
@@ -3476,8 +3476,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 122.15329140000001,
-    "materials_expected_value": 113.3716514
+    "total_expected_value": 120.4339074,
+    "materials_expected_value": 111.65226739999999
   },
   {
     "id": "chest_of_trellin",
@@ -4336,8 +4336,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 97.63477060000001,
-    "materials_expected_value": 96.2347706
+    "total_expected_value": 96.6359082,
+    "materials_expected_value": 95.2359082
   },
   {
     "id": "gem_pouch",
@@ -4426,8 +4426,8 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 141.84697720000003,
-    "materials_expected_value": 141.84697720000003
+    "total_expected_value": 140.449358,
+    "materials_expected_value": 140.449358
   },
   {
     "id": "rusty_chest",
@@ -4686,7 +4686,7 @@
         "table_weight": null
       }
     ],
-    "total_expected_value": 72.33191039999998,
-    "materials_expected_value": 60.381910399999995
+    "total_expected_value": 72.3481856,
+    "materials_expected_value": 60.398185600000005
   }
 ]
