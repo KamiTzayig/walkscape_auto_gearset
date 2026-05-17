@@ -58,6 +58,14 @@ def edit_target_dialog(item_id=None):
                 st.session_state['opt_targets_list'] = [x for x in st.session_state['opt_targets_list'] if x['id'] != item_id]
                 st.rerun()
 
+def get_relative_time(timestamp):
+    if not timestamp: return "Unknown"
+    diff = time.time() - timestamp
+    if diff < 60: return "Just now"
+    if diff < 3600: return f"{int(diff // 60)} minutes ago"
+    if diff < 86400: return f"{int(diff // 3600)} hours ago"
+    return f"{int(diff // 86400)} days ago"
+
 def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recipes, locations, services, all_pets, all_consumables,all_materials, drop_calc, WIKI_URL):
     # Unpack user state
     use_owned = user_state["use_owned"]
