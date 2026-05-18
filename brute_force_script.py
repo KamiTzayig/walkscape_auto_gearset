@@ -16,6 +16,7 @@ from drop_calculator import DropCalculator
 from gear_optimizer import GearOptimizer
 from calculations import calculate_passive_stats, _calculate_single_target_score
 from ui_sidebar import extract_user_pets
+from utils.export import export_gearset  
 
 # ONLY rely on the UI's native methods
 from ui_utils import (
@@ -234,6 +235,7 @@ def process_job(job):
 
     input_names = " + ".join([m.name for m in selected_input_materials]) if selected_input_materials else "None"
 
+    # --- UPDATED ROW GENERATION ---
     row = {
         "Run Target": run_name,
         "Name": final_activity.name,
@@ -242,20 +244,13 @@ def process_job(job):
         "XP/Step": round(xp_per_step, 4),
         "Coins/1k Steps": round(net_profit * 1000, 2),
         "Output/Input Ratio": round(out_in_ratio, 4),
+        "GearSet Export": export_gearset(best_gear), 
         "Location": location_id if location_id else "Any",
         "Inputs": input_names,
         "Variant Logic": "Fine" if is_fine else "Normal",
         "Pet": f"{actual_pet.name} (Lvl {actual_pet.active_level})" if actual_pet else "None",
-        "Tools": " | ".join([t.name for t in best_gear.tools]),
-        "Rings": " | ".join([r.name for r in best_gear.rings]),
-        "Head": best_gear.head.name if best_gear.head else "",
-        "Chest": best_gear.chest.name if best_gear.chest else "",
-        "Legs": best_gear.legs.name if best_gear.legs else "",
-        "Primary": best_gear.primary.name if best_gear.primary else "",
-        "Secondary": best_gear.secondary.name if best_gear.secondary else "",
         "Base Steps": getattr(final_activity, 'base_steps', 0),
         "Final Steps/Action": round(actual_steps, 2),
-        
         "Work Efficiency %": round(total_we_percent, 2),
         "Double Action %": round(final_stats.get('double_action', 0) * 100, 2),
         "Double Rewards %": round(final_stats.get('double_rewards', 0) * 100, 2),
