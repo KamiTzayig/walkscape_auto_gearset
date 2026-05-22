@@ -67,7 +67,7 @@ def render_user_data_section(is_mobile, all_collectibles_raw):
         with c1:
             st.markdown("<div style='font-weight: 900;'>tap ANYWHERE to load the data!</div>", unsafe_allow_html=True)
         with c2:
-            st.button("🧹 Clear", on_click=clear_json, use_container_width=True, help="Clear text area for easy pasting")
+            st.button("🧹 Clear", on_click=clear_json, width="stretch", help="Clear text area for easy pasting")
 
 
         # Handle the invisible LocalStorage save triggered by the callback

@@ -382,33 +382,112 @@ def _calculate_single_target_score(target: OPTIMAZATION_TARGET, activity: Activi
         total_ev_per_roll = ev_normal + ev_fine + ev_chest + ev_special        
         
         val = (total_ev_per_roll * da_mult * dr_mult) / steps
+
     elif target == OPTIMAZATION_TARGET.net_profit_per_step:
         drop_calc = context.get("drop_calc")
         if not drop_calc:
             val = 0.0
         else:
-            drop_table = drop_calc.get_drop_table(
-                activity, stats, player_skill_level,
-                is_fine_materials=is_fine,
-                is_equipment_upgrade=is_upg
-            )
+            total_ev_per_roll = 0.0
             
-            output_ev_per_step = 0.0
-            for d in drop_table:
-                item_id = d["Item"]
-                steps_for_drop = d["Steps"]
-                if steps_for_drop <= 0 or steps_for_drop == float('inf'):
-                    continue
+            is_fine = context.get("is_fine_materials", False)
+            is_upg = context.get("is_equipment_upgrade", False)
+            is_recipe = getattr(activity, "output_item_id", None) is not None
+            
+            if is_recipe:
+                out_id = activity.output_item_id
+                avg_qty = float(getattr(activity, "output_quantity", 1.0))
                 
-                ev = drop_calc.container_evs.get(item_id, drop_calc.item_values.get(item_id, 0.0))
-                output_ev_per_step += ev / steps_for_drop
-            
+                is_equipment = f"{out_id}_uncommon" in drop_calc.item_values or f"{out_id}_common" in drop_calc.item_values
+                
+                if is_equipment:
+                    quality_bonus = stats.get("quality_outcome", 0.0)
+                    probs = calculate_quality_probabilities(
+                        activity.level, player_skill_level, quality_bonus,
+                        is_fine_materials=is_fine, is_equipment_upgrade=is_upg
+                    )
+                    suffix_map = {"Normal": "", "Good": "_uncommon", "Great": "_rare", "Excellent": "_epic", "Perfect": "_legendary", "Eternal": "_ethereal"}
+                    
+                    for qual_name, prob in probs.items():
+                        if prob > 0:
+                            suffix = suffix_map.get(qual_name, "")
+                            q_id = f"{out_id}{suffix}"
+                            
+                            if q_id not in drop_calc.item_values and qual_name == "Normal":
+                                q_id = out_id
+                                
+                            q_ev = drop_calc.item_values.get(q_id, 0.0)
+                            total_ev_per_roll += prob * q_ev * avg_qty
+                else:
+                    base_ev = drop_calc.item_values.get(out_id, 0.0)
+                    fine_ev = drop_calc.item_values.get(f"{out_id}_fine", base_ev)
+                    
+                    if is_fine and not is_upg:
+                        total_ev_per_roll += fine_ev * avg_qty
+                    else:
+                        total_ev_per_roll += base_ev * avg_qty
+                
+                chest_id = f"{getattr(activity, 'primary_skill', getattr(activity, 'skill', ''))}_chest"
+                chest_ev = drop_calc.container_evs.get(chest_id, 0.0)
+                total_ev_per_roll += 0.004 * (1.0 + stats.get("chest_finding", 0.0)) * chest_ev
+                
+            else:
+                for table in getattr(activity, "loot_tables", []):
+                    raw_type = getattr(table, "type", "main")
+                    table_type = getattr(raw_type, "value", raw_type)  
+                    rolls = getattr(table, "rolls", 1) or 1
+                    
+                    for drop in getattr(table, "drops", []):
+                        item_id = getattr(drop, "item_id", "")
+                        base_chance = getattr(drop, "chance", 0.0) or 0.0
+                        if item_id == "nothing" or base_chance <= 0: 
+                            continue
+                        
+                        avg_qty = (getattr(drop, "min_quantity", 1) + getattr(drop, "max_quantity", 1)) / 2.0
+                        
+                        mult = 1.0
+                        if item_id in drop_calc.chest_ids:
+                            mult += stats.get("chest_finding", 0.0)
+                        if item_id == "bird_nest":
+                            mult += stats.get("find_bird_nests", 0.0)
+                        if item_id in drop_calc.collectible_ids:
+                            mult += stats.get("find_collectibles", 0.0)
+                            
+                        if table_type == "gem":
+                            mult += stats.get("find_gems", 0.0)
+                            
+                        final_prob = (base_chance / 100.0) * mult * rolls
+                        
+                        base_ev = drop_calc.container_evs.get(item_id, drop_calc.item_values.get(item_id, 0.0))
+                        fine_id = drop_calc.fine_material_map.get(item_id)
+                        
+                        if fine_id:
+                            fine_ev = drop_calc.container_evs.get(fine_id, drop_calc.item_values.get(fine_id, 0.0))
+                            eff_ev = base_ev * (1.0 - fine_conversion_rate) + fine_ev * fine_conversion_rate
+                            total_ev_per_roll += final_prob * avg_qty * eff_ev
+                        else:
+                            total_ev_per_roll += final_prob * avg_qty * base_ev
+                            
+            special_ev_map = context.get("special_ev_map")
+            if not special_ev_map:
+                special_ev_map = drop_calc.get_special_ev_map()
+                
+            for stat_key, ev_data in special_ev_map.items():
+                chance = stats.get(stat_key, 0.0)
+                if chance > 0:
+                    eff_ev = ev_data["normal"] * (1.0 - fine_conversion_rate) + ev_data["fine"] * fine_conversion_rate
+                    total_ev_per_roll += chance * eff_ev
+
+            output_ev_per_step = (total_ev_per_roll * da_mult * dr_mult) / steps
             base_input_cost = context.get("base_input_cost", 0.0)
             
-            input_cost_per_step = (base_input_cost * da_mult * (1.0 - nmc_val)) / steps
-            
+
+            if is_recipe:
+                input_cost_per_step = (base_input_cost * da_mult * (1.0 - nmc_val)) / steps
+            else:
+                input_cost_per_step = (base_input_cost * da_mult) / steps
+                
             val = output_ev_per_step - input_cost_per_step
-            
     return val
 
 def analyze_score(gear_set: GearSet, activity, player_skill_level, target, context, passive_stats: Dict[str, float] = None, normalization_context=None):

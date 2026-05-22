@@ -40,7 +40,7 @@ def edit_target_dialog(item_id=None):
     
     c1, c2 = st.columns(2)
     with c1:
-        if st.button("Save", type="primary", use_container_width=True):
+        if st.button("Save", type="primary", width="stretch"):
             if item_id is None:
                 new_id = st.session_state.get('next_target_id', 1)
                 st.session_state['opt_targets_list'].append({"id": new_id, "target": new_target, "weight": new_weight})
@@ -54,7 +54,7 @@ def edit_target_dialog(item_id=None):
             st.rerun()
     with c2:
         if item_id is not None:
-            if st.button("Delete", use_container_width=True):
+            if st.button("Delete", width="stretch"):
                 st.session_state['opt_targets_list'] = [x for x in st.session_state['opt_targets_list'] if x['id'] != item_id]
                 st.rerun()
 
@@ -501,10 +501,10 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 with col_txt:
                     st.markdown(f"<div style='background-color:#1e293b; padding:8px 12px; border: 1px solid #334155; border-radius:6px; margin-bottom:4px;'><b style='color:#e2e8f0'>{item['target']}</b> <span style='color:#94a3b8; font-size:0.85em;'>({item['weight']}%)</span></div>", unsafe_allow_html=True)
                 with col_btn:
-                    if st.button("✏️", key=f"edit_m_{item['id']}", use_container_width=True):
+                    if st.button("✏️", key=f"edit_m_{item['id']}", width="stretch"):
                         edit_target_dialog(item['id'])
             
-            if st.button("➕ Add Target", key="add_tgt_btn_mobile", use_container_width=True):
+            if st.button("➕ Add Target", key="add_tgt_btn_mobile", width="stretch"):
                 edit_target_dialog(None)
 
         else:
@@ -554,7 +554,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 for i in sorted(targets_to_remove, reverse=True):
                     del st.session_state['opt_targets_list'][i]
                 st.rerun()
-            if st.button("➕ Add Target", key="add_tgt_btn_desktop", use_container_width=True):
+            if st.button("➕ Add Target", key="add_tgt_btn_desktop", width="stretch"):
                 new_id = st.session_state.get('next_target_id', 1)
                 st.session_state['opt_targets_list'].append({"id": new_id, "target": "Reward Rolls", "weight": 100})
                 st.session_state['next_target_id'] = new_id + 1
@@ -1127,7 +1127,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 if use_owned:
                     with st.expander("💡 Upgrade Finder (What to Grind For)", expanded=False):
                         st.caption("Find all mathematical improvements currently not in your inventory. Shows the exact impact on your target metrics.")
-                        if st.button("🔍 Scan for Upgrades", use_container_width=True):
+                        if st.button("🔍 Scan for Upgrades", width="stretch"):
                             with st.spinner("Evaluating all possible item swaps..."):
                                 baseline_analysis = analyze_score(best_gear, saved_activity, saved_skill_lvl, display_target, context, passive_stats=passive_stats, normalization_context=norm_context_saved)
                                 baseline_score = baseline_analysis["score"]
@@ -1421,7 +1421,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         })
                         
                     if revenue_rows:
-                        st.dataframe(pd.DataFrame(revenue_rows), use_container_width=True, hide_index=True)
+                        st.dataframe(pd.DataFrame(revenue_rows), width="stretch", hide_index=True)
                     else:
                         st.info("No drops generate revenue.")
                         
@@ -1478,7 +1478,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         
                         # Display the breakdown table
                         if cost_rows:
-                            st.dataframe(pd.DataFrame(cost_rows), use_container_width=True, hide_index=True)
+                            st.dataframe(pd.DataFrame(cost_rows), width="stretch", hide_index=True)
     
                         # Final EV per step calculations
                         input_cost_per_step = (base_input_cost * da_mult * nmc_mult) / final_steps
