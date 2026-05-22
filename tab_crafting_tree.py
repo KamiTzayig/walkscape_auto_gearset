@@ -814,7 +814,7 @@ def render_crafting_tree_tab(recipes, all_items_raw, activities, all_containers,
                                             self.max_efficiency = r.max_efficiency
                                             self.locations = []
                                             self.requirements = []
-                                            self.materials = []
+                                            self.materials = r.materials
                                             self.output_item_id = r.output_item_id
                                             self.output_quantity = r.output_quantity
                                     activity_obj = WrappedRecipe(recipe_obj)
