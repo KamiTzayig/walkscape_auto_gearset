@@ -185,7 +185,7 @@ def main():
             unsafe_allow_html=True
         )
 
-    st.title("🛡️ WalkScape Gear Optimizer")
+    st.title("🔥 The Giga Optimizer OF HELL 🔥")
 
     tab_opt, tab_tree, tab_entry = st.tabs(["🎯 Single Optimizer", "🌳 Crafting Tree Calculator", "📝 Data Entry"])
     
