@@ -736,7 +736,7 @@ def render_crafting_tree_tab(recipes, all_items_raw, activities, all_containers,
             )
             
             if is_equipment:
-                qualities = [q for q in EquipmentQuality]
+                qualities = [q.capitalize() for q in EquipmentQuality]
                 st.session_state['global_quality'] = st.selectbox("Target Quality", options=qualities, index=0)
             else:
                 st.session_state['global_quality'] = "Normal"
