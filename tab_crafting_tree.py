@@ -933,10 +933,18 @@ def render_crafting_tree_tab(recipes, all_items_raw, activities, all_containers,
                     )
                     
                     # --- PREPARE EXPORT BASE64 ---
+                    gs = None
                     if getattr(node, 'loadout_id', None) == "AUTO" and getattr(node, 'auto_gear_set', None):
-                        node.metrics["gear_set_base64"] = export_gearset(node.auto_gear_set)
+                        gs = node.auto_gear_set
                     elif getattr(node, 'loadout_id', None) and node.loadout_id in st.session_state['saved_loadouts']:
-                        node.metrics["gear_set_base64"] = export_gearset(st.session_state['saved_loadouts'][node.loadout_id].gear_set)
+                        gs = st.session_state['saved_loadouts'][node.loadout_id].gear_set.clone()
+
+                    if gs:
+                        # Grab the items directly via list comprehension
+                        gs.inputs = [game_data_dict['materials'].get(i) or game_data_dict['consumables'].get(i) 
+                                     for i in getattr(node, 'selected_activity_inputs', {}).values() if i]
+                        
+                        node.metrics["gear_set_base64"] = export_gearset(gs)
 
                 # 1. Run the Gear Optimizer across the whole tree and calculate local node math
                 run_and_save_metrics(root, is_root=True)

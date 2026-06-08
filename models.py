@@ -305,6 +305,8 @@ class GearSet(BaseModel):
 
     rings: List[Equipment] = Field(default_factory=list)
     tools: List[Equipment] = Field(default_factory=list)
+    
+    inputs: List[Any] = Field(default_factory=list)
 
     def clone(self) -> 'GearSet':
         new_set = GearSet()
@@ -314,6 +316,7 @@ class GearSet(BaseModel):
         new_set.tools = list(self.tools)
         new_set.pet = self.pet
         new_set.consumable = self.consumable
+        new_set.inputs = list(self.inputs)
         return new_set
 
     def equip(self, item: Equipment, max_tools: int = 6) -> bool:

@@ -31,33 +31,47 @@ def export_gearset(gearset: GearSet) -> str:
         ("tool", 3, lambda g: g.tools[3] if len(g.tools) > 3 else None),
         ("tool", 4, lambda g: g.tools[4] if len(g.tools) > 4 else None),
         ("tool", 5, lambda g: g.tools[5] if len(g.tools) > 5 else None),
-        ("pet",0, lambda g: g.pet if g.pet else None),
-        ("consumable",0, lambda g: g.consumable if g.consumable else None),
+        ("pet", 0, lambda g: g.pet if g.pet else None),
+        ("consumable", 0, lambda g: g.consumable if g.consumable else None),
+        ("activityInput", 0, lambda g: g.inputs[0] if len(g.inputs) > 0 else None),
     ]
 
     json_entries = []
 
     # Suffixes to strip (Legacy support, just in case)
-    SUFFIXES = ["_common", "_uncommon", "_rare", "_epic", "_legendary", "_ethreal"]
+    SUFFIXES = ["_common", "_uncommon", "_rare", "_epic", "_legendary", "_ethereal"]
 
     for type_name, idx, getter in slots_map:
         item = getter(gearset)
-        id = item.uuid if item and hasattr(item, 'uuid') else item.id if item and hasattr(item, 'id') else None
-        if id:
-            # # 1. LOWERCASE CONVERSION
-            # # New models are "ADVENTURING_AMULET", but tools expect "adventuring_amulet"
-            # clean_id = item.id.lower()
+        
+        # Safely grab the UUID if it exists and isn't empty, otherwise fallback to the base ID
+        id = None
+        if item:
+            if hasattr(item, 'uuid') and item.uuid:
+                id = item.uuid
+            elif hasattr(item, 'id') and item.id:
+                id = item.id
 
-            # # 2. SUFFIX STRIPPING
-            # # Remove quality suffix if present (e.g. "sword_good" -> "sword")
-            # for suffix in SUFFIXES:
-            #     if clean_id.endswith(suffix):
-            #         clean_id = clean_id[:-len(suffix)]
-            #         break
-            
-            # # 3. QUALITY HANDLING
-            # # If quality is "None" (from new models), default to "Normal" for the tool
+        if id:
+            # Default quality for standard equipment
             quality_val = "Normal"
+
+            # Handle Fine Variants for Consumables
+            if type_name == "consumable":
+                if id.endswith("_fine"):
+                    id = id.replace("_fine", "")
+                    quality_val = "consumableFine"
+                else:
+                    quality_val = "Normal"
+
+            # Handle Fine Variants for Activity Inputs
+            elif type_name == "activityInput":
+                if id.endswith("_fine"):
+                    id = id.replace("_fine", "")
+                    quality_val = "materialFine"
+                else:
+                    # Raw JSON expects `null` for normal materials
+                    quality_val = None
 
             inner_data = {
                 "id": id,

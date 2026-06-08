@@ -769,6 +769,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 if error_msg:
                     st.error(error_msg)
                 else:
+                    best_gear.inputs = list(selected_input_materials)
                     st.session_state['best_gear'] = best_gear
                     st.session_state['filler_slots'] = filler_slots
                     st.session_state['final_skill_lvl'] = final_skill_lvl
@@ -1591,6 +1592,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                                 test_gear = GearSet(**best_gear.model_dump())
                                 test_gear.rings = list(best_gear.rings)
                                 test_gear.tools = list(best_gear.tools)
+                                test_gear.inputs = list(best_gear.inputs)
                                 test_gear.pet = best_gear.pet 
                                 test_gear.consumable = best_gear.consumable
                                 
