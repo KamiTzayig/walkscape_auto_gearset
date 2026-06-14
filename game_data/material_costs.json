@@ -1,0 +1,1062 @@
+{
+  "feather_fine": {
+    "cost": 772.2222222222223,
+    "source": "[Activity] Bird watching"
+  },
+  "rough_opal_fine": {
+    "cost": 111653.33333314724,
+    "source": "[Activity] Antique market assessor"
+  },
+  "sturdy_branch_fine": {
+    "cost": 51666.666665805555,
+    "source": "[Activity] Branch trimming"
+  },
+  "wooden_stick": {
+    "cost": 17.396184062860396,
+    "source": "[Activity] Branch trimming"
+  },
+  "honeycomb": {
+    "cost": 1171.431966714728,
+    "source": "[Activity] Cliff foraging"
+  },
+  "beaver_trinket_fine": {
+    "cost": 39534353.093732566,
+    "source": "[Activity] Seashell searching"
+  },
+  "wheat_fine": {
+    "cost": 16155.55555553886,
+    "source": "[Activity] Plains foraging"
+  },
+  "old_copper_ring": {
+    "cost": 13200.000001319999,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "sweet_kelp": {
+    "cost": 1414.1414141414143,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "shark_tooth_trinket": {
+    "cost": 36934.15637812205,
+    "source": "[Activity] Bodysurfing"
+  },
+  "wooden_stick_fine": {
+    "cost": 1722.222222223179,
+    "source": "[Activity] Branch trimming"
+  },
+  "maple_logs": {
+    "cost": 667.6614631124881,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "nettle": {
+    "cost": 209.8174729759861,
+    "source": "[Activity] Forest foraging"
+  },
+  "bagel": {
+    "cost": 362.0891454221415,
+    "source": "[Recipe] Bake a bagel"
+  },
+  "foraging_chest": {
+    "cost": 10000.0,
+    "source": "[Activity] Forest foraging"
+  },
+  "rough_jade": {
+    "cost": 11278.114478294929,
+    "source": "[Activity] Antique market assessor"
+  },
+  "thistle_fine": {
+    "cost": 20771.929824622628,
+    "source": "[Activity] Forest foraging"
+  },
+  "potato": {
+    "cost": 909.0909090890909,
+    "source": "[Activity] Vegetable chopping"
+  },
+  "raw_squid_fine": {
+    "cost": 146259.259259308,
+    "source": "[Activity] Bodysurfing"
+  },
+  "wood_scrap": {
+    "cost": 349.9300699298023,
+    "source": "[Recipe] Upcycle trash"
+  },
+  "alien_squeaky_toy": {
+    "cost": 40032.0,
+    "source": "[Activity] Search team"
+  },
+  "rough_topaz_fine": {
+    "cost": 1116533.333351198,
+    "source": "[Activity] Antique market assessor"
+  },
+  "berries_fine": {
+    "cost": 6040.19607842844,
+    "source": "[Activity] Cliff foraging"
+  },
+  "simple_torch": {
+    "cost": 1656.000000021528,
+    "source": "[Activity] Litter looting"
+  },
+  "name_tag_fine": {
+    "cost": 1251000.0,
+    "source": "[Activity] Search team"
+  },
+  "rough_wrentmarine_fine": {
+    "cost": 446613.33333416696,
+    "source": "[Activity] Antique market assessor"
+  },
+  "sea_shell_fine": {
+    "cost": 16472.647058815583,
+    "source": "[Activity] Seashell searching"
+  },
+  "woodcutting_chest": {
+    "cost": 7500.0,
+    "source": "[Activity] Branch trimming"
+  },
+  "cattail": {
+    "cost": 424.24242424242425,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "flowy_trousers": {
+    "cost": 35100.000005315145,
+    "source": "[Activity] House jumping"
+  },
+  "eberhart_corkscrew": {
+    "cost": 48871.87498353628,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "teak_plank": {
+    "cost": 28049.23318059108,
+    "source": "[Recipe] Create a teak plank (Scrap)"
+  },
+  "rough_wrentmarine": {
+    "cost": 4511.245791254212,
+    "source": "[Activity] Antique market assessor"
+  },
+  "large_stone": {
+    "cost": 869.8092031280396,
+    "source": "[Activity] Stone quarrying"
+  },
+  "cooked_carp": {
+    "cost": 350.28274194901576,
+    "source": "[Recipe] Fry a carp"
+  },
+  "porridge": {
+    "cost": 198.95666062315865,
+    "source": "[Recipe] Make porridge"
+  },
+  "hide_scraps_fine": {
+    "cost": 24893.506493573255,
+    "source": "[Activity] Box trapping"
+  },
+  "oak_plank": {
+    "cost": 7072.018890219674,
+    "source": "[Activity] Box trapping"
+  },
+  "pine_logs": {
+    "cost": 667.6614631124881,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "rough_topaz": {
+    "cost": 11278.114478294929,
+    "source": "[Activity] Antique market assessor"
+  },
+  "basic_leather": {
+    "cost": 1281.24780270572,
+    "source": "[Recipe] Make a basic leather"
+  },
+  "maple_logs_fine": {
+    "cost": 66098.48484813633,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "stone_fine": {
+    "cost": 2870.3703703719652,
+    "source": "[Activity] Stone quarrying"
+  },
+  "feather_cape": {
+    "cost": 43489.411765524506,
+    "source": "[Activity] Cliff foraging"
+  },
+  "ectoplasm_fine": {
+    "cost": 22700.0,
+    "source": "[Activity] Ghost tag"
+  },
+  "hunting_chest": {
+    "cost": 21000.0,
+    "source": "[Activity] Rabbit tracking"
+  },
+  "crab_rolls": {
+    "cost": 306.14124364631607,
+    "source": "[Recipe] Make crab rolls"
+  },
+  "jelly_sandwich": {
+    "cost": 547.2053889561756,
+    "source": "[Recipe] Make a jelly sandwich"
+  },
+  "rough_ruby_fine": {
+    "cost": 6210714.285162419,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "grass": {
+    "cost": 485.67242268953873,
+    "source": "[Activity] Bird feeding"
+  },
+  "measuring_spoons_trinket_fine": {
+    "cost": 9774375.004056366,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "hemp": {
+    "cost": 130.54994388349382,
+    "source": "[Activity] Plains foraging"
+  },
+  "life_vest": {
+    "cost": 36564.814814340825,
+    "source": "[Activity] Bodysurfing"
+  },
+  "raw_carp_fine": {
+    "cost": 31822.222222183325,
+    "source": "[Activity] Surface swimming"
+  },
+  "simple_life_vest": {
+    "cost": 10607.40740577701,
+    "source": "[Activity] Surface swimming"
+  },
+  "honeycomb_fine": {
+    "cost": 115971.7647047581,
+    "source": "[Activity] Cliff foraging"
+  },
+  "eel_trinket": {
+    "cost": 32143.65881603991,
+    "source": "[Activity] Surface swimming"
+  },
+  "feather_boots": {
+    "cost": 57500.00000000001,
+    "source": "[Activity] Shoreline scramble"
+  },
+  "aerodynamic_thread_fine": {
+    "cost": 466753.24675449857,
+    "source": "[Activity] Box trapping"
+  },
+  "trinketry_chest": {
+    "cost": 79000.0,
+    "source": "[Activity] Antique market assessor"
+  },
+  "cattail_fine": {
+    "cost": 42000.0,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "raw_trout": {
+    "cost": 857.1642349580131,
+    "source": "[Activity] Surface swimming"
+  },
+  "fishbone": {
+    "cost": 117.45202893986155,
+    "source": "[Activity] Seashell searching"
+  },
+  "raw_shrimp": {
+    "cost": 128.57463524114476,
+    "source": "[Activity] Surface swimming"
+  },
+  "maple_plank": {
+    "cost": 1383.537211939262,
+    "source": "[Recipe] Cut a maple plank"
+  },
+  "animal_meat": {
+    "cost": 4714.67926014645,
+    "source": "[Activity] Box trapping"
+  },
+  "dark_feather_fine": {
+    "cost": 46333.333333333336,
+    "source": "[Activity] Bird watching"
+  },
+  "highwater_lotus": {
+    "cost": 848.4848484848485,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "berries": {
+    "cost": 61.012081600287274,
+    "source": "[Activity] Cliff foraging"
+  },
+  "trash_fine": {
+    "cost": 33119.9999999735,
+    "source": "[Activity] Litter looting"
+  },
+  "trash": {
+    "cost": 334.54545454518694,
+    "source": "[Activity] Litter looting"
+  },
+  "thistle": {
+    "cost": 209.8174729759861,
+    "source": "[Activity] Forest foraging"
+  },
+  "simple_chisel": {
+    "cost": 54531.25000749805,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "sea_shell": {
+    "cost": 166.39037433147055,
+    "source": "[Activity] Seashell searching"
+  },
+  "parkour_gloves": {
+    "cost": 19800.00000198,
+    "source": "[Activity] Hut jumping"
+  },
+  "simple_bowstring": {
+    "cost": 152.54994388349382,
+    "source": "[Recipe] Craft a simple bowstring"
+  },
+  "raw_trout_fine": {
+    "cost": 84859.2592608433,
+    "source": "[Activity] Surface swimming"
+  },
+  "rough_star_pearl": {
+    "cost": 1503.7485970847374,
+    "source": "[Activity] Antique market assessor"
+  },
+  "coin_pouch": {
+    "cost": 79000.0,
+    "source": "[Activity] Antique market assessor"
+  },
+  "rough_ruby": {
+    "cost": 62734.48772891333,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "smithing_chest": {
+    "cost": 37500.0,
+    "source": "[Activity] Flame stoking"
+  },
+  "snowdrop_fine": {
+    "cost": 18883.572567812007,
+    "source": "[Activity] Forest foraging"
+  },
+  "blue_ice_sickle": {
+    "cost": 928000.0,
+    "source": "[Activity] Glacier foraging"
+  },
+  "raw_jellyfish_fine": {
+    "cost": 54847.222222240496,
+    "source": "[Activity] Bodysurfing"
+  },
+  "beer": {
+    "cost": 358.5177168507129,
+    "source": "[Recipe] Brew beer"
+  },
+  "rabbit_ears": {
+    "cost": 10000.0,
+    "source": "[Activity] Rabbit tracking"
+  },
+  "bones": {
+    "cost": 66.66666666664166,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "snowdrop": {
+    "cost": 190.74315725062633,
+    "source": "[Activity] Forest foraging"
+  },
+  "hemp_fine": {
+    "cost": 12924.444444465887,
+    "source": "[Activity] Plains foraging"
+  },
+  "raw_crab_fine": {
+    "cost": 9185.185185185184,
+    "source": "[Activity] Crab tracking"
+  },
+  "birch_plank": {
+    "cost": 477.92207792358,
+    "source": "[Activity] Litter looting"
+  },
+  "trout_soup": {
+    "cost": 2625.0641334454676,
+    "source": "[Recipe] Make trout soup"
+  },
+  "flax": {
+    "cost": 163.1874298539279,
+    "source": "[Activity] Plains foraging"
+  },
+  "raw_salmon": {
+    "cost": 221.6049382716788,
+    "source": "[Activity] Bodysurfing"
+  },
+  "cooked_perch": {
+    "cost": 795.3333333412676,
+    "source": "[Recipe] Fry a perch"
+  },
+  "adventurers_enamel_pin_fine": {
+    "cost": 280000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "cooked_trout": {
+    "cost": 889.3070921008702,
+    "source": "[Recipe] Fry a trout"
+  },
+  "agility_chest": {
+    "cost": 8000.0,
+    "source": "[Activity] Surface swimming"
+  },
+  "large_stone_fine": {
+    "cost": 86111.11110967593,
+    "source": "[Activity] Stone quarrying"
+  },
+  "twine": {
+    "cost": 350.3748597078558,
+    "source": "[Recipe] Spin flax into twine"
+  },
+  "grass_fine": {
+    "cost": 48081.569846264334,
+    "source": "[Activity] Bird feeding"
+  },
+  "bread": {
+    "cost": 182.4181990846971,
+    "source": "[Recipe] Bake bread"
+  },
+  "cooked_squid": {
+    "cost": 1522.1938413514217,
+    "source": "[Recipe] Fry a squid"
+  },
+  "shrimp_trinket": {
+    "cost": 109785.35358014597,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "pearls": {
+    "cost": 665.5614973258822,
+    "source": "[Activity] Seashell searching"
+  },
+  "boxtrap": {
+    "cost": 976.2077922107964,
+    "source": "[Recipe] Craft a boxtrap"
+  },
+  "sweet_kelp_fine": {
+    "cost": 140000.0,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "fishbone_fine": {
+    "cost": 11627.750865046293,
+    "source": "[Activity] Seashell searching"
+  },
+  "coins": {
+    "cost": 27.272727272727273,
+    "source": "[Activity] Apprentice for Loif"
+  },
+  "rough_jade_fine": {
+    "cost": 1116533.333351198,
+    "source": "[Activity] Antique market assessor"
+  },
+  "beaver_trinket": {
+    "cost": 399336.89993669256,
+    "source": "[Activity] Seashell searching"
+  },
+  "ruby": {
+    "cost": 62826.15439557999,
+    "source": "[Recipe] Shape a ruby"
+  },
+  "raw_jellyfish": {
+    "cost": 554.012345679197,
+    "source": "[Activity] Bodysurfing"
+  },
+  "moondaisy_fine": {
+    "cost": 18883.572567812007,
+    "source": "[Activity] Forest foraging"
+  },
+  "gem_pouch": {
+    "cost": 16250.0,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "birch_logs": {
+    "cost": 667.6614631124881,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "wine": {
+    "cost": 109.70117845106464,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "cooked_meat": {
+    "cost": 4735.833106300296,
+    "source": "[Recipe] Cook meat"
+  },
+  "cooked_shrimp": {
+    "cost": 154.57463524114476,
+    "source": "[Recipe] Fry a shrimp"
+  },
+  "wine_fine": {
+    "cost": 10860.4166666554,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "widows_kiss": {
+    "cost": 148.14814814847736,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "tomato_fine": {
+    "cost": 89999.99999982,
+    "source": "[Activity] Vegetable chopping"
+  },
+  "wheat": {
+    "cost": 163.18742985392788,
+    "source": "[Activity] Plains foraging"
+  },
+  "fishing_line_fine": {
+    "cost": 65871.21212101211,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "pine_logs_fine": {
+    "cost": 66098.48484813633,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "moonshine": {
+    "cost": 990.8444920266132,
+    "source": "[Recipe] Distill moonshine"
+  },
+  "feather": {
+    "cost": 7.800224466891134,
+    "source": "[Activity] Bird watching"
+  },
+  "tomato": {
+    "cost": 909.0909090890909,
+    "source": "[Activity] Vegetable chopping"
+  },
+  "strong_bowstring": {
+    "cost": 456.55011655011657,
+    "source": "[Recipe] Craft a strong bowstring"
+  },
+  "stone": {
+    "cost": 28.993640104767326,
+    "source": "[Activity] Stone quarrying"
+  },
+  "bones_fine": {
+    "cost": 6599.999999997524,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "moondaisy": {
+    "cost": 190.74315725062633,
+    "source": "[Activity] Forest foraging"
+  },
+  "dark_feather": {
+    "cost": 468.01346801346796,
+    "source": "[Activity] Bird watching"
+  },
+  "jade": {
+    "cost": 11364.321374846653,
+    "source": "[Recipe] Shape a jade"
+  },
+  "raw_perch": {
+    "cost": 767.3333333412676,
+    "source": "[Activity] Soup kitchen volunteering"
+  },
+  "eel_trinket_fine": {
+    "cost": 3182222.2227879507,
+    "source": "[Activity] Surface swimming"
+  },
+  "cooking_chest": {
+    "cost": 8250.0,
+    "source": "[Activity] Soup kitchen volunteering"
+  },
+  "birch_skis": {
+    "cost": 8000.0,
+    "source": "[Activity] Forest foraging"
+  },
+  "highwater_lotus_fine": {
+    "cost": 84000.0,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "cooked_jellyfish": {
+    "cost": 589.7266313934826,
+    "source": "[Recipe] Fry a jellyfish"
+  },
+  "name_tag": {
+    "cost": 12636.363636363636,
+    "source": "[Activity] Search team"
+  },
+  "shrimp_trinket_fine": {
+    "cost": 10868750.004434451,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "beer_fine": {
+    "cost": 289833.3333306205,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "kelp_rolls": {
+    "cost": 4278.138528138528,
+    "source": "[Recipe] Prepare a kelp roll"
+  },
+  "opal": {
+    "cost": 1187.8114478095683,
+    "source": "[Recipe] Shape an opal"
+  },
+  "old_silver_ring": {
+    "cost": 13200.000001319999,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "oak_plank_fine": {
+    "cost": 700129.8701317478,
+    "source": "[Activity] Box trapping"
+  },
+  "nettle_fine": {
+    "cost": 20771.929824622628,
+    "source": "[Activity] Forest foraging"
+  },
+  "potato_fine": {
+    "cost": 89999.99999982,
+    "source": "[Activity] Vegetable chopping"
+  },
+  "clam_shell": {
+    "cost": 249.5855614972058,
+    "source": "[Activity] Seashell searching"
+  },
+  "rough_star_pearl_fine": {
+    "cost": 148871.111111389,
+    "source": "[Activity] Antique market assessor"
+  },
+  "rusty_chest": {
+    "cost": 8000.0,
+    "source": "[Activity] Forest foraging"
+  },
+  "aerodynamic_thread": {
+    "cost": 4714.67926014645,
+    "source": "[Activity] Box trapping"
+  },
+  "sticky_finger_shorts": {
+    "cost": 6923.809523906238,
+    "source": "[Activity] Plains foraging"
+  },
+  "raw_carp": {
+    "cost": 321.4365881028619,
+    "source": "[Activity] Surface swimming"
+  },
+  "rough_opal": {
+    "cost": 1127.8114478095683,
+    "source": "[Activity] Antique market assessor"
+  },
+  "cooked_salmon": {
+    "cost": 257.3192239859645,
+    "source": "[Recipe] Fry a salmon"
+  },
+  "simple_saw": {
+    "cost": 54531.25000749805,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "spruce_plank_fine": {
+    "cost": 560103.8961053982,
+    "source": "[Activity] Box trapping"
+  },
+  "topaz": {
+    "cost": 11358.471621152072,
+    "source": "[Recipe] Shape a topaz"
+  },
+  "measuring_spoons_trinket": {
+    "cost": 98731.060647034,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "raw_salmon_fine": {
+    "cost": 21938.8888888962,
+    "source": "[Activity] Bodysurfing"
+  },
+  "old_gold_ring": {
+    "cost": 26400.000002639998,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "wrentmarine": {
+    "cost": 4585.319865328286,
+    "source": "[Recipe] Shape a wrentmarine"
+  },
+  "nettle_tea": {
+    "cost": 449.6349459519722,
+    "source": "[Recipe] Brew nettle tea"
+  },
+  "smelly_socks": {
+    "cost": 8280.0000003933,
+    "source": "[Activity] Litter looting"
+  },
+  "clam_shell_fine": {
+    "cost": 24708.970588223372,
+    "source": "[Activity] Seashell searching"
+  },
+  "shark_tooth_trinket_fine": {
+    "cost": 3656481.481434082,
+    "source": "[Activity] Bodysurfing"
+  },
+  "ectoplasm": {
+    "cost": 229.2929292929293,
+    "source": "[Activity] Ghost tag"
+  },
+  "flax_fine": {
+    "cost": 16155.555555538864,
+    "source": "[Activity] Plains foraging"
+  },
+  "crafting_chest": {
+    "cost": 37500.0,
+    "source": "[Activity] Apprentice for Loif"
+  },
+  "linen_cloth": {
+    "cost": 281.09988776698765,
+    "source": "[Recipe] Make linen cloth"
+  },
+  "raw_shrimp_fine": {
+    "cost": 12728.888888873329,
+    "source": "[Activity] Surface swimming"
+  },
+  "birch_plank_fine": {
+    "cost": 47314.285714434416,
+    "source": "[Activity] Litter looting"
+  },
+  "star_pearl": {
+    "cost": 1571.0562893924298,
+    "source": "[Recipe] Shape a star pearl"
+  },
+  "spruce_plank": {
+    "cost": 5657.615112175739,
+    "source": "[Activity] Box trapping"
+  },
+  "hide_scraps": {
+    "cost": 251.449560541144,
+    "source": "[Activity] Box trapping"
+  },
+  "sturdy_branch": {
+    "cost": 521.8855218768238,
+    "source": "[Activity] Branch trimming"
+  },
+  "willow_plank": {
+    "cost": 28044.06076679798,
+    "source": "[Recipe] Create a willow plank (Scrap)"
+  },
+  "raw_squid": {
+    "cost": 1477.3662551445252,
+    "source": "[Activity] Bodysurfing"
+  },
+  "root": {
+    "cost": 1170.0336700336702,
+    "source": "[Activity] Bird watching"
+  },
+  "widows_kiss_fine": {
+    "cost": 14666.666666699259,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "tough_linen_cloth": {
+    "cost": 891.3419913419914,
+    "source": "[Recipe] Make tough linen"
+  },
+  "fishing_line": {
+    "cost": 665.3657790001224,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "raw_crab": {
+    "cost": 92.77964833520389,
+    "source": "[Activity] Crab tracking"
+  },
+  "carpentry_chest": {
+    "cost": 37500.0,
+    "source": "[Activity] Sandcastle building"
+  },
+  "birch_logs_fine": {
+    "cost": 66098.48484813633,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "adventurers_enamel_pin": {
+    "cost": 2828.2828282828286,
+    "source": "[Activity] Treasure hunt"
+  },
+  "mining_chest": {
+    "cost": 6250.0,
+    "source": "[Activity] Stone quarrying"
+  },
+  "root_fine": {
+    "cost": 115833.33333333334,
+    "source": "[Activity] Bird watching"
+  },
+  "sunken_chest": {
+    "cost": 8000.0,
+    "source": "[Activity] Surface swimming"
+  },
+  "pearls_fine": {
+    "cost": 65890.58823526233,
+    "source": "[Activity] Seashell searching"
+  },
+  "pine_plank_fine": {
+    "cost": 430849.15085030627,
+    "source": "[Activity] Box trapping"
+  },
+  "cooked_shrimp_fine": {
+    "cost": 121545.60000181638,
+    "source": "[Activity] Soup kitchen volunteering"
+  },
+  "pine_plank": {
+    "cost": 1375.7075416095918,
+    "source": "[Recipe] Cut a pine plank"
+  },
+  "animal_meat_fine": {
+    "cost": 466753.24675449857,
+    "source": "[Activity] Box trapping"
+  },
+  "raw_perch_fine": {
+    "cost": 75966.0000007855,
+    "source": "[Activity] Soup kitchen volunteering"
+  },
+  "meteorite_fragment": {
+    "cost": 316000.0,
+    "source": "[Activity] Antique market assessor"
+  },
+  "bird_nest": {
+    "cost": 7500.0,
+    "source": "[Activity] Branch trimming"
+  },
+  "pine_fishing_rod": {
+    "cost": 3952.2727272607267,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "oak_fishing_rod": {
+    "cost": 7245.833333349517,
+    "source": "[Activity] Erdwise dumpster diving"
+  },
+  "jar_of_dirt": {
+    "cost": 161538.46153846153,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "tiger_egg": {
+    "cost": 80769.23076923077,
+    "source": "[Activity] Flooded field scavenging"
+  },
+  "expedition_journal": {
+    "cost": 232000.0,
+    "source": "[Activity] Glacier foraging"
+  },
+  "haunted_teddy_bear": {
+    "cost": 24000.0,
+    "source": "[Activity] Graveyard foraging"
+  },
+  "lost_timmys_sand_shovel": {
+    "cost": 7500.0,
+    "source": "[Activity] Sandcastle building"
+  },
+  "shiny_broken_skydisc": {
+    "cost": 345000.0,
+    "source": "[Activity] Shoreline scramble"
+  },
+  "soup_kitchen_badge": {
+    "cost": 66000.0,
+    "source": "[Activity] Soup kitchen volunteering"
+  },
+  "petrified_branch": {
+    "cost": 10000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "floating_coral": {
+    "cost": 69421.4876033058,
+    "source": "[Activity] Treasure hunt"
+  },
+  "easter_egg": {
+    "cost": 350000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "treasure_hunter_token": {
+    "cost": 1400000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "artificial_snowflake": {
+    "cost": 2800000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "reindeer_egg": {
+    "cost": 168000.0,
+    "source": "[Activity] Treasure hunt"
+  },
+  "bronze_hatchet": {
+    "cost": 6232.142857222984,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "iron_hatchet": {
+    "cost": 6232.142857222984,
+    "source": "[Activity] Trellin dumpster diving"
+  },
+  "99_year_old_wine": {
+    "cost": 130000.0,
+    "source": "[Activity] Wine grape stomping"
+  },
+  "basic_pickaxe": {
+    "cost": 119.38346427239505,
+    "source": "[Recipe] Make a basic pickaxe"
+  },
+  "spectral_hatchet": {
+    "cost": 2562.2841316388954,
+    "source": "[Recipe] Craft a spectral hatchet"
+  },
+  "spectral_vest": {
+    "cost": 2635.870469399806,
+    "source": "[Recipe] Make a spectral vest"
+  },
+  "willow_fishing_rod": {
+    "cost": 84857.89290698025,
+    "source": "[Recipe] Craft a willow fishing rod"
+  },
+  "spectral_sewing_needle": {
+    "cost": 3852.111888111763,
+    "source": "[Recipe] Craft a spectral sewing needle"
+  },
+  "spectral_sickle": {
+    "cost": 2560.6712284130886,
+    "source": "[Recipe] Craft a spectral sickle"
+  },
+  "birch_hunting_bow": {
+    "cost": 1541.8728701084701,
+    "source": "[Recipe] Craft a birch hunting bow"
+  },
+  "wraithwater_flower_necklace": {
+    "cost": 474.2724867730952,
+    "source": "[Recipe] Create a Wraithwater flower necklace"
+  },
+  "spectral_hunting_bow": {
+    "cost": 2586.2626262625513,
+    "source": "[Recipe] Craft a spectral hunting bow"
+  },
+  "spectral_hammer": {
+    "cost": 3851.1888111886865,
+    "source": "[Recipe] Craft a spectral hammer"
+  },
+  "spectral_handwear": {
+    "cost": 2524.1414141413643,
+    "source": "[Recipe] Make spectral handwear"
+  },
+  "grassknot_tunic": {
+    "cost": 1117.1029674542833,
+    "source": "[Recipe] Make a grassknot tunic"
+  },
+  "basic_hatchet": {
+    "cost": 119.38346427239505,
+    "source": "[Recipe] Make a basic hatchet"
+  },
+  "spectral_fishing_rod": {
+    "cost": 2565.509938090508,
+    "source": "[Recipe] Craft a spectral fishing rod"
+  },
+  "spectral_saw": {
+    "cost": 3852.727272727148,
+    "source": "[Recipe] Craft a spectral saw"
+  },
+  "spectral_breeches": {
+    "cost": 2638.0039197948895,
+    "source": "[Recipe] Make spectral breeches"
+  },
+  "wooden_fishing_pole": {
+    "cost": 744.4774081117805,
+    "source": "[Recipe] Craft a basic fishing rod"
+  },
+  "spectral_wrench": {
+    "cost": 3852.727272727148,
+    "source": "[Recipe] Craft a spectral wrench"
+  },
+  "spectral_chisel": {
+    "cost": 3854.2657342656094,
+    "source": "[Recipe] Craft a spectral chisel"
+  },
+  "tatty_handwraps": {
+    "cost": 624.6997755339753,
+    "source": "[Recipe] Make tatty handwraps"
+  },
+  "grassknot_chaps": {
+    "cost": 1118.4604335176316,
+    "source": "[Recipe] Make grassknot chaps"
+  },
+  "wooden_shield": {
+    "cost": 1011.84415584716,
+    "source": "[Recipe] Make a wooden shield"
+  },
+  "wooden_sword": {
+    "cost": 1011.84415584716,
+    "source": "[Recipe] Make a wooden sword"
+  },
+  "jarvonian_flower_necklace": {
+    "cost": 1184.4589435037578,
+    "source": "[Recipe] Create a Jarvonian flower necklace"
+  },
+  "spectral_fishing_cagespear": {
+    "cost": 2573.5744542195403,
+    "source": "[Recipe] Craft a spectral fishing cagespear"
+  },
+  "spectral_pickaxe": {
+    "cost": 2563.8970348647017,
+    "source": "[Recipe] Craft a spectral pickaxe"
+  },
+  "bag_of_rocks": {
+    "cost": 1468.6178019279403,
+    "source": "[Recipe] Craft a bag of rocks"
+  },
+  "pine_toolbox": {
+    "cost": 6971.614631124882,
+    "source": "[Recipe] Woodwork a pine toolbox"
+  },
+  "spectral_pan": {
+    "cost": 3855.804195804071,
+    "source": "[Recipe] Craft a spectral pan"
+  },
+  "tatty_skirt": {
+    "cost": 623.4242653298936,
+    "source": "[Recipe] Make tatty skirt"
+  },
+  "basic_sickle": {
+    "cost": 440.76468387548357,
+    "source": "[Recipe] Make a basic sickle"
+  },
+  "large_fishing_net": {
+    "cost": 734.6782908442831,
+    "source": "[Recipe] Weave a large fishing net"
+  },
+  "tatty_garb": {
+    "cost": 622.1997755339753,
+    "source": "[Recipe] Make a tatty garb"
+  },
+  "grassknot_mitts": {
+    "cost": 802.7723104565264,
+    "source": "[Recipe] Make grassknot mitts"
+  },
+  "aerofibril_bracers": {
+    "cost": 6648.449419031307,
+    "source": "[Recipe] Make aerofibril bracers"
+  },
+  "apprentice_vest": {
+    "cost": 1917.5216523137694,
+    "source": "[Recipe] Make an apprentice vest"
+  },
+  "shadowquill_bracers": {
+    "cost": 2072.504015629033,
+    "source": "[Recipe] Make shadowquill bracers"
+  },
+  "aerofibril_plastron": {
+    "cost": 6970.476726153133,
+    "source": "[Recipe] Make an aerofibril plastron"
+  },
+  "shadowquill_shorts": {
+    "cost": 2394.268063797023,
+    "source": "[Recipe] Make shadowquill shorts"
+  },
+  "basic_fishing_net": {
+    "cost": 379.2210135540097,
+    "source": "[Recipe] Weave a basic fishing net"
+  },
+  "rootweave_chaps": {
+    "cost": 3099.5829431886195,
+    "source": "[Recipe] Make rootweave chaps"
+  },
+  "shadowquill_plastron": {
+    "cost": 2392.8403565979906,
+    "source": "[Recipe] Make a shadowquill plastron"
+  },
+  "rootweave_mitts": {
+    "cost": 3101.067455169917,
+    "source": "[Recipe] Make rootweave mitts"
+  },
+  "comfy_fishing_chair": {
+    "cost": 29717.04266183003,
+    "source": "[Recipe] Craft comfy fishing chair"
+  },
+  "rootweave_tunic": {
+    "cost": 3420.9144693736866,
+    "source": "[Recipe] Make a rootweave tunic"
+  },
+  "apprentice_breeches": {
+    "cost": 1918.919276352903,
+    "source": "[Recipe] Make apprentice breeches"
+  },
+  "apprentice_handwear": {
+    "cost": 1600.8092289342462,
+    "source": "[Recipe] Make apprentice handwear"
+  },
+  "aerofibril_shorts": {
+    "cost": 6972.560059486466,
+    "source": "[Recipe] Make aerofibril shorts"
+  }
+}

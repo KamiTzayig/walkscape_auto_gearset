@@ -131,6 +131,9 @@ def node_settings_dialog(node: CraftingNode, game_data_dict: dict, locations, us
         st.rerun()
 
 def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locations, user_state: dict, level: int = 0):
+    valid_json = user_state.get("valid_json", False)
+    user_skills_map = user_state.get("user_skills_map", {})
+    player_skill_levels = {k: calculate_level_from_xp(v) for k, v in user_skills_map.items()} if valid_json else {}
     icon = {"recipe": "🔨", "activity": "🪓", "chest": "🧰", "bank": "🏦"}.get(node.source_type, "📦")
     item_name = node.item_id.replace('_', ' ').title()
     title = f"{icon} {item_name} (x{node.base_requirement_amount})"
@@ -168,7 +171,7 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                         for i, material_group in enumerate(recipe.materials):
                             if not material_group: continue
                             mat = material_group[0] 
-                            child_node = build_default_tree(mat.item_id, game_data_dict, drop_calc)
+                            child_node = build_default_tree(mat.item_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                             child_node.base_requirement_amount = mat.amount
                             node.inputs[f"{mat.item_id}_{i}"] = child_node
 
@@ -182,22 +185,27 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
 
                             first_valid_id = None
                             if req_type_val in ('keyword_count', 'input_keyword'):
+                                valid_mats = []
                                 for mat in list(game_data_dict['materials'].values()) + list(game_data_dict['consumables'].values()):
                                     if hasattr(mat, 'keywords') and mat.keywords:
                                         if kw_target in [k.lower().replace("_", " ").strip() for k in mat.keywords]:
                                             if is_material_level_valid(mat, req):
-                                                first_valid_id = mat.id
-                                                break
+                                                valid_mats.append(mat)
+                                if valid_mats:
+                                    from ui_utils import load_material_costs
+                                    mat_costs = load_material_costs()
+                                    valid_mats.sort(key=lambda m: mat_costs.get(m.id, {}).get("cost", float('inf')))
+                                    first_valid_id = valid_mats[0].id
                             elif req_type_val == 'item':
                                 first_valid_id = req.target.lower()
 
                             if first_valid_id:
                                 node.selected_activity_inputs[i] = first_valid_id
-                                child_node = build_default_tree(first_valid_id, game_data_dict, drop_calc)
+                                child_node = build_default_tree(first_valid_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                                 child_node.base_requirement_amount = req.value
                                 node.inputs[f"{first_valid_id}_{i}"] = child_node
                 elif node.source_type == "chest":
-                    child_node = build_default_tree(node.source_id, game_data_dict, drop_calc)
+                    child_node = build_default_tree(node.source_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                     child_node.base_requirement_amount = 1
                     node.inputs[node.source_id] = child_node
                             
@@ -250,7 +258,7 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                             for i, material_group in enumerate(recipe.materials):
                                 if not material_group: continue
                                 mat = material_group[0] 
-                                child_node = build_default_tree(mat.item_id, game_data_dict, drop_calc)
+                                child_node = build_default_tree(mat.item_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                                 child_node.base_requirement_amount = mat.amount
                                 node.inputs[f"{mat.item_id}_{i}"] = child_node
 
@@ -264,18 +272,23 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
 
                                 first_valid_id = None
                                 if req_type_val in ('keyword_count', 'input_keyword'):
+                                    valid_mats = []
                                     for mat in list(game_data_dict['materials'].values()) + list(game_data_dict['consumables'].values()):
                                         if hasattr(mat, 'keywords') and mat.keywords:
                                             if kw_target in [k.lower().replace("_", " ").strip() for k in mat.keywords]:
                                                 if is_material_level_valid(mat, req):
-                                                    first_valid_id = mat.id
-                                                    break
+                                                    valid_mats.append(mat)
+                                    if valid_mats:
+                                        from ui_utils import load_material_costs
+                                        mat_costs = load_material_costs()
+                                        valid_mats.sort(key=lambda m: mat_costs.get(m.id, {}).get("cost", float('inf')))
+                                        first_valid_id = valid_mats[0].id
                                 elif req_type_val == 'item':
                                     first_valid_id = req.target.lower()
 
                                 if first_valid_id:
                                     node.selected_activity_inputs[i] = first_valid_id
-                                    child_node = build_default_tree(first_valid_id, game_data_dict, drop_calc)
+                                    child_node = build_default_tree(first_valid_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                                     child_node.base_requirement_amount = req.value
                                     node.inputs[f"{first_valid_id}_{i}"] = child_node
 
@@ -309,15 +322,28 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                                     if mat.id == item_target or mat.id == f"{item_target}_fine":
                                         valid_mats.append(mat)
                                         
-                            if valid_mats:
-                                seen = set()
-                                unique_valid_mats = []
-                                for m in valid_mats:
-                                    if m.id not in seen:
-                                        seen.add(m.id)
-                                        unique_valid_mats.append(m)
+                                if valid_mats:
+                                    seen = set()
+                                    unique_valid_mats = []
+                                    for m in valid_mats:
+                                        if m.id not in seen:
+                                            seen.add(m.id)
+                                            unique_valid_mats.append(m)
+                                            
+                                    from ui_utils import load_material_costs
+                                    mat_costs = load_material_costs()
+                                    unique_valid_mats.sort(key=lambda m: mat_costs.get(m.id, {}).get("cost", float('inf')))
                                         
-                                mat_names = [m.name for m in unique_valid_mats]
+                                    mat_names = []
+                                    display_to_obj = {}
+                                    for m in unique_valid_mats:
+                                        cost_info = mat_costs.get(m.id, {})
+                                        source = cost_info.get("source", "Unknown")
+                                        if source and source.startswith("[Activity] "): source = source[11:]
+                                        elif source and source.startswith("[Recipe] "): source = source[9:]
+                                        d_name = f"{m.name} (via {source})"
+                                        mat_names.append(d_name)
+                                        display_to_obj[d_name] = m
                                 
                                 current_mat_id = node.selected_activity_inputs.get(i)
                                 if not current_mat_id and unique_valid_mats:
@@ -328,16 +354,23 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                                     input_key = f"{current_mat_id}_{i}"
                                     if input_key not in node.inputs:
                                         c_node = build_default_tree(
-                                            target_item_id=current_mat_id, 
-                                            game_data=game_data_dict, 
-                                            drop_calc=drop_calc, 
-                                            global_target_quality="Normal", 
-                                            global_use_fine=False
-                                        )
+                                                target_item_id=current_mat_id, 
+                                                game_data=game_data_dict, 
+                                                drop_calc=drop_calc, 
+                                                global_target_quality="Normal", 
+                                                global_use_fine=False,
+                                                player_skill_levels=player_skill_levels
+                                            )
                                         c_node.base_requirement_amount = req.value
                                         node.inputs[input_key] = c_node
                                 
-                                current_mat_name = next((m.name for m in unique_valid_mats if m.id == current_mat_id), mat_names[0] if mat_names else "")
+                                current_mat_name = ""
+                                for d_name, m_obj in display_to_obj.items():
+                                    if m_obj.id == current_mat_id:
+                                        current_mat_name = d_name
+                                        break
+                                if not current_mat_name and mat_names:
+                                    current_mat_name = mat_names[0]
                                 
                                 try: idx = mat_names.index(current_mat_name)
                                 except ValueError: idx = 0
@@ -345,7 +378,7 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                                 sel_name = st.selectbox(f"{req.target.replace('_', ' ').title()} ({req.value}x)", options=mat_names, index=idx, key=f"act_in_{node.node_id}_{i}")
                                 
                                 if sel_name != current_mat_name:
-                                    sel_obj = next(m for m in unique_valid_mats if m.name == sel_name)
+                                    sel_obj = display_to_obj[sel_name]
                                     node.selected_activity_inputs[i] = sel_obj.id
                                     
                                     # Rebuild inputs to sync the tree
@@ -359,7 +392,8 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                                                 game_data=game_data_dict, 
                                                 drop_calc=drop_calc, 
                                                 global_target_quality="Normal", 
-                                                global_use_fine=False
+                                                global_use_fine=False,
+                                                player_skill_levels=player_skill_levels
                                             )
                                             c_node.base_requirement_amount = j_req.value
                                             node.inputs[input_key] = c_node
@@ -632,14 +666,14 @@ def render_tree_node(node: CraftingNode, game_data_dict: dict, drop_calc, locati
                                 new_inputs = {}
                                 for k, v in node.inputs.items():
                                     if k == old_key:
-                                        c_node = build_default_tree(new_mat.item_id, game_data_dict, drop_calc)
+                                        c_node = build_default_tree(new_mat.item_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                                         c_node.base_requirement_amount = new_mat.amount
                                         new_inputs[f"{new_mat_id}_{i}"] = c_node
                                     else:
                                         new_inputs[k] = v
                                         
                                 if f"{new_mat_id}_{i}" not in new_inputs:
-                                    c_node = build_default_tree(new_mat.item_id, game_data_dict, drop_calc)
+                                    c_node = build_default_tree(new_mat.item_id, game_data_dict, drop_calc, player_skill_levels=player_skill_levels)
                                     c_node.base_requirement_amount = new_mat.amount
                                     new_inputs[f"{new_mat_id}_{i}"] = c_node
                                     
@@ -709,8 +743,17 @@ def render_crafting_tree_tab(recipes, all_items_raw, activities, all_containers,
         'items': all_items_raw
     }
         
+    valid_json = user_state.get("valid_json", False)
+    user_skills_map = user_state.get("user_skills_map", {})
+    player_skill_levels = {k: calculate_level_from_xp(v) for k, v in user_skills_map.items()} if valid_json else {}
+        
     if st.button("Generate Tree", type="primary"):
-        st.session_state['crafting_tree_root'] = build_default_tree(target_item, game_data_dict,drop_calc=drop_calc)
+        st.session_state['crafting_tree_root'] = build_default_tree(
+            target_item, 
+            game_data_dict,
+            drop_calc=drop_calc,
+            player_skill_levels=player_skill_levels
+        )
         st.session_state['tree_target_item'] = target_item 
         st.rerun()
 

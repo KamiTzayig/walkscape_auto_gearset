@@ -39,6 +39,14 @@ def find_category(target_name):
     return "Base" 
 
 # --- Helpers ---
+@st.cache_data
+def load_material_costs() -> Dict[str, Any]:
+    cost_path = os.path.join(os.path.dirname(__file__), "game_data", "material_costs.json")
+    if os.path.exists(cost_path):
+        with open(cost_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
 def get_xp_for_level(level: int) -> int:
     total = 0
     for i in range(1, level):
@@ -347,7 +355,8 @@ def build_default_tree(
     drop_calc: Any,
     global_target_quality: str = "Normal",
     global_use_fine: bool = False,
-    visited: Optional[set[str]] = None
+    visited: Optional[set[str]] = None,
+    player_skill_levels: Optional[Dict[str, int]] = None
 ) -> CraftingNode:
     """Recursively builds the default crafting tree path for a target item."""
     if visited is None:
@@ -374,13 +383,25 @@ def build_default_tree(
             sources.append({"type": "recipe", "id": r_id, "label": f"[Recipe] {r_obj.name}"})
             
     # 2. Find Activities
+    activity_sources = []
     for act_id, act_obj in game_data['activities'].items():
-        drop_table = drop_calc.get_drop_table(act_obj, {}, 99) 
+        player_lvl = player_skill_levels.get(act_obj.primary_skill.lower(), 99) if player_skill_levels else 99
+        stats = {"work_efficiency": act_obj.max_efficiency}
+        drop_table = drop_calc.get_drop_table(act_obj, stats, player_lvl) 
         for drop in drop_table:
             # Check for either the exact fine drop OR the base item drop
             if drop["Item"] == base_item_id or drop["Item"] == target_item_id:
-                sources.append({"type": "activity", "id": act_id, "label": f"[Activity] {act_obj.name}"})
+                activity_sources.append({
+                    "type": "activity", 
+                    "id": act_id, 
+                    "label": f"[Activity] {act_obj.name}",
+                    "steps": drop.get("Steps", float('inf'))
+                })
                 break
+                
+    activity_sources.sort(key=lambda x: x["steps"])
+    for src in activity_sources:
+        sources.append({"type": src["type"], "id": src["id"], "label": src["label"]})
                 
     # 3. Find Chests
     for chest_id, chest_obj in game_data.get('chests', {}).items():
@@ -448,7 +469,7 @@ def build_default_tree(
                         mat_item_id = fine_id
                 
             child_node = build_default_tree(
-                mat_item_id, game_data, drop_calc, global_target_quality, global_use_fine, set(visited)
+                mat_item_id, game_data, drop_calc, global_target_quality, global_use_fine, set(visited), player_skill_levels
             )
             child_node.base_requirement_amount = req_group[0].amount
             node.inputs[f"{mat_item_id}_{i}"] = child_node
@@ -464,12 +485,16 @@ def build_default_tree(
                 
                 first_valid_id = None
                 if req_type_val in ('keyword_count', 'input_keyword'):
+                    valid_mats = []
                     for mat in list(game_data.get('materials', {}).values()) + list(game_data.get('consumables', {}).values()):
                         if hasattr(mat, 'keywords') and mat.keywords:
                             if kw_target in [k.lower().replace("_", " ").strip() for k in mat.keywords]:
                                 if is_material_level_valid(mat, req):
-                                    first_valid_id = mat.id
-                                    break
+                                    valid_mats.append(mat)
+                    if valid_mats:
+                        mat_costs = load_material_costs()
+                        valid_mats.sort(key=lambda m: mat_costs.get(m.id, {}).get("cost", float('inf')))
+                        first_valid_id = valid_mats[0].id
                 elif req_type_val == 'item':
                     first_valid_id = req.target.lower()
                     
@@ -480,7 +505,8 @@ def build_default_tree(
                         drop_calc=drop_calc,
                         global_target_quality=global_target_quality,
                         global_use_fine=False, 
-                        visited=set(visited)
+                        visited=set(visited),
+                        player_skill_levels=player_skill_levels
                     )
                     child_node.base_requirement_amount = req.value
                     node.inputs[f"{first_valid_id}_{i}"] = child_node
@@ -492,7 +518,8 @@ def build_default_tree(
             drop_calc=drop_calc,
             global_target_quality=global_target_quality,
             global_use_fine=False, 
-            visited=set(visited)
+            visited=set(visited),
+            player_skill_levels=player_skill_levels
         )
         # We set this to 1. The fractional math (expected items per chest) 
         # will be handled inside calculate_node_metrics later.
