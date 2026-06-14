@@ -1225,7 +1225,15 @@
     "uuid": "item-cape_of_achiever-ec78bda5-4b83-4091-bcfd-812976429eff",
     "slot": "cape",
     "quality": "None",
-    "requirements": [],
+    "requirements": [
+      {
+        "type": "achievement_points",
+        "target": null,
+        "value": 265,
+        "input_skill": null,
+        "input_level": null
+      }
+    ],
     "modifiers": [
       {
         "stat": "work_efficiency",
@@ -1307,7 +1315,15 @@
     "uuid": "item-cape_of_half-achiever-c262e3f7-dadd-4bd3-aef1-f35cf21511d6",
     "slot": "cape",
     "quality": "None",
-    "requirements": [],
+    "requirements": [
+      {
+        "type": "achievement_points",
+        "target": null,
+        "value": 133,
+        "input_skill": null,
+        "input_level": null
+      }
+    ],
     "modifiers": [
       {
         "stat": "work_efficiency",

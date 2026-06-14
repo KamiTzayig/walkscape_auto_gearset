@@ -78,6 +78,10 @@ class CandidateSelector:
                             if context.get("skill_group_levels", {}).get(req.target.lower(), 0) < req.value:
                                 a_is_equippable = False
                                 break
+                        elif req.type == RequirementType.ACHIEVEMENT_POINTS:
+                            if context.get("achievement_points", 0) < req.value:
+                                a_is_equippable = False
+                                break
                     if not a_is_equippable: continue
                     
                     # 2. Tool Conflict Check: They must share a restriction to compete
@@ -207,6 +211,10 @@ class CandidateSelector:
                     elif req.type == RequirementType.SKILL_GROUP_LEVEL and req.target:
                         if group_lvls.get(req.target.lower(), 0) < req.value:
                             rejection_reason = f"Low {req.target.title()} Level ({req.value})"
+                            break
+                    elif req.type == RequirementType.ACHIEVEMENT_POINTS:
+                        if context.get("achievement_points", 0) < req.value:
+                            rejection_reason = f"Low Achievement Points ({req.value})"
                             break
             
             # C. Check Activity Requirements (Keywords)

@@ -119,6 +119,14 @@ def parse_requirements(soup) -> list[Requirement]:
             ))
             continue
 
+        ap_match = re.search(r'Have\s*[\(\[](\d+)[\)\]]\s*achievement points?', text, re.IGNORECASE)
+        if ap_match:
+            requirements.append(Requirement(
+                type=RequirementType.ACHIEVEMENT_POINTS,
+                value=int(ap_match.group(1))
+            ))
+            continue
+
         # Total skill level (e.g. "Have a [500] total skill level.")
         total_skill_match = re.search(r'Have a\s*\[?(\d+)\]?\s*total skill level', text, re.IGNORECASE)
         if total_skill_match:

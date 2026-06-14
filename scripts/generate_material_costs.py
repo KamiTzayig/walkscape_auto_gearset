@@ -24,8 +24,20 @@ def generate_costs():
     for k in drop_calc.item_values.keys(): all_item_ids.add(k)
     for k in drop_calc.chest_ids: all_item_ids.add(k)
     
+    producible_items = set()
+    for act_obj in activities:
+        drop_table = drop_calc.get_drop_table(act_obj, {"work_efficiency": act_obj.max_efficiency}, 99)
+        for drop in drop_table: producible_items.add(drop["Item"])
+    for rec_obj in recipes:
+        producible_items.add(rec_obj.output_item_id)
+    for chest in containers:
+        for drop in chest.drops: producible_items.add(drop.item_id)
+        
     for item_id in all_item_ids:
-        costs[item_id] = {"cost": float('inf'), "source": None}
+        if item_id not in producible_items:
+            costs[item_id] = {"cost": 0.0, "source": "Shop/Bank"}
+        else:
+            costs[item_id] = {"cost": float('inf'), "source": None}
             
     # Some items might be bought from shops, but we don't have shop data.
     # We will compute costs iteratively.
@@ -92,6 +104,21 @@ def generate_costs():
             if total_recipe_cost < costs.get(rec_obj.output_item_id, {}).get("cost", float('inf')):
                 costs[rec_obj.output_item_id] = {"cost": total_recipe_cost, "source": f"[Recipe] {rec_obj.name}"}
                 changed = True
+                
+        # 3. Chests
+        for chest in containers:
+            chest_cost = costs.get(chest.id, {}).get("cost", float('inf'))
+            if chest_cost == float('inf'): continue
+            for drop in chest.drops:
+                if drop.item_id == "nothing": continue
+                chance = drop.chance or 0.0
+                if chance <= 0: continue
+                avg_qty = (drop.min_quantity + drop.max_quantity) / 2.0
+                expected_yield = (chance / 100.0) * avg_qty
+                cost_per_item = chest_cost / expected_yield
+                if cost_per_item < costs.get(drop.item_id, {}).get("cost", float('inf')):
+                    costs[drop.item_id] = {"cost": cost_per_item, "source": f"[Chest] {chest.name}"}
+                    changed = True
                 
     final_costs = {k: v for k, v in costs.items() if v["cost"] != float('inf')}
     
