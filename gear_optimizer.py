@@ -136,7 +136,7 @@ class GearOptimizer:
             self.last_normalization_context = normalization_context
 
         # 7. Generate Skeletons
-        skeletons = self._generate_skeletons(candidates, required_keywords)
+        skeletons = self._generate_skeletons(candidates, required_keywords, owned_item_counts)
         
         best_overall_set = GearSet()
         best_overall_score = -float('inf')
@@ -427,7 +427,7 @@ class GearOptimizer:
             
             for item in all_candidates:
                 if needed <= 0: break
-                if item in dummy_set.get_all_items(): continue
+                if dummy_set.get_all_items().count(item) >= (2 if item.slot == EquipmentSlot.RING else 1): continue
                 
                 # Check if item provides keyword dynamically
                 if item.provides_keyword(req_kw):
@@ -464,7 +464,7 @@ class GearOptimizer:
             equipped_count = 0
             for item in sorted_cands:
                 if equipped_count >= count_needed: break
-                if item in dummy_set.get_all_items(): continue
+                if dummy_set.get_all_items().count(item) >= (2 if item.slot == EquipmentSlot.RING else 1): continue
                 if can_equip(item, dummy_set):
                     if dummy_set.equip(item, tool_slots):
                         equipped_count += 1
@@ -515,7 +515,7 @@ class GearOptimizer:
             target_req = missing_reqs[0]
             best_filler = None
             for cand in provider_pool:
-                if cand in current_set.get_all_items(): continue
+                if current_set.get_all_items().count(cand) >= (2 if cand.slot == EquipmentSlot.RING else 1): continue
                 if cand.provides_keyword(target_req):
                     if can_equip(cand, current_set):
                         best_filler = cand
@@ -589,7 +589,7 @@ class GearOptimizer:
                 
                 for candidate in provider_pool:
                     if candidate.id == provider_to_remove.id: continue
-                    if candidate in best_local_set.get_all_items(): continue
+                    if best_local_set.get_all_items().count(candidate) >= (2 if candidate.slot == EquipmentSlot.RING else 1): continue
                     
                     if not any(candidate.provides_keyword(req) for req in relevant_reqs): continue
 
@@ -659,7 +659,7 @@ class GearOptimizer:
                     
                     for cand in best_candidates:
                         if curr_item and cand.id == curr_item.id: continue
-                        if cand in best_local_set.get_all_items(): continue
+                        if best_local_set.get_all_items().count(cand) >= (2 if cand.slot == EquipmentSlot.RING else 1): continue
                         if not can_equip(cand, best_local_set): continue
 
                         test_set = best_local_set.clone()
@@ -1054,7 +1054,7 @@ class GearOptimizer:
                         best_subset = test_subset
         return best_subset, best_val
 
-    def _generate_skeletons(self, candidates, required_keywords) -> List[Tuple[GearSet, Set[str]]]:
+    def _generate_skeletons(self, candidates, required_keywords, owned_counts=None) -> List[Tuple[GearSet, Set[str]]]:
         # Part A: Requirement-based Skeletons
 
         if not required_keywords:
@@ -1141,7 +1141,11 @@ class GearOptimizer:
                             solve(index + 1, new_map, locked_slots)
                     elif attr == "rings":
                         current_rings = current_map.get("rings", [])
-                        if len(current_rings) < 2 and item not in current_rings:
+                        if len(current_rings) < 2 and current_rings.count(item) < 2:
+                            if owned_counts is not None:
+                                needed = current_rings.count(item) + 1
+                                if self.candidate_selector._get_available_count(item, owned_counts) < needed:
+                                    continue
                             new_map = current_map.copy()
                             new_map["rings"] = current_rings + [item]
                             solve(index + 1, new_map, locked_slots)

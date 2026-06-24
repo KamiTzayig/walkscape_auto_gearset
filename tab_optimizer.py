@@ -1184,7 +1184,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                                 # Evaluate Rings
                                 valid_rings = [i for i in all_items_raw if i.slot == EquipmentSlot.RING and i.id not in blacklist_set]
                                 for item in valid_rings:
-                                    if item in best_gear.rings: continue
+                                    if best_gear.rings.count(item) >= 2: continue
                                     
                                     best_ring_score = baseline_score + 0.0001
                                     best_ring_analysis = None
@@ -1198,9 +1198,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                                         test_gear.rings[idx] = item
                                         test_gear.rings = [r for r in test_gear.rings if r is not None]
                                         
-                                        # Strict duplicate check
-                                        ring_ids = [r.id for r in test_gear.rings]
-                                        if len(ring_ids) != len(set(ring_ids)): continue
+                                        # Allowed duplicate rings so no strict unique check here
                                         
                                         if test_gear.violates_restrictions(item): continue
                                             
