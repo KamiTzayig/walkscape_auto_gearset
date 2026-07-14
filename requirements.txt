@@ -1,5 +1,5 @@
 pydantic==2.12.5
-streamlit==1.52.2
+streamlit==1.59.2
 beautifulsoup4==4.14.3
 streamlit-js-eval==1.0.0
 pytest==9.0.2
