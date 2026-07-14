@@ -39,6 +39,34 @@
     ]
   },
   {
+    "id": "ADVENTURERS_GUILD_BUCKLER",
+    "wiki_slug": "Special:MyLanguage/Adventurers%27_guild_buckler",
+    "name": "Adventurers' guild buckler",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Shield",
+      "exact_item_adventurers_guild_buckler"
+    ],
+    "uuid": "f4be2b79-f096-4ce0-944c-dd6589af11d9",
+    "slot": "secondary",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "find_adventurers_guild_token",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ADVENTURING_AMULET",
     "wiki_slug": "Special:MyLanguage/Adventuring_amulet",
     "name": "Adventuring amulet",
@@ -1671,6 +1699,243 @@
           {
             "type": "skill_activity",
             "target": "cooking",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "COLLECTION_RING",
+    "wiki_slug": "Special:MyLanguage/Collection_ring",
+    "name": "Collection ring",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Ring",
+      "exact_item_collection_ring"
+    ],
+    "uuid": "0a7fac6c-d73c-4001-94fe-214dc8fbd054",
+    "slot": "ring",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "chest_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 3.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -9143,6 +9408,194 @@
     ]
   },
   {
+    "id": "TREASURE_HUNTER_BANDOLIER",
+    "wiki_slug": "Special:MyLanguage/Treasure_hunter_bandolier",
+    "name": "Treasure hunter bandolier",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Treasure hunter set",
+      "exact_item_treasure_hunter_bandolier"
+    ],
+    "uuid": "bc73832c-da80-4517-b6a5-e462d0164d40",
+    "slot": "back",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "double_rewards",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TREASURE_HUNTER_GLOVES",
+    "wiki_slug": "Special:MyLanguage/Treasure_hunter_gloves",
+    "name": "Treasure hunter gloves",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Treasure hunter set",
+      "exact_item_treasure_hunter_gloves"
+    ],
+    "uuid": "a8b4073a-cf20-4187-8be2-59aa1225e621",
+    "slot": "hands",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "double_rewards",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "TREASURE_HUNTER_HAT",
     "wiki_slug": "Special:MyLanguage/Treasure_hunter_hat",
     "name": "Treasure hunter hat",
@@ -9320,6 +9773,100 @@
             "type": "set_equipped",
             "target": "treasure hunter set",
             "value": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TREASURE_HUNTER_SCARF",
+    "wiki_slug": "Special:MyLanguage/Treasure_hunter_scarf",
+    "name": "Treasure hunter scarf",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Treasure hunter set",
+      "exact_item_treasure_hunter_scarf"
+    ],
+    "uuid": "1f73fb38-6433-4590-9e18-ca611015b577",
+    "slot": "neck",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "double_rewards",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "stat": "find_collectibles",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "set_equipped",
+            "target": "treasure hunter set",
+            "value": 6
           }
         ]
       }

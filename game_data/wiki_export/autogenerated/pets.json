@@ -926,6 +926,123 @@
     "use_pet_ability": false
   },
   {
+    "id": "pixie",
+    "wiki_slug": "Pixie",
+    "name": "Pixie",
+    "egg_item_id": "pixie_egg",
+    "xp_requirement_desc": null,
+    "levels": [
+      {
+        "level": 1,
+        "total_xp": 50000,
+        "modifiers": [
+          {
+            "stat": "find_collectibles",
+            "value": 5.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 2,
+        "total_xp": 150000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 1.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 1.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "find_collectibles",
+            "value": 10.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 3,
+        "total_xp": 300000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "find_collectibles",
+            "value": 20.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": [
+          {
+            "name": "Party Mode",
+            "effect": "Gives a buff to Find collectibles.Effect lasts for: 1000 stepsGlobal +20% Find collectibles",
+            "requirements": null,
+            "cooldown": "This ability is charged by using items. One full charge requires 3. 3 gained from Wine 1 gained from Beer",
+            "charges": 100
+          }
+        ]
+      }
+    ],
+    "active_level": 1,
+    "use_pet_ability": false
+  },
+  {
     "id": "reindeer",
     "wiki_slug": "Reindeer",
     "name": "Reindeer",
