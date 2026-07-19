@@ -5,7 +5,7 @@ import time
 import pandas as pd
 from collections import defaultdict
 
-from utils.constants import StatName, PERCENTAGE_STATS, QUALITY_NAMES, BUFF_PET_ABILITIES
+from utils.constants import StatName, PERCENTAGE_STATS, QUALITY_NAMES, BUFF_PET_ABILITIES, ARTISAN_SKILLS
 from utils.export import export_gearset
 from calculations import calculate_passive_stats, calculate_score, analyze_score, calculate_quality_probabilities, _calculate_single_target_score
 from gear_optimizer import GearOptimizer, OPTIMAZATION_TARGET
@@ -815,6 +815,17 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 
                 score = analysis_result["score"]
                 stats = analysis_result["stats"]
+                display_stats = dict(stats)
+                if saved_activity and saved_skill_lvl:
+                    level_diff = max(0, saved_skill_lvl - saved_activity.level)
+                    work_eff_bonus = min(0.25, level_diff * 0.0125)
+                    if work_eff_bonus > 0:
+                        display_stats[StatName.WORK_EFFICIENCY] = display_stats.get(StatName.WORK_EFFICIENCY, 0.0) + work_eff_bonus
+                    
+                    skill_name = (saved_activity.primary_skill or "").lower()
+                    if skill_name in ARTISAN_SKILLS:
+                        display_stats[StatName.QUALITY_OUTCOME] = display_stats.get(StatName.QUALITY_OUTCOME, 0.0) + level_diff
+
                 final_steps = analysis_result["steps"]
                 breakdown = analysis_result.get("target_breakdown", [])
 
@@ -833,7 +844,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 
                 for key, label in badge_stats:
                     is_percent = key in PERCENTAGE_STATS
-                    val = stats.get(key, 0)
+                    val = display_stats.get(key, 0)
                     if val > 0.001:
                         fmt_val = f"{val*100:.1f}%" if is_percent else f"{val:.2f}"
                         badges_html += f"""
@@ -1630,9 +1641,24 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                                 st.caption("Detailed Stat Changes:")
                                 test_stats = analysis.get("stats", {})
                                 orig_stats = orig_analysis.get("stats", {})
-                                for k in ["fine_material_finding", "double_rewards", "double_action", "work_efficiency", "xp_percent", "percent_step_reduction"]:
-                                    v1 = orig_stats.get(k, 0)
-                                    v2 = test_stats.get(k, 0)
+                                
+                                test_display_stats = dict(test_stats)
+                                orig_display_stats = dict(orig_stats)
+                                if saved_activity and saved_skill_lvl:
+                                    level_diff = max(0, saved_skill_lvl - saved_activity.level)
+                                    work_eff_bonus = min(0.25, level_diff * 0.0125)
+                                    if work_eff_bonus > 0:
+                                        test_display_stats["work_efficiency"] = test_display_stats.get("work_efficiency", 0.0) + work_eff_bonus
+                                        orig_display_stats["work_efficiency"] = orig_display_stats.get("work_efficiency", 0.0) + work_eff_bonus
+                                    
+                                    skill_name = (saved_activity.primary_skill or "").lower()
+                                    if skill_name in ARTISAN_SKILLS:
+                                        test_display_stats["quality_outcome"] = test_display_stats.get("quality_outcome", 0.0) + level_diff
+                                        orig_display_stats["quality_outcome"] = orig_display_stats.get("quality_outcome", 0.0) + level_diff
+
+                                for k in ["fine_material_finding", "double_rewards", "double_action", "work_efficiency", "xp_percent", "percent_step_reduction", "quality_outcome"]:
+                                    v1 = orig_display_stats.get(k, 0)
+                                    v2 = test_display_stats.get(k, 0)
                                     if abs(v1-v2) > 0.001:
                                         st.text(f"{k}: {v1:.2f} -> {v2:.2f}")
 
