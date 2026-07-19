@@ -589,7 +589,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
     with container_wiki:
         if not is_mobile:
             st.subheader("Gear Tool Reference (fala's tool)")
-        components.iframe(WIKI_URL, height=1200 if not is_mobile else 800, scrolling=True)
+        st.iframe(WIKI_URL, height=1200 if not is_mobile else 800)
 
     with container_results:
         st.subheader("Results")
