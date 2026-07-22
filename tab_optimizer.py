@@ -18,46 +18,6 @@ from ui_utils import (
     get_best_auto_pet, format_target_metric, is_material_level_valid,get_filtered_consumables
 )
 
-@st.dialog("Configure Target")
-def edit_target_dialog(item_id=None):
-    if item_id is None:
-        current_target_name = "Reward Rolls"
-        weight = 100
-    else:
-        item = next((x for x in st.session_state['opt_targets_list'] if x['id'] == item_id), None)
-        if not item: return
-        current_target_name = item['target']
-        weight = item['weight']
-        
-    current_cat = find_category(current_target_name)
-    new_cat = st.selectbox("Category", options=list(TARGET_CATEGORIES.keys()), index=list(TARGET_CATEGORIES.keys()).index(current_cat), key="dialog_cat")
-    
-    available_targets = TARGET_CATEGORIES[new_cat]
-    target_idx = available_targets.index(current_target_name) if current_target_name in available_targets else 0
-    new_target = st.selectbox("Target", options=available_targets, index=target_idx, key="dialog_tgt")
-    
-    new_weight = st.slider("Weight", min_value=1, max_value=100, value=int(weight), format="%d%%", key="dialog_weight")
-    
-    c1, c2 = st.columns(2)
-    with c1:
-        if st.button("Save", type="primary", width="stretch"):
-            if item_id is None:
-                new_id = st.session_state.get('next_target_id', 1)
-                st.session_state['opt_targets_list'].append({"id": new_id, "target": new_target, "weight": new_weight})
-                st.session_state['next_target_id'] = new_id + 1
-            else:
-                for x in st.session_state['opt_targets_list']:
-                    if x['id'] == item_id:
-                        x['target'] = new_target
-                        x['weight'] = new_weight
-                        break
-            st.rerun()
-    with c2:
-        if item_id is not None:
-            if st.button("Delete", width="stretch"):
-                st.session_state['opt_targets_list'] = [x for x in st.session_state['opt_targets_list'] if x['id'] != item_id]
-                st.rerun()
-
 def get_relative_time(timestamp):
     if not timestamp: return "Unknown"
     diff = time.time() - timestamp
@@ -496,16 +456,66 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
     with c2:
         st.write("🎯 **Optimization Targets**")
         if is_mobile:
-            for item in st.session_state['opt_targets_list']:
-                col_txt, col_btn = st.columns([4, 1])
-                with col_txt:
-                    st.markdown(f"<div style='background-color:#1e293b; padding:8px 12px; border: 1px solid #334155; border-radius:6px; margin-bottom:4px;'><b style='color:#e2e8f0'>{item['target']}</b> <span style='color:#94a3b8; font-size:0.85em;'>({item['weight']}%)</span></div>", unsafe_allow_html=True)
-                with col_btn:
-                    if st.button("✏️", key=f"edit_m_{item['id']}", width="stretch"):
-                        edit_target_dialog(item['id'])
-            
+            targets_to_remove = []
+            for index, item in enumerate(st.session_state['opt_targets_list']):
+                current_target_name = item['target']
+                current_cat = find_category(current_target_name)
+                
+                with st.container(border=True):
+                    c_cat, c_target = st.columns(2)
+                    with c_cat:
+                        new_cat = st.selectbox(
+                            "Category", 
+                            options=list(TARGET_CATEGORIES.keys()), 
+                            index=list(TARGET_CATEGORIES.keys()).index(current_cat),
+                            key=f"m_cat_sel_{item['id']}", 
+                            label_visibility="collapsed"
+                        )
+                        if new_cat != current_cat:
+                            first_tgt = TARGET_CATEGORIES[new_cat][0]
+                            item['target'] = first_tgt
+                            st.session_state[f"m_target_sel_{item['id']}"] = first_tgt
+                            st.rerun()
+                    with c_target:
+                        available_targets = TARGET_CATEGORIES[new_cat]
+                        try:
+                            target_idx = available_targets.index(item['target'])
+                        except ValueError:
+                            target_idx = 0
+                            item['target'] = available_targets[0]
+                            st.session_state[f"m_target_sel_{item['id']}"] = available_targets[0]
+                        
+                        new_target = st.selectbox(
+                            "Target", 
+                            options=available_targets,
+                            index=target_idx,
+                            key=f"m_target_sel_{item['id']}", 
+                            label_visibility="collapsed"
+                        )
+                        item['target'] = new_target
+                    
+                    c_slider, c_btn = st.columns([4, 1])
+                    with c_slider:
+                        item['weight'] = st.slider(
+                            "Weight", min_value=1, max_value=100, 
+                            value=int(item['weight']), format="%d%%",
+                            key=f"m_target_slider_{item['id']}", label_visibility="collapsed"
+                        )
+
+                    with c_btn:
+                        if st.button("❌", key=f"m_target_rem_{item['id']}", help="Remove target", width="stretch"):
+                            targets_to_remove.append(index)
+
+            if targets_to_remove:
+                for i in sorted(targets_to_remove, reverse=True):
+                    del st.session_state['opt_targets_list'][i]
+                st.rerun()
+
             if st.button("➕ Add Target", key="add_tgt_btn_mobile", width="stretch"):
-                edit_target_dialog(None)
+                new_id = st.session_state.get('next_target_id', 1)
+                st.session_state['opt_targets_list'].append({"id": new_id, "target": "Reward Rolls", "weight": 100})
+                st.session_state['next_target_id'] = new_id + 1
+                st.rerun()
 
         else:
             targets_to_remove = []
@@ -522,7 +532,9 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         label_visibility="collapsed"
                     )
                     if new_cat != current_cat:
-                        item['target'] = TARGET_CATEGORIES[new_cat][0]
+                        first_tgt = TARGET_CATEGORIES[new_cat][0]
+                        item['target'] = first_tgt
+                        st.session_state[f"target_sel_{item['id']}"] = first_tgt
                         st.rerun()
                 with c_target:
                     available_targets = TARGET_CATEGORIES[new_cat]
@@ -530,6 +542,8 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         target_idx = available_targets.index(item['target'])
                     except ValueError:
                         target_idx = 0
+                        item['target'] = available_targets[0]
+                        st.session_state[f"target_sel_{item['id']}"] = available_targets[0]
                     
                     new_target = st.selectbox(
                         "Target", 
@@ -559,6 +573,7 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 st.session_state['opt_targets_list'].append({"id": new_id, "target": "Reward Rolls", "weight": 100})
                 st.session_state['next_target_id'] = new_id + 1
                 st.rerun()
+
 
         weighted_targets = []
         for item in st.session_state['opt_targets_list']:
