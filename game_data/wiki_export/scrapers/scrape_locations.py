@@ -108,9 +108,9 @@ def parse_location_page(location_name, from_folder=False, cache_file_path=None) 
     if primary_region:
         tags.add(normalize_id(primary_region))
 
-    # 2. Extract Keywords (NEW: Handles Spectral, Underwater, etc.)
-    # Look for "Keywords" header
-    keyword_heading = soup.find(['h1', 'h2'], id='Keywords')
+    # 2. Extract Keywords (NEW: Handles Spectral, Underwater, Desert, Snowy, etc.)
+    # Look for "Keyword" or "Keywords" header
+    keyword_heading = soup.find(['h1', 'h2'], id=re.compile(r'^Keywords?$', re.I))
     
     if keyword_heading:
         kw_div = keyword_heading.find_parent('div', class_='mw-heading')
@@ -140,7 +140,7 @@ def parse_location_page(location_name, from_folder=False, cache_file_path=None) 
 
     # 3. Extract Factions
     # Look for "Faction" header and subsequent links
-    faction_heading = soup.find(['h1', 'h2'], id='Faction') or soup.find(['h1', 'h2'], id='Factions')
+    faction_heading = soup.find(['h1', 'h2'], id=re.compile(r'^Factions?$', re.I))
     
     if faction_heading:
         faction_div = faction_heading.find_parent('div', class_='mw-heading')

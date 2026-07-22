@@ -120,6 +120,7 @@ class StatName(str, Enum):
     CHANCE_TO_FIND_BIRD_NEST = "chance_to_find_bird_nest"
     FIND_RANDOM_GEM = "find_random_gem"
     FIND_FIBROUS_PLANT = "find_fibrous_plant"
+    FIND_LINENS = "find_linens"
     INVENTORY_SPACE = "inventory_space"
 
     # "Any Action" Global XP
@@ -274,7 +275,7 @@ TARGET_TO_STATS = {
         StatName.FIND_GEMS, StatName.FIND_ADVENTURERS_GUILD_TOKEN,
         StatName.FIND_SEA_SHELLS, StatName.FIND_CRUSTACEAN,
         StatName.FIND_FIBROUS_PLANT, StatName.FIND_FISHING_BAIT, StatName.FIND_GOLD_NUGGET,
-        StatName.FIND_RANDOM_GEM, StatName.FIND_SKILL_CHEST
+        StatName.FIND_RANDOM_GEM, StatName.FIND_SKILL_CHEST, StatName.FIND_LINENS
     },
 
     OPTIMAZATION_TARGET.xp_per_material: {StatName.BONUS_XP_ADD, StatName.BONUS_XP_PERCENT, StatName.NO_MATERIALS_CONSUMED},
@@ -307,7 +308,7 @@ PERCENTAGE_STATS = {
     StatName.FIND_SKILL_CHEST, StatName.FIND_SEA_SHELLS, StatName.FIND_GOLD,
     StatName.FIND_ECTOPLASM, StatName.FIND_FISHING_BAIT, StatName.FIND_GOLD_NUGGET,
     StatName.FIND_ADVENTURERS_GUILD_TOKEN, StatName.FIND_COIN_POUCH, 
-    StatName.FIND_JUNK, StatName.CHANCE_TO_FIND_BIRD_NEST
+    StatName.FIND_JUNK, StatName.CHANCE_TO_FIND_BIRD_NEST, StatName.FIND_LINENS
 }
 class ActivityLootTableType(str, Enum):
     MAIN = "main"
@@ -353,6 +354,8 @@ CRUSTACEAN_TABLE = [
 
 FIBROUS_PLANT_TABLE = [("hemp", 0.70, 1.0), ("flax", 0.30, 1.0)]
 
+LINENS_TABLE = [("linen_cloth", 0.67, 2.5), ("tough_linen_cloth", 0.33, 1.0)]
+
 SPECIAL_FIND_MAP = {
     "chance_to_find_bird_nest": "bird_nest",
     "find_coin_pouch": "coin_pouch",
@@ -366,7 +369,8 @@ SPECIAL_FIND_MAP = {
     "find_random_gem": GEM_TABLE,
     "find_skill_chest": SKILL_CHEST_TABLE,
     "find_crustacean": CRUSTACEAN_TABLE,
-    "find_fibrous_plant": FIBROUS_PLANT_TABLE
+    "find_fibrous_plant": FIBROUS_PLANT_TABLE,
+    "find_linens": LINENS_TABLE
 }
 
 
@@ -412,6 +416,13 @@ BUFF_PET_ABILITIES = {
             "work_efficiency": 0.06,
             "double_action": 0.03,
             "flat_step_reduction": 2
+        }
+    },
+    "Party Mode": { # Pixie
+        "allowed_source_types": ["activity", "recipe"],
+        "skill": None,
+        "modifiers": {
+            "find_collectibles": 0.20
         }
     },
 }

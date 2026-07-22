@@ -21,7 +21,7 @@ from models import (
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 PETS_URL = 'https://wiki.walkscape.app/wiki/Pets'
 CACHE_DIR = get_cache_dir('pets')
 CACHE_FILE = get_cache_file('pets_cache.html')
@@ -386,6 +386,16 @@ def parse_pet_page(pet_info) -> Optional[Pet]:
                                 
                                 if lvl not in levels_data: levels_data[lvl] = {'total_xp': 0, 'modifiers': [], 'abilities': []}
                                 levels_data[lvl]['abilities'].append(ability)
+
+                        # Check for passive modifier rows inside ability table (e.g. Mummy's Global +7% Find Linens)
+                        for extra_row in rows[2:]:
+                            text_lines = [l.strip() for l in extra_row.get_text().split('\n') if l.strip()]
+                            extra_mods = parse_attribute_lines(text_lines)
+                            if extra_mods:
+                                if lvl not in levels_data: levels_data[lvl] = {'total_xp': 0, 'modifiers': [], 'abilities': []}
+                                for em in extra_mods:
+                                    if not any(m.stat == em.stat and m.value == em.value for m in levels_data[lvl]['modifiers']):
+                                        levels_data[lvl]['modifiers'].append(em)
             curr = curr.find_next_sibling()
 
     # Construct Object

@@ -823,6 +823,26 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 passive_stats = calculate_passive_stats(saved_collectibles, context)
                 for k,v in saved_service_stats.items():
                     passive_stats[k] = passive_stats.get(k, 0.0) + v
+                if saved_cons and getattr(saved_cons, 'modifiers', None):
+                    for k, v in extract_modifier_stats(saved_cons.modifiers).items():
+                        passive_stats[k] = passive_stats.get(k, 0.0) + v
+                if saved_materials:
+                    for mat in saved_materials:
+                        if getattr(mat, 'modifiers', None):
+                            for k, v in extract_modifier_stats(mat.modifiers).items():
+                                passive_stats[k] = passive_stats.get(k, 0.0) + v
+                if saved_pet and hasattr(saved_pet, 'levels') and saved_pet.levels and getattr(saved_pet, 'use_pet_ability', False):
+                    active_lvl = getattr(saved_pet, 'active_level', saved_pet.levels[-1].level)
+                    lvl_obj = next((l for l in saved_pet.levels if l.level == active_lvl), saved_pet.levels[-1])
+                    if lvl_obj:
+                        for ab in lvl_obj.abilities:
+                            if ab.name in BUFF_PET_ABILITIES:
+                                reqs = BUFF_PET_ABILITIES[ab.name]
+                                act_skill = getattr(saved_activity, 'primary_skill', '').lower()
+                                if not reqs.get("skill") or act_skill == reqs["skill"].lower():
+                                    buff_stats = reqs.get("modifiers", {})
+                                    for k, v in buff_stats.items():
+                                        passive_stats[k] = passive_stats.get(k, 0.0) + v
 
                 display_target = weighted_targets_saved if weighted_targets_saved else OPTIMAZATION_TARGET.reward_rolls
                 

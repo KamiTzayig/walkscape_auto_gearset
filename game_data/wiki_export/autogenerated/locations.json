@@ -4,7 +4,8 @@
     "wiki_slug": "Azurazera",
     "name": "Azurazera",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -12,7 +13,8 @@
     "wiki_slug": "Barbantok",
     "name": "Barbantok",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -21,7 +23,8 @@
     "name": "Beach of Woes",
     "tags": [
       "herberts_guiding_grounds",
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -38,7 +41,8 @@
     "wiki_slug": "Black_Eye_Peak",
     "name": "Black Eye Peak",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -46,13 +50,13 @@
     "wiki_slug": "Blackrane",
     "name": "Blackrane",
     "tags": [
-      "wallisia"
+      "empire_of_wallisia"
     ]
   },
   {
-    "id": "blackspell_port",
-    "wiki_slug": "Blackspell_Port",
-    "name": "Blackspell Port",
+    "id": "blackspell_harbour",
+    "wiki_slug": "Blackspell_Harbour",
+    "name": "Blackspell Harbour",
     "tags": [
       "erdwise",
       "gdte"
@@ -63,7 +67,7 @@
     "wiki_slug": "Blackwater_Fields",
     "name": "Blackwater Fields",
     "tags": [
-      "wallisia"
+      "empire_of_wallisia"
     ]
   },
   {
@@ -72,7 +76,8 @@
     "name": "Bog Bottom",
     "tags": [
       "gdte",
-      "halfling_rebels"
+      "halfling_rebels",
+      "underwater"
     ]
   },
   {
@@ -89,7 +94,8 @@
     "wiki_slug": "Casbrant_Fields",
     "name": "Casbrant Fields",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -107,7 +113,8 @@
     "wiki_slug": "Centaham",
     "name": "Centaham",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -115,7 +122,8 @@
     "wiki_slug": "Coldington",
     "name": "Coldington",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -123,6 +131,7 @@
     "wiki_slug": "Crown_of_Cinders",
     "name": "Crown of Cinders",
     "tags": [
+      "desert",
       "wrentmark"
     ]
   },
@@ -141,7 +150,8 @@
     "name": "Disenchanted Forest",
     "tags": [
       "herberts_guiding_grounds",
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -177,7 +187,8 @@
     "wiki_slug": "Fort_of_Permafrost",
     "name": "Fort of Permafrost",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -185,7 +196,8 @@
     "wiki_slug": "Frostbite_Mountain",
     "name": "Frostbite Mountain",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -193,7 +205,8 @@
     "wiki_slug": "Frusenholm",
     "name": "Frusenholm",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -237,7 +250,8 @@
     "wiki_slug": "Horn_of_Respite",
     "name": "Horn of Respite",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -245,7 +259,8 @@
     "wiki_slug": "Kallaheim",
     "name": "Kallaheim",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -262,7 +277,7 @@
     "wiki_slug": "Kildome_Cross",
     "name": "Kildome Cross",
     "tags": [
-      "wallisia"
+      "empire_of_wallisia"
     ]
   },
   {
@@ -279,6 +294,7 @@
     "wiki_slug": "Myriadian_Arc",
     "name": "Myriadian Arc",
     "tags": [
+      "desert",
       "wrentmark"
     ]
   },
@@ -287,7 +303,9 @@
     "wiki_slug": "Noiseless_Pass",
     "name": "Noiseless Pass",
     "tags": [
-      "jarvonia"
+      "gdte",
+      "snowy",
+      "trellin"
     ]
   },
   {
@@ -295,7 +313,8 @@
     "wiki_slug": "Nomad_Woods",
     "name": "Nomad Woods",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -303,7 +322,8 @@
     "wiki_slug": "Norsack_Plains",
     "name": "Norsack Plains",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -311,7 +331,8 @@
     "wiki_slug": "Nurturing_Nook_Springs",
     "name": "Nurturing Nook Springs",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -329,7 +350,8 @@
     "name": "Pit of Pittance",
     "tags": [
       "herberts_guiding_grounds",
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -337,7 +359,8 @@
     "wiki_slug": "Port_Skildar",
     "name": "Port Skildar",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -363,7 +386,8 @@
     "wiki_slug": "Sanguine_Hills",
     "name": "Sanguine Hills",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -371,7 +395,7 @@
     "wiki_slug": "Stalking_Yew_Woods",
     "name": "Stalking Yew Woods",
     "tags": [
-      "wallisia"
+      "empire_of_wallisia"
     ]
   },
   {
@@ -379,7 +403,7 @@
     "wiki_slug": "Tendon_Wet_Fields",
     "name": "Tendon Wet Fields",
     "tags": [
-      "wallisia"
+      "empire_of_wallisia"
     ]
   },
   {
@@ -414,7 +438,8 @@
     "wiki_slug": "Winter_Waves_Glacier",
     "name": "Winter Waves Glacier",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -422,7 +447,8 @@
     "wiki_slug": "Winter's_End",
     "name": "Winter's End",
     "tags": [
-      "jarvonia"
+      "jarvonia",
+      "snowy"
     ]
   },
   {
@@ -439,9 +465,18 @@
     "wiki_slug": "Wraithwater",
     "name": "Wraithwater",
     "tags": [
-      "spectral",
+      "empire_of_wallisia",
       "ghostly",
-      "wallisia"
+      "spectral"
+    ]
+  },
+  {
+    "id": "blackspell_port",
+    "wiki_slug": "Blackspell_Port",
+    "name": "Blackspell Port",
+    "tags": [
+      "erdwise",
+      "gdte"
     ]
   }
 ]

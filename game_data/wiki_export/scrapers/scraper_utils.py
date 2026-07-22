@@ -313,6 +313,9 @@ STAT_KEYWORDS = {
     "gold nugget": "find_gold_nugget",
     "random skill chest": "find_skill_chest",
     "skill chest": "find_skill_chest",
+    "chance to get some linens": "find_linens",
+    "get some linens": "find_linens",
+    "linens": "find_linens",
 
     # Inventory
     'inventory space': 'inventory_space',
