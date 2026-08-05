@@ -124,7 +124,7 @@ def parse_infobox(infobox, activity_data):
         data_text = clean_text(data.get_text())
         
         if 'Main Skill' in header_text:
-            skill_link = data.find('a', href=re.compile(r'/wiki/(Special:MyLanguage/)?(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Mining|Smithing|Trinketry|Woodcutting)'))
+            skill_link = data.find('a', href=re.compile(r'/wiki/(Special:MyLanguage/)?(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Hunting|Mining|Smithing|Tailoring|Traveling|Trinketry|Woodcutting)'))
             if skill_link:
                 activity_data['primary_skill'] = skill_link.get_text(strip=True)
         
@@ -136,7 +136,7 @@ def parse_infobox(infobox, activity_data):
                     activity_data['locations'].append(loc_name)
         
         elif 'Skill' in header_text and 'Level' in header_text:
-            skill_links = data.find_all('a', href=re.compile(r'/wiki/(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Mining|Smithing|Trinketry|Woodcutting)'))
+            skill_links = data.find_all('a', href=re.compile(r'/wiki/(Special:MyLanguage/)?(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Hunting|Mining|Smithing|Tailoring|Traveling|Trinketry|Woodcutting)'))
             for link in skill_links:
                 skill_name = link.get('title', '').strip()
                 if not skill_name: continue
@@ -387,7 +387,7 @@ def parse_experience_table(soup, activity_data):
                 cols = row.find_all('td')
                 if len(cols) < 3: continue
                 
-                skill_link = cols[1].find('a', href=re.compile(r'/wiki/(Special:MyLanguage/)?(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Mining|Smithing|Trinketry|Woodcutting)'))
+                skill_link = cols[1].find('a', href=re.compile(r'/wiki/(Special:MyLanguage/)?(Agility|Carpentry|Cooking|Crafting|Fishing|Foraging|Hunting|Mining|Smithing|Tailoring|Traveling|Trinketry|Woodcutting)'))
                 if not skill_link: continue
                 
                 skill_name = skill_link.get_text(strip=True)

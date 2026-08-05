@@ -2747,9 +2747,9 @@
       }
     ],
     "modifiers": [],
-    "normal_roll_worth": 0.0,
+    "normal_roll_worth": 8.0,
     "chest_roll_worth": 0.57858874,
-    "fine_roll_worth": 0.0,
+    "fine_roll_worth": 30.0,
     "output_item_id": null,
     "output_quantity": null
   },
@@ -13758,9 +13758,10 @@
     "locations": [
       "cactus_canyon"
     ],
-    "base_steps": 0,
-    "base_xp": 22.0,
+    "base_steps": 200,
+    "base_xp": 44.0,
     "secondary_xp": {
+      "foraging": 22.0,
       "mining": 22.0
     },
     "max_efficiency": 2.4,
@@ -13882,7 +13883,7 @@
     "modifiers": [],
     "normal_roll_worth": 0.0,
     "chest_roll_worth": 0.2559952408,
-    "fine_roll_worth": 0.0,
+    "fine_roll_worth": 0.2949,
     "output_item_id": null,
     "output_quantity": null
   },
