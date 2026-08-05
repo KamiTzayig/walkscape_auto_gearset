@@ -353,7 +353,7 @@ def extract_skill_from_text(text: str) -> str:
     Returns:
         Skill name in lowercase, or 'global' if no skill found
     """
-    text_lower = text.lower()
+    text_lower = text.lower().replace('travelling', 'traveling')
     
     # Check for skill groups first
     if 'gathering skills' in text_lower or 'gathering skill' in text_lower:
@@ -533,15 +533,7 @@ def normalize_stat_name(text: str) -> Optional[str]:
     return None
 
 
-def extract_skill_from_text(text: str) -> Optional[str]:
-    """Extract skill name from text like 'While doing Fishing'"""
-    text_lower = text.lower()
-    
-    for skill in SKILL_KEYWORDS:
-        if skill in text_lower:
-            return skill
-    
-    return None
+# (Duplicate extract_skill_from_text removed; primary implementation is at line 348)
 
 
 def is_activity_stat(text: str) -> bool:

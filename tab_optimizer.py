@@ -823,9 +823,6 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                 passive_stats = calculate_passive_stats(saved_collectibles, context)
                 for k,v in saved_service_stats.items():
                     passive_stats[k] = passive_stats.get(k, 0.0) + v
-                if saved_cons and getattr(saved_cons, 'modifiers', None):
-                    for k, v in extract_modifier_stats(saved_cons.modifiers).items():
-                        passive_stats[k] = passive_stats.get(k, 0.0) + v
                 if saved_materials:
                     for mat in saved_materials:
                         if getattr(mat, 'modifiers', None):
