@@ -45243,44 +45243,6 @@
     ]
   },
   {
-    "id": "TRAVELLERS_KIT",
-    "wiki_slug": "Special:MyLanguage/Traveller%27s_kit",
-    "name": "Traveller's kit",
-    "value": 0,
-    "keywords": [
-      "Achievement reward",
-      "exact_item_travellers_kit"
-    ],
-    "uuid": "item-travelers_kit-6fa9af97-63dd-4708-a8c3-2d5ccf0eb42a",
-    "slot": "tools",
-    "quality": "None",
-    "requirements": [],
-    "modifiers": [
-      {
-        "stat": "double_action",
-        "value": 30.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "steps_add",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "TREASURE_GRABBER",
     "wiki_slug": "Special:MyLanguage/Treasure_grabber",
     "name": "Treasure grabber",
