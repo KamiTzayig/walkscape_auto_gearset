@@ -1,105 +1,5 @@
 [
   {
-    "id": "aerodynamic_thread",
-    "wiki_slug": "Aerodynamic_thread",
-    "name": "Aerodynamic thread",
-    "value": 6,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "aerodynamic_thread_fine",
-    "wiki_slug": "Aerodynamic_thread",
-    "name": "Aerodynamic thread (Fine)",
-    "value": 27,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "animal_fur",
-    "wiki_slug": "Animal_fur",
-    "name": "Animal fur",
-    "value": 5,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "animal_fur_fine",
-    "wiki_slug": "Animal_fur",
-    "name": "Animal fur (Fine)",
-    "value": 26,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ectoplasm_scraps",
-    "wiki_slug": "Ectoplasm_scraps",
-    "name": "Ectoplasm scraps",
-    "value": 0,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ectoplasm_scraps_fine",
-    "wiki_slug": "Ectoplasm_scraps",
-    "name": "Ectoplasm scraps (Fine)",
-    "value": 5,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "lizard_tail",
-    "wiki_slug": "Lizard_tail",
-    "name": "Lizard tail",
-    "value": 2,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "lizard_tail_fine",
-    "wiki_slug": "Lizard_tail",
-    "name": "Lizard tail (Fine)",
-    "value": 15,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "unicorn_horn",
-    "wiki_slug": "Unicorn_horn",
-    "name": "Unicorn horn",
-    "value": 12,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "unicorn_horn_fine",
-    "wiki_slug": "Unicorn_horn",
-    "name": "Unicorn horn (Fine)",
-    "value": 70,
-    "keywords": [],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
     "id": "bronze_arrows",
     "wiki_slug": "Bronze_arrows",
     "name": "Bronze arrows",
@@ -144,22 +44,22 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 40.0,
+        "value": 10.0,
         "conditions": [
           {
-            "type": "global",
-            "target": null,
+            "type": "skill_activity",
+            "target": "hunting",
             "value": null
           }
         ]
       },
       {
         "stat": "work_efficiency",
-        "value": 10.0,
+        "value": 40.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "hunting",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -341,22 +241,22 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 40.0,
+        "value": 50.0,
         "conditions": [
           {
-            "type": "global",
-            "target": null,
+            "type": "skill_activity",
+            "target": "hunting",
             "value": null
           }
         ]
       },
       {
         "stat": "work_efficiency",
-        "value": 50.0,
+        "value": 40.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "hunting",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -451,22 +351,22 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 40.0,
+        "value": 20.0,
         "conditions": [
           {
-            "type": "global",
-            "target": null,
+            "type": "skill_activity",
+            "target": "hunting",
             "value": null
           }
         ]
       },
       {
         "stat": "work_efficiency",
-        "value": 20.0,
+        "value": 40.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "hunting",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -561,22 +461,22 @@
     "modifiers": [
       {
         "stat": "work_efficiency",
-        "value": 40.0,
+        "value": 30.0,
         "conditions": [
           {
-            "type": "global",
-            "target": null,
+            "type": "skill_activity",
+            "target": "hunting",
             "value": null
           }
         ]
       },
       {
         "stat": "work_efficiency",
-        "value": 30.0,
+        "value": 40.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "hunting",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -674,8 +574,8 @@
         "value": 40.0,
         "conditions": [
           {
-            "type": "global",
-            "target": null,
+            "type": "skill_activity",
+            "target": "hunting",
             "value": null
           }
         ]
@@ -685,8 +585,8 @@
         "value": 40.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "hunting",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -1001,6 +901,530 @@
     "requirements": []
   },
   {
+    "id": "raw_crab",
+    "wiki_slug": "Raw_crab",
+    "name": "Raw crab",
+    "value": 1,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "raw_crab_fine",
+    "wiki_slug": "Raw_crab",
+    "name": "Raw crab (Fine)",
+    "value": 11,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "raw_lobster",
+    "wiki_slug": "Raw_lobster",
+    "name": "Raw lobster",
+    "value": 4,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "raw_lobster_fine",
+    "wiki_slug": "Raw_lobster",
+    "name": "Raw lobster (Fine)",
+    "value": 24,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "raw_shrimp",
+    "wiki_slug": "Raw_shrimp",
+    "name": "Raw shrimp",
+    "value": 0,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "raw_shrimp_fine",
+    "wiki_slug": "Raw_shrimp",
+    "name": "Raw shrimp (Fine)",
+    "value": 6,
+    "keywords": [
+      "Crustacean",
+      "Fish"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "unidentified_remains",
+    "wiki_slug": "Unidentified_remains",
+    "name": "Unidentified remains",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 20
+    },
+    "requirements": []
+  },
+  {
+    "id": "unidentified_remains_fine",
+    "wiki_slug": "Unidentified_remains",
+    "name": "Unidentified remains (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 100
+    },
+    "requirements": []
+  },
+  {
+    "id": "adventurers_enamel_pin",
+    "wiki_slug": "Adventurers%27_enamel_pin",
+    "name": "Adventurers' enamel pin",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 2
+    },
+    "requirements": []
+  },
+  {
+    "id": "adventurers_enamel_pin_fine",
+    "wiki_slug": "Adventurers%27_enamel_pin",
+    "name": "Adventurers' enamel pin (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 10
+    },
+    "requirements": []
+  },
+  {
+    "id": "halfmaw_scales",
+    "wiki_slug": "Halfmaw_scales",
+    "name": "Halfmaw scales",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 1
+    },
+    "requirements": []
+  },
+  {
+    "id": "halfmaw_scales_fine",
+    "wiki_slug": "Halfmaw_scales",
+    "name": "Halfmaw scales (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 5
+    },
+    "requirements": []
+  },
+  {
+    "id": "halfmaw_teeth",
+    "wiki_slug": "Halfmaw_teeth",
+    "name": "Halfmaw teeth",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 3
+    },
+    "requirements": []
+  },
+  {
+    "id": "halfmaw_teeth_fine",
+    "wiki_slug": "Halfmaw_teeth",
+    "name": "Halfmaw teeth (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 15
+    },
+    "requirements": []
+  },
+  {
+    "id": "mysterious_chitin",
+    "wiki_slug": "Mysterious_chitin",
+    "name": "Mysterious chitin",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 10
+    },
+    "requirements": []
+  },
+  {
+    "id": "mysterious_chitin_fine",
+    "wiki_slug": "Mysterious_chitin",
+    "name": "Mysterious chitin (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 50
+    },
+    "requirements": []
+  },
+  {
+    "id": "name_tag",
+    "wiki_slug": "Name_tag",
+    "name": "Name tag",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 10
+    },
+    "requirements": []
+  },
+  {
+    "id": "name_tag_fine",
+    "wiki_slug": "Name_tag",
+    "name": "Name tag (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 50
+    },
+    "requirements": []
+  },
+  {
+    "id": "strange_fur",
+    "wiki_slug": "Strange_fur",
+    "name": "Strange fur",
+    "value": 0,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 1
+    },
+    "requirements": []
+  },
+  {
+    "id": "strange_fur_fine",
+    "wiki_slug": "Strange_fur",
+    "name": "Strange fur (Fine)",
+    "value": 6,
+    "keywords": [
+      "Curiosity",
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "adventurers_guild_token",
+      "amount": 5
+    },
+    "requirements": []
+  },
+  {
+    "id": "ethernite",
+    "wiki_slug": "Ethernite",
+    "name": "Ethernite",
+    "value": 108,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ethernite_fine",
+    "wiki_slug": "Ethernite",
+    "name": "Ethernite (Fine)",
+    "value": 257,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "jade",
+    "wiki_slug": "Jade",
+    "name": "Jade",
+    "value": 76,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "jade_fine",
+    "wiki_slug": "Jade",
+    "name": "Jade (Fine)",
+    "value": 224,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "opal",
+    "wiki_slug": "Opal",
+    "name": "Opal",
+    "value": 40,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "opal_fine",
+    "wiki_slug": "Opal",
+    "name": "Opal (Fine)",
+    "value": 186,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ruby",
+    "wiki_slug": "Ruby",
+    "name": "Ruby",
+    "value": 84,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ruby_fine",
+    "wiki_slug": "Ruby",
+    "name": "Ruby (Fine)",
+    "value": 232,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "star_pearl",
+    "wiki_slug": "Star_pearl",
+    "name": "Star pearl",
+    "value": 52,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "star_pearl_fine",
+    "wiki_slug": "Star_pearl",
+    "name": "Star pearl (Fine)",
+    "value": 199,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sun_stone",
+    "wiki_slug": "Sun_stone",
+    "name": "Sun stone",
+    "value": 92,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sun_stone_fine",
+    "wiki_slug": "Sun_stone",
+    "name": "Sun stone (Fine)",
+    "value": 240,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "topaz",
+    "wiki_slug": "Topaz",
+    "name": "Topaz",
+    "value": 68,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "topaz_fine",
+    "wiki_slug": "Topaz",
+    "name": "Topaz (Fine)",
+    "value": 215,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wrentmarine",
+    "wiki_slug": "Wrentmarine",
+    "name": "Wrentmarine",
+    "value": 60,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wrentmarine_fine",
+    "wiki_slug": "Wrentmarine",
+    "name": "Wrentmarine (Fine)",
+    "value": 207,
+    "keywords": [
+      "Cut gem",
+      "Gem"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
     "id": "linen_cloth",
     "wiki_slug": "Linen_cloth",
     "name": "Linen cloth",
@@ -1113,6 +1537,290 @@
         "input_level": null
       }
     ]
+  },
+  {
+    "id": "cattail",
+    "wiki_slug": "Cattail",
+    "name": "Cattail",
+    "value": 4,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "cattail_fine",
+    "wiki_slug": "Cattail",
+    "name": "Cattail (Fine)",
+    "value": 19,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "flax",
+    "wiki_slug": "Flax",
+    "name": "Flax",
+    "value": 1,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "flax_fine",
+    "wiki_slug": "Flax",
+    "name": "Flax (Fine)",
+    "value": 11,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "hemp",
+    "wiki_slug": "Hemp",
+    "name": "Hemp",
+    "value": 0,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "hemp_fine",
+    "wiki_slug": "Hemp",
+    "name": "Hemp (Fine)",
+    "value": 6,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ironweed",
+    "wiki_slug": "Ironweed",
+    "name": "Ironweed",
+    "value": 5,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ironweed_fine",
+    "wiki_slug": "Ironweed",
+    "name": "Ironweed (Fine)",
+    "value": 26,
+    "keywords": [
+      "Fibrous plant",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
   },
   {
     "id": "ectoplasm_fish",
@@ -1475,292 +2183,6 @@
     "requirements": []
   },
   {
-    "id": "raw_crab",
-    "wiki_slug": "Raw_crab",
-    "name": "Raw crab",
-    "value": 1,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "raw_crab_fine",
-    "wiki_slug": "Raw_crab",
-    "name": "Raw crab (Fine)",
-    "value": 11,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "raw_lobster",
-    "wiki_slug": "Raw_lobster",
-    "name": "Raw lobster",
-    "value": 4,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "raw_lobster_fine",
-    "wiki_slug": "Raw_lobster",
-    "name": "Raw lobster (Fine)",
-    "value": 24,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "raw_shrimp",
-    "wiki_slug": "Raw_shrimp",
-    "name": "Raw shrimp",
-    "value": 0,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "raw_shrimp_fine",
-    "wiki_slug": "Raw_shrimp",
-    "name": "Raw shrimp (Fine)",
-    "value": 6,
-    "keywords": [
-      "Fish",
-      "Crustacean"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ethernite",
-    "wiki_slug": "Ethernite",
-    "name": "Ethernite",
-    "value": 108,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ethernite_fine",
-    "wiki_slug": "Ethernite",
-    "name": "Ethernite (Fine)",
-    "value": 257,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "jade",
-    "wiki_slug": "Jade",
-    "name": "Jade",
-    "value": 76,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "jade_fine",
-    "wiki_slug": "Jade",
-    "name": "Jade (Fine)",
-    "value": 224,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "opal",
-    "wiki_slug": "Opal",
-    "name": "Opal",
-    "value": 40,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "opal_fine",
-    "wiki_slug": "Opal",
-    "name": "Opal (Fine)",
-    "value": 186,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ruby",
-    "wiki_slug": "Ruby",
-    "name": "Ruby",
-    "value": 84,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ruby_fine",
-    "wiki_slug": "Ruby",
-    "name": "Ruby (Fine)",
-    "value": 232,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "star_pearl",
-    "wiki_slug": "Star_pearl",
-    "name": "Star pearl",
-    "value": 52,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "star_pearl_fine",
-    "wiki_slug": "Star_pearl",
-    "name": "Star pearl (Fine)",
-    "value": 199,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sun_stone",
-    "wiki_slug": "Sun_stone",
-    "name": "Sun stone",
-    "value": 92,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sun_stone_fine",
-    "wiki_slug": "Sun_stone",
-    "name": "Sun stone (Fine)",
-    "value": 240,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "topaz",
-    "wiki_slug": "Topaz",
-    "name": "Topaz",
-    "value": 68,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "topaz_fine",
-    "wiki_slug": "Topaz",
-    "name": "Topaz (Fine)",
-    "value": 215,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wrentmarine",
-    "wiki_slug": "Wrentmarine",
-    "name": "Wrentmarine",
-    "value": 60,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wrentmarine_fine",
-    "wiki_slug": "Wrentmarine",
-    "name": "Wrentmarine (Fine)",
-    "value": 207,
-    "keywords": [
-      "Gem",
-      "Cut gem"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
     "id": "pearls",
     "wiki_slug": "Pearls",
     "name": "Pearls",
@@ -1995,12 +2417,65 @@
     "requirements": []
   },
   {
+    "id": "large_stone",
+    "wiki_slug": "Large_stone",
+    "name": "Large stone",
+    "value": 1,
+    "keywords": [
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "large_stone_fine",
+    "wiki_slug": "Large_stone",
+    "name": "Large stone (Fine)",
+    "value": 11,
+    "keywords": [
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sturdy_branch",
+    "wiki_slug": "Sturdy_branch",
+    "name": "Sturdy branch",
+    "value": 1,
+    "keywords": [
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sturdy_branch_fine",
+    "wiki_slug": "Sturdy_branch",
+    "name": "Sturdy branch (Fine)",
+    "value": 11,
+    "keywords": [
+      "Heavy",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
     "id": "basic_hide",
     "wiki_slug": "Basic_hide",
     "name": "Basic hide",
     "value": 1,
     "keywords": [
-      "Hide"
+      "Hide",
+      "Hunting product"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2012,7 +2487,8 @@
     "name": "Basic hide (Fine)",
     "value": 11,
     "keywords": [
-      "Hide"
+      "Hide",
+      "Hunting product"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2024,7 +2500,8 @@
     "name": "Elderhide hide",
     "value": 3,
     "keywords": [
-      "Hide"
+      "Hide",
+      "Hunting product"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2036,7 +2513,8 @@
     "name": "Elderhide hide (Fine)",
     "value": 23,
     "keywords": [
-      "Hide"
+      "Hide",
+      "Hunting product"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2049,6 +2527,7 @@
     "value": 1,
     "keywords": [
       "Hide",
+      "Hunting product",
       "Light"
     ],
     "modifiers": [],
@@ -2062,6 +2541,7 @@
     "value": 11,
     "keywords": [
       "Hide",
+      "Hunting product",
       "Light"
     ],
     "modifiers": [],
@@ -2075,6 +2555,7 @@
     "value": 0,
     "keywords": [
       "Hide",
+      "Hunting product",
       "Light"
     ],
     "modifiers": [],
@@ -2088,7 +2569,36 @@
     "value": 6,
     "keywords": [
       "Hide",
+      "Hunting product",
       "Light"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ectoplasm_scraps",
+    "wiki_slug": "Ectoplasm_scraps",
+    "name": "Ectoplasm scraps",
+    "value": 0,
+    "keywords": [
+      "Hide",
+      "Hunting product",
+      "Medium"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "ectoplasm_scraps_fine",
+    "wiki_slug": "Ectoplasm_scraps",
+    "name": "Ectoplasm scraps (Fine)",
+    "value": 5,
+    "keywords": [
+      "Hide",
+      "Hunting product",
+      "Medium"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2182,6 +2692,206 @@
     ]
   },
   {
+    "id": "aerodynamic_thread",
+    "wiki_slug": "Aerodynamic_thread",
+    "name": "Aerodynamic thread",
+    "value": 6,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "aerodynamic_thread_fine",
+    "wiki_slug": "Aerodynamic_thread",
+    "name": "Aerodynamic thread (Fine)",
+    "value": 27,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "animal_fur",
+    "wiki_slug": "Animal_fur",
+    "name": "Animal fur",
+    "value": 5,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "animal_fur_fine",
+    "wiki_slug": "Animal_fur",
+    "name": "Animal fur (Fine)",
+    "value": 26,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "lizard_tail",
+    "wiki_slug": "Lizard_tail",
+    "name": "Lizard tail",
+    "value": 2,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "lizard_tail_fine",
+    "wiki_slug": "Lizard_tail",
+    "name": "Lizard tail (Fine)",
+    "value": 15,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "unicorn_horn",
+    "wiki_slug": "Unicorn_horn",
+    "name": "Unicorn horn",
+    "value": 12,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "unicorn_horn_fine",
+    "wiki_slug": "Unicorn_horn",
+    "name": "Unicorn horn (Fine)",
+    "value": 70,
+    "keywords": [
+      "Hunting product"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "animal_meat",
+    "wiki_slug": "Animal_meat",
+    "name": "Animal meat",
+    "value": 1,
+    "keywords": [
+      "Hunting product",
+      "Ingredient"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "animal_meat_fine",
+    "wiki_slug": "Animal_meat",
+    "name": "Animal meat (Fine)",
+    "value": 11,
+    "keywords": [
+      "Hunting product",
+      "Ingredient"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "dark_feather",
+    "wiki_slug": "Dark_feather",
+    "name": "Dark feather",
+    "value": 4,
+    "keywords": [
+      "Hunting product",
+      "Light"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "dark_feather_fine",
+    "wiki_slug": "Dark_feather",
+    "name": "Dark feather (Fine)",
+    "value": 24,
+    "keywords": [
+      "Hunting product",
+      "Light"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "feather",
+    "wiki_slug": "Feather",
+    "name": "Feather",
+    "value": 0,
+    "keywords": [
+      "Hunting product",
+      "Light"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "feather_fine",
+    "wiki_slug": "Feather",
+    "name": "Feather (Fine)",
+    "value": 6,
+    "keywords": [
+      "Hunting product",
+      "Light"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "bones",
+    "wiki_slug": "Bones",
+    "name": "Bones",
+    "value": 1,
+    "keywords": [
+      "Hunting product",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "bones_fine",
+    "wiki_slug": "Bones",
+    "name": "Bones (Fine)",
+    "value": 11,
+    "keywords": [
+      "Hunting product",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
     "id": "boxtrap",
     "wiki_slug": "Boxtrap",
     "name": "Boxtrap",
@@ -2267,30 +2977,6 @@
         "input_level": null
       }
     ]
-  },
-  {
-    "id": "animal_meat",
-    "wiki_slug": "Animal_meat",
-    "name": "Animal meat",
-    "value": 1,
-    "keywords": [
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "animal_meat_fine",
-    "wiki_slug": "Animal_meat",
-    "name": "Animal meat (Fine)",
-    "value": 11,
-    "keywords": [
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
   },
   {
     "id": "chocolate",
@@ -2461,6 +3147,79 @@
     "requirements": []
   },
   {
+    "id": "pepper",
+    "wiki_slug": "Pepper",
+    "name": "Pepper",
+    "value": 1,
+    "keywords": [
+      "Ingredient",
+      "Light",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "pepper_fine",
+    "wiki_slug": "Pepper",
+    "name": "Pepper (Fine)",
+    "value": 11,
+    "keywords": [
+      "Ingredient",
+      "Light",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
     "id": "mushroom",
     "wiki_slug": "Mushroom",
     "name": "Mushroom",
@@ -2483,6 +3242,1213 @@
       "Mushroom"
     ],
     "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "bell_pepper",
+    "wiki_slug": "Bell_pepper",
+    "name": "Bell pepper",
+    "value": 4,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "bell_pepper_fine",
+    "wiki_slug": "Bell_pepper",
+    "name": "Bell pepper (Fine)",
+    "value": 24,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "berries",
+    "wiki_slug": "Berries",
+    "name": "Berries",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "berries_fine",
+    "wiki_slug": "Berries",
+    "name": "Berries (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "carrot",
+    "wiki_slug": "Carrot",
+    "name": "Carrot",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "carrot_fine",
+    "wiki_slug": "Carrot",
+    "name": "Carrot (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "cucumber",
+    "wiki_slug": "Cucumber",
+    "name": "Cucumber",
+    "value": 4,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "cucumber_fine",
+    "wiki_slug": "Cucumber",
+    "name": "Cucumber (Fine)",
+    "value": 24,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "grass",
+    "wiki_slug": "Grass",
+    "name": "Grass",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "grass_fine",
+    "wiki_slug": "Grass",
+    "name": "Grass (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "milkweed",
+    "wiki_slug": "Milkweed",
+    "name": "Milkweed",
+    "value": 4,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "milkweed_fine",
+    "wiki_slug": "Milkweed",
+    "name": "Milkweed (Fine)",
+    "value": 24,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "nettle",
+    "wiki_slug": "Nettle",
+    "name": "Nettle",
+    "value": 0,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "nettle_fine",
+    "wiki_slug": "Nettle",
+    "name": "Nettle (Fine)",
+    "value": 6,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "potato",
+    "wiki_slug": "Potato",
+    "name": "Potato",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "potato_fine",
+    "wiki_slug": "Potato",
+    "name": "Potato (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "root",
+    "wiki_slug": "Root",
+    "name": "Root",
+    "value": 4,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "root_fine",
+    "wiki_slug": "Root",
+    "name": "Root (Fine)",
+    "value": 24,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "rotbud",
+    "wiki_slug": "Rotbud",
+    "name": "Rotbud",
+    "value": 7,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "rotbud_fine",
+    "wiki_slug": "Rotbud",
+    "name": "Rotbud (Fine)",
+    "value": 38,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "salty_hops",
+    "wiki_slug": "Salty_hops",
+    "name": "Salty hops",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "salty_hops_fine",
+    "wiki_slug": "Salty_hops",
+    "name": "Salty hops (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sea_cabbage",
+    "wiki_slug": "Sea_cabbage",
+    "name": "Sea cabbage",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sea_cabbage_fine",
+    "wiki_slug": "Sea_cabbage",
+    "name": "Sea cabbage (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sea_spinach",
+    "wiki_slug": "Sea_spinach",
+    "name": "Sea spinach",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sea_spinach_fine",
+    "wiki_slug": "Sea_spinach",
+    "name": "Sea spinach (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sweet_kelp",
+    "wiki_slug": "Sweet_kelp",
+    "name": "Sweet kelp",
+    "value": 6,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sweet_kelp_fine",
+    "wiki_slug": "Sweet_kelp",
+    "name": "Sweet kelp (Fine)",
+    "value": 37,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "tomato",
+    "wiki_slug": "Tomato",
+    "name": "Tomato",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "tomato_fine",
+    "wiki_slug": "Tomato",
+    "name": "Tomato (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "underwater_lotus",
+    "wiki_slug": "Underwater_lotus",
+    "name": "Underwater lotus",
+    "value": 4,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "underwater_lotus_fine",
+    "wiki_slug": "Underwater_lotus",
+    "name": "Underwater lotus (Fine)",
+    "value": 24,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wheat",
+    "wiki_slug": "Wheat",
+    "name": "Wheat",
+    "value": 2,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wheat_fine",
+    "wiki_slug": "Wheat",
+    "name": "Wheat (Fine)",
+    "value": 15,
+    "keywords": [
+      "Ingredient",
+      "Plant"
+    ],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 40.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 200.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 10.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 100.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ],
     "special_sell": null,
     "requirements": []
   },
@@ -2539,48 +4505,133 @@
     "requirements": []
   },
   {
-    "id": "dark_feather",
-    "wiki_slug": "Dark_feather",
-    "name": "Dark feather",
+    "id": "sea_shell",
+    "wiki_slug": "Sea_shell",
+    "name": "Sea shell",
+    "value": 5,
+    "keywords": [
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "sea_shell_fine",
+    "wiki_slug": "Sea_shell",
+    "name": "Sea shell (Fine)",
+    "value": 26,
+    "keywords": [
+      "Light",
+      "Misc."
+    ],
+    "modifiers": [],
+    "special_sell": {
+      "item_id": "sea_shell",
+      "amount": 10
+    },
+    "requirements": []
+  },
+  {
+    "id": "gold_nugget",
+    "wiki_slug": "Gold_nugget",
+    "name": "Gold nugget",
+    "value": 8,
+    "keywords": [
+      "Light",
+      "Nugget"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "gold_nugget_fine",
+    "wiki_slug": "Gold_nugget",
+    "name": "Gold nugget (Fine)",
+    "value": 39,
+    "keywords": [
+      "Light",
+      "Nugget"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "silver_nugget",
+    "wiki_slug": "Silver_nugget",
+    "name": "Silver nugget",
     "value": 4,
     "keywords": [
-      "Light"
+      "Light",
+      "Nugget"
     ],
     "modifiers": [],
     "special_sell": null,
     "requirements": []
   },
   {
-    "id": "dark_feather_fine",
-    "wiki_slug": "Dark_feather",
-    "name": "Dark feather (Fine)",
-    "value": 24,
+    "id": "silver_nugget_fine",
+    "wiki_slug": "Silver_nugget",
+    "name": "Silver nugget (Fine)",
+    "value": 25,
     "keywords": [
-      "Light"
+      "Light",
+      "Nugget"
     ],
     "modifiers": [],
     "special_sell": null,
     "requirements": []
   },
   {
-    "id": "feather",
-    "wiki_slug": "Feather",
-    "name": "Feather",
+    "id": "metal_scrap",
+    "wiki_slug": "Metal_scrap",
+    "name": "Metal scrap",
     "value": 0,
     "keywords": [
-      "Light"
+      "Light",
+      "Offcut"
     ],
     "modifiers": [],
     "special_sell": null,
     "requirements": []
   },
   {
-    "id": "feather_fine",
-    "wiki_slug": "Feather",
-    "name": "Feather (Fine)",
+    "id": "metal_scrap_fine",
+    "wiki_slug": "Metal_scrap",
+    "name": "Metal scrap (Fine)",
     "value": 6,
     "keywords": [
-      "Light"
+      "Light",
+      "Offcut"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wood_scrap",
+    "wiki_slug": "Wood_scrap",
+    "name": "Wood scrap",
+    "value": 0,
+    "keywords": [
+      "Light",
+      "Offcut"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "wood_scrap_fine",
+    "wiki_slug": "Wood_scrap",
+    "name": "Wood scrap (Fine)",
+    "value": 6,
+    "keywords": [
+      "Light",
+      "Offcut"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -2675,6 +4726,30 @@
     "wiki_slug": "Ectoplasm_logs",
     "name": "Ectoplasm logs (Fine)",
     "value": 5,
+    "keywords": [
+      "Log"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "mahogany_logs",
+    "wiki_slug": "Mahogany_logs",
+    "name": "Mahogany logs",
+    "value": 8,
+    "keywords": [
+      "Log"
+    ],
+    "modifiers": [],
+    "special_sell": null,
+    "requirements": []
+  },
+  {
+    "id": "mahogany_logs_fine",
+    "wiki_slug": "Mahogany_logs",
+    "name": "Mahogany logs (Fine)",
+    "value": 30,
     "keywords": [
       "Log"
     ],
@@ -2875,30 +4950,6 @@
     "requirements": []
   },
   {
-    "id": "bones",
-    "wiki_slug": "Bones",
-    "name": "Bones",
-    "value": 1,
-    "keywords": [
-      "Misc."
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "bones_fine",
-    "wiki_slug": "Bones",
-    "name": "Bones (Fine)",
-    "value": 11,
-    "keywords": [
-      "Misc."
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
     "id": "clam_shell",
     "wiki_slug": "Clam_shell",
     "name": "Clam shell",
@@ -3019,255 +5070,14 @@
     "requirements": []
   },
   {
-    "id": "large_stone",
-    "wiki_slug": "Large_stone",
-    "name": "Large stone",
-    "value": 1,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "large_stone_fine",
-    "wiki_slug": "Large_stone",
-    "name": "Large stone (Fine)",
-    "value": 11,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sturdy_branch",
-    "wiki_slug": "Sturdy_branch",
-    "name": "Sturdy branch",
-    "value": 1,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sturdy_branch_fine",
-    "wiki_slug": "Sturdy_branch",
-    "name": "Sturdy branch (Fine)",
-    "value": 11,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "unidentified_remains",
-    "wiki_slug": "Unidentified_remains",
-    "name": "Unidentified remains",
-    "value": 0,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 20
-    },
-    "requirements": []
-  },
-  {
-    "id": "unidentified_remains_fine",
-    "wiki_slug": "Unidentified_remains",
-    "name": "Unidentified remains (Fine)",
-    "value": 6,
-    "keywords": [
-      "Misc.",
-      "Heavy"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 100
-    },
-    "requirements": []
-  },
-  {
-    "id": "adventurers_enamel_pin",
-    "wiki_slug": "Adventurers%27_enamel_pin",
-    "name": "Adventurers' enamel pin",
-    "value": 0,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 2
-    },
-    "requirements": []
-  },
-  {
-    "id": "adventurers_enamel_pin_fine",
-    "wiki_slug": "Adventurers%27_enamel_pin",
-    "name": "Adventurers' enamel pin (Fine)",
-    "value": 6,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 10
-    },
-    "requirements": []
-  },
-  {
-    "id": "halfmaw_scales",
-    "wiki_slug": "Halfmaw_scales",
-    "name": "Halfmaw scales",
-    "value": 0,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 1
-    },
-    "requirements": []
-  },
-  {
-    "id": "halfmaw_scales_fine",
-    "wiki_slug": "Halfmaw_scales",
-    "name": "Halfmaw scales (Fine)",
-    "value": 6,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 5
-    },
-    "requirements": []
-  },
-  {
-    "id": "halfmaw_teeth",
-    "wiki_slug": "Halfmaw_teeth",
-    "name": "Halfmaw teeth",
-    "value": 0,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 3
-    },
-    "requirements": []
-  },
-  {
-    "id": "halfmaw_teeth_fine",
-    "wiki_slug": "Halfmaw_teeth",
-    "name": "Halfmaw teeth (Fine)",
-    "value": 6,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 15
-    },
-    "requirements": []
-  },
-  {
-    "id": "name_tag",
-    "wiki_slug": "Name_tag",
-    "name": "Name tag",
-    "value": 0,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 10
-    },
-    "requirements": []
-  },
-  {
-    "id": "name_tag_fine",
-    "wiki_slug": "Name_tag",
-    "name": "Name tag (Fine)",
-    "value": 6,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "adventurers_guild_token",
-      "amount": 50
-    },
-    "requirements": []
-  },
-  {
-    "id": "sea_shell",
-    "wiki_slug": "Sea_shell",
-    "name": "Sea shell",
-    "value": 5,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sea_shell_fine",
-    "wiki_slug": "Sea_shell",
-    "name": "Sea shell (Fine)",
-    "value": 26,
-    "keywords": [
-      "Misc.",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": {
-      "item_id": "sea_shell",
-      "amount": 10
-    },
-    "requirements": []
-  },
-  {
     "id": "ectoplasm",
     "wiki_slug": "Ectoplasm",
     "name": "Ectoplasm",
     "value": 0,
     "keywords": [
       "Misc.",
-      "Ultra light",
-      "Processed"
+      "Processed",
+      "Ultra light"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -3280,112 +5090,34 @@
     "value": 5,
     "keywords": [
       "Misc.",
-      "Ultra light",
-      "Processed"
+      "Processed",
+      "Ultra light"
     ],
     "modifiers": [],
     "special_sell": null,
     "requirements": []
   },
   {
-    "id": "gold_nugget",
-    "wiki_slug": "Gold_nugget",
-    "name": "Gold nugget",
-    "value": 8,
-    "keywords": [
-      "Nugget",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "gold_nugget_fine",
-    "wiki_slug": "Gold_nugget",
-    "name": "Gold nugget (Fine)",
-    "value": 39,
-    "keywords": [
-      "Nugget",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "silver_nugget",
-    "wiki_slug": "Silver_nugget",
-    "name": "Silver nugget",
-    "value": 4,
-    "keywords": [
-      "Nugget",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "silver_nugget_fine",
-    "wiki_slug": "Silver_nugget",
-    "name": "Silver nugget (Fine)",
-    "value": 25,
-    "keywords": [
-      "Nugget",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "metal_scrap",
-    "wiki_slug": "Metal_scrap",
-    "name": "Metal scrap",
+    "id": "trash",
+    "wiki_slug": "Trash",
+    "name": "Trash",
     "value": 0,
     "keywords": [
-      "Offcut",
-      "Light"
+      "Misc.",
+      "Trash"
     ],
     "modifiers": [],
     "special_sell": null,
     "requirements": []
   },
   {
-    "id": "metal_scrap_fine",
-    "wiki_slug": "Metal_scrap",
-    "name": "Metal scrap (Fine)",
+    "id": "trash_fine",
+    "wiki_slug": "Trash",
+    "name": "Trash (Fine)",
     "value": 6,
     "keywords": [
-      "Offcut",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wood_scrap",
-    "wiki_slug": "Wood_scrap",
-    "name": "Wood scrap",
-    "value": 0,
-    "keywords": [
-      "Offcut",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wood_scrap_fine",
-    "wiki_slug": "Wood_scrap",
-    "name": "Wood scrap (Fine)",
-    "value": 6,
-    "keywords": [
-      "Offcut",
-      "Light"
+      "Misc.",
+      "Trash"
     ],
     "modifiers": [],
     "special_sell": null,
@@ -4544,1570 +6276,6 @@
     "requirements": []
   },
   {
-    "id": "cattail",
-    "wiki_slug": "Cattail",
-    "name": "Cattail",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "cattail_fine",
-    "wiki_slug": "Cattail",
-    "name": "Cattail (Fine)",
-    "value": 19,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "flax",
-    "wiki_slug": "Flax",
-    "name": "Flax",
-    "value": 1,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "flax_fine",
-    "wiki_slug": "Flax",
-    "name": "Flax (Fine)",
-    "value": 11,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "hemp",
-    "wiki_slug": "Hemp",
-    "name": "Hemp",
-    "value": 0,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "hemp_fine",
-    "wiki_slug": "Hemp",
-    "name": "Hemp (Fine)",
-    "value": 6,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ironweed",
-    "wiki_slug": "Ironweed",
-    "name": "Ironweed",
-    "value": 5,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "ironweed_fine",
-    "wiki_slug": "Ironweed",
-    "name": "Ironweed (Fine)",
-    "value": 26,
-    "keywords": [
-      "Plant",
-      "Fibrous plant"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "bell_pepper",
-    "wiki_slug": "Bell_pepper",
-    "name": "Bell pepper",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "bell_pepper_fine",
-    "wiki_slug": "Bell_pepper",
-    "name": "Bell pepper (Fine)",
-    "value": 24,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "berries",
-    "wiki_slug": "Berries",
-    "name": "Berries",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "berries_fine",
-    "wiki_slug": "Berries",
-    "name": "Berries (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "carrot",
-    "wiki_slug": "Carrot",
-    "name": "Carrot",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "carrot_fine",
-    "wiki_slug": "Carrot",
-    "name": "Carrot (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "cucumber",
-    "wiki_slug": "Cucumber",
-    "name": "Cucumber",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "cucumber_fine",
-    "wiki_slug": "Cucumber",
-    "name": "Cucumber (Fine)",
-    "value": 24,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "grass",
-    "wiki_slug": "Grass",
-    "name": "Grass",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "grass_fine",
-    "wiki_slug": "Grass",
-    "name": "Grass (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "milkweed",
-    "wiki_slug": "Milkweed",
-    "name": "Milkweed",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "milkweed_fine",
-    "wiki_slug": "Milkweed",
-    "name": "Milkweed (Fine)",
-    "value": 24,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "nettle",
-    "wiki_slug": "Nettle",
-    "name": "Nettle",
-    "value": 0,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "nettle_fine",
-    "wiki_slug": "Nettle",
-    "name": "Nettle (Fine)",
-    "value": 6,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "potato",
-    "wiki_slug": "Potato",
-    "name": "Potato",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "potato_fine",
-    "wiki_slug": "Potato",
-    "name": "Potato (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "root",
-    "wiki_slug": "Root",
-    "name": "Root",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "root_fine",
-    "wiki_slug": "Root",
-    "name": "Root (Fine)",
-    "value": 24,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "rotbud",
-    "wiki_slug": "Rotbud",
-    "name": "Rotbud",
-    "value": 7,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "rotbud_fine",
-    "wiki_slug": "Rotbud",
-    "name": "Rotbud (Fine)",
-    "value": 38,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "salty_hops",
-    "wiki_slug": "Salty_hops",
-    "name": "Salty hops",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "salty_hops_fine",
-    "wiki_slug": "Salty_hops",
-    "name": "Salty hops (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sea_cabbage",
-    "wiki_slug": "Sea_cabbage",
-    "name": "Sea cabbage",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sea_cabbage_fine",
-    "wiki_slug": "Sea_cabbage",
-    "name": "Sea cabbage (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sea_spinach",
-    "wiki_slug": "Sea_spinach",
-    "name": "Sea spinach",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sea_spinach_fine",
-    "wiki_slug": "Sea_spinach",
-    "name": "Sea spinach (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sweet_kelp",
-    "wiki_slug": "Sweet_kelp",
-    "name": "Sweet kelp",
-    "value": 6,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "sweet_kelp_fine",
-    "wiki_slug": "Sweet_kelp",
-    "name": "Sweet kelp (Fine)",
-    "value": 37,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "tomato",
-    "wiki_slug": "Tomato",
-    "name": "Tomato",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "tomato_fine",
-    "wiki_slug": "Tomato",
-    "name": "Tomato (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "underwater_lotus",
-    "wiki_slug": "Underwater_lotus",
-    "name": "Underwater lotus",
-    "value": 4,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "underwater_lotus_fine",
-    "wiki_slug": "Underwater_lotus",
-    "name": "Underwater lotus (Fine)",
-    "value": 24,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wheat",
-    "wiki_slug": "Wheat",
-    "name": "Wheat",
-    "value": 2,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "wheat_fine",
-    "wiki_slug": "Wheat",
-    "name": "Wheat (Fine)",
-    "value": 15,
-    "keywords": [
-      "Plant",
-      "Ingredient"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "pepper",
-    "wiki_slug": "Pepper",
-    "name": "Pepper",
-    "value": 1,
-    "keywords": [
-      "Plant",
-      "Ingredient",
-      "Light"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "pepper_fine",
-    "wiki_slug": "Pepper",
-    "name": "Pepper (Fine)",
-    "value": 11,
-    "keywords": [
-      "Plant",
-      "Ingredient",
-      "Light"
-    ],
-    "modifiers": [
-      {
-        "stat": "work_efficiency",
-        "value": 40.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "fine_material_finding",
-        "value": 200.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "double_rewards",
-        "value": 10.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      },
-      {
-        "stat": "bonus_xp_percent",
-        "value": 100.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
     "id": "fishing_line",
     "wiki_slug": "Fishing_line",
     "name": "Fishing line",
@@ -6294,32 +6462,6 @@
     "value": 6,
     "keywords": [
       "Processed"
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "trash",
-    "wiki_slug": "Trash",
-    "name": "Trash",
-    "value": 0,
-    "keywords": [
-      "Trash",
-      "Misc."
-    ],
-    "modifiers": [],
-    "special_sell": null,
-    "requirements": []
-  },
-  {
-    "id": "trash_fine",
-    "wiki_slug": "Trash",
-    "name": "Trash (Fine)",
-    "value": 6,
-    "keywords": [
-      "Trash",
-      "Misc."
     ],
     "modifiers": [],
     "special_sell": null,

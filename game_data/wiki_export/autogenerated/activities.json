@@ -119,7 +119,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 7.6,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 79.6,
     "output_item_id": null,
     "output_quantity": null
@@ -278,7 +278,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 26.0094339623,
-    "chest_roll_worth": 2.2384763178,
+    "chest_roll_worth": 2.2294491495,
     "fine_roll_worth": 84.9056603774,
     "output_item_id": null,
     "output_quantity": null
@@ -342,7 +342,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.5,
-    "chest_roll_worth": 0.4084640784,
+    "chest_roll_worth": 0.4082423272,
     "fine_roll_worth": 5.5,
     "output_item_id": null,
     "output_quantity": null
@@ -460,7 +460,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 8.4347739295,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 72.9122666933,
     "output_item_id": null,
     "output_quantity": null
@@ -552,7 +552,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.68,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 45.66,
     "output_item_id": null,
     "output_quantity": null
@@ -656,7 +656,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.74,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 118.35,
     "output_item_id": null,
     "output_quantity": null
@@ -790,7 +790,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.1331476323,
-    "chest_roll_worth": 0.5519943488,
+    "chest_roll_worth": 0.5517844816,
     "fine_roll_worth": 7.5379387187,
     "output_item_id": null,
     "output_quantity": null
@@ -918,7 +918,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.6666666667,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 18.1111111111,
     "output_item_id": null,
     "output_quantity": null
@@ -1053,7 +1053,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.6666666667,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 22.7777777778,
     "output_item_id": null,
     "output_quantity": null
@@ -1194,7 +1194,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.28,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 49.12,
     "output_item_id": null,
     "output_quantity": null
@@ -1290,7 +1290,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0580645161,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 11.0903225806,
     "output_item_id": null,
     "output_quantity": null
@@ -1430,7 +1430,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.7345740621,
-    "chest_roll_worth": 1.2027595712,
+    "chest_roll_worth": 1.2024278384,
     "fine_roll_worth": 7.0877707979,
     "output_item_id": null,
     "output_quantity": null
@@ -1590,7 +1590,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.9314613912,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 27.5594128909,
     "output_item_id": null,
     "output_quantity": null
@@ -1848,7 +1848,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 25.6288461538,
-    "chest_roll_worth": 1.3209504208,
+    "chest_roll_worth": 1.3167733736,
     "fine_roll_worth": 114.8442307692,
     "output_item_id": null,
     "output_quantity": null
@@ -1919,7 +1919,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -2035,7 +2035,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.4583333333,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 1.4583333333,
     "output_item_id": null,
     "output_quantity": null
@@ -2159,7 +2159,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.4981023102,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 18.1340346535,
     "output_item_id": null,
     "output_quantity": null
@@ -2293,7 +2293,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.0,
-    "chest_roll_worth": 0.721444808,
+    "chest_roll_worth": 0.717211576,
     "fine_roll_worth": 29.2,
     "output_item_id": null,
     "output_quantity": null
@@ -2369,7 +2369,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.35,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 14.85,
     "output_item_id": null,
     "output_quantity": null
@@ -2470,7 +2470,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.0231160703,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 24.0803963326,
     "output_item_id": null,
     "output_quantity": null
@@ -2572,7 +2572,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.045,
-    "chest_roll_worth": 0.6339509224,
+    "chest_roll_worth": 0.63371314,
     "fine_roll_worth": 6.045,
     "output_item_id": null,
     "output_quantity": null
@@ -2660,8 +2660,96 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 5.0,
+    "output_item_id": null,
+    "output_quantity": null
+  },
+  {
+    "id": "cut_mahogany_trees",
+    "wiki_slug": "Special:MyLanguage/Cut_mahogany_trees",
+    "name": "Cut mahogany trees",
+    "primary_skill": "woodcutting",
+    "locations": [
+      "blackwater_lake"
+    ],
+    "base_steps": 201,
+    "base_xp": 155.0,
+    "secondary_xp": {},
+    "max_efficiency": 3.5,
+    "requirements": [
+      {
+        "type": "skill_level",
+        "target": "woodcutting",
+        "value": 70,
+        "input_skill": null,
+        "input_level": null
+      },
+      {
+        "type": "keyword_count",
+        "target": "hatchet",
+        "value": 1,
+        "input_skill": null,
+        "input_level": null
+      },
+      {
+        "type": "keyword_count",
+        "target": "req_woodcutting_60_hatchet",
+        "value": 1,
+        "input_skill": null,
+        "input_level": null
+      }
+    ],
+    "faction_rewards": [],
+    "materials": [],
+    "loot_tables": [
+      {
+        "type": "main",
+        "drops": [
+          {
+            "item_id": "mahogany_logs",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 100.0,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          }
+        ],
+        "rolls": 1
+      },
+      {
+        "type": "secondary",
+        "drops": [
+          {
+            "item_id": "bird_nest",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.4,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "woodcutting_chest",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.4,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          }
+        ],
+        "rolls": 1
+      }
+    ],
+    "modifiers": [],
+    "normal_roll_worth": 0.0,
+    "chest_roll_worth": 0.57858874,
+    "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
   },
@@ -2751,7 +2839,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.037789419,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 26.1318430839,
     "output_item_id": null,
     "output_quantity": null
@@ -2842,7 +2930,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.0220764678,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 15.0771076628,
     "output_item_id": null,
     "output_quantity": null
@@ -2924,7 +3012,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.0,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 15.0,
     "output_item_id": null,
     "output_quantity": null
@@ -3016,7 +3104,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.045,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 11.045,
     "output_item_id": null,
     "output_quantity": null
@@ -3099,7 +3187,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.0,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 11.0,
     "output_item_id": null,
     "output_quantity": null
@@ -3190,7 +3278,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.0393921216,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 24.1067786443,
     "output_item_id": null,
     "output_quantity": null
@@ -3292,7 +3380,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.0176777019,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 24.0614820073,
     "output_item_id": null,
     "output_quantity": null
@@ -3380,7 +3468,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 6.0,
-    "chest_roll_worth": 0.5788265224,
+    "chest_roll_worth": 0.57858874,
     "fine_roll_worth": 27.0,
     "output_item_id": null,
     "output_quantity": null
@@ -3498,7 +3586,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.69,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 62.63,
     "output_item_id": null,
     "output_quantity": null
@@ -3648,7 +3736,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.3499306903,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 17.6776268367,
     "output_item_id": null,
     "output_quantity": null
@@ -3795,7 +3883,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 7.75,
-    "chest_roll_worth": 0.6468265384,
+    "chest_roll_worth": 0.6425388736,
     "fine_roll_worth": 60.890625,
     "output_item_id": null,
     "output_quantity": null
@@ -3866,7 +3954,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 5.0,
     "output_item_id": null,
     "output_quantity": null
@@ -3944,7 +4032,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 30.0,
     "output_item_id": null,
     "output_quantity": null
@@ -4349,7 +4437,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.6719378953,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 12.5845313399,
     "output_item_id": null,
     "output_quantity": null
@@ -4427,7 +4515,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -4515,7 +4603,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -4625,7 +4713,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0490272374,
-    "chest_roll_worth": 0.5935724328,
+    "chest_roll_worth": 0.5930596824,
     "fine_roll_worth": 6.1774319066,
     "output_item_id": null,
     "output_quantity": null
@@ -4689,7 +4777,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.5,
-    "chest_roll_worth": 0.38529274,
+    "chest_roll_worth": 0.3855847056,
     "fine_roll_worth": 5.5,
     "output_item_id": null,
     "output_quantity": null
@@ -4803,7 +4891,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.4,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 22.05,
     "output_item_id": null,
     "output_quantity": null
@@ -4914,7 +5002,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.980750083,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 31.5366744109,
     "output_item_id": null,
     "output_quantity": null
@@ -5081,7 +5169,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.9372297297,
-    "chest_roll_worth": 0.368588416,
+    "chest_roll_worth": 0.3682899232,
     "fine_roll_worth": 12.5618918919,
     "output_item_id": null,
     "output_quantity": null
@@ -5236,7 +5324,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2661538462,
-    "chest_roll_worth": 0.7448196976,
+    "chest_roll_worth": 0.7412161112,
     "fine_roll_worth": 1.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -5317,7 +5405,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.8512,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.8512,
     "output_item_id": null,
     "output_quantity": null
@@ -5381,7 +5469,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 5.0,
     "output_item_id": null,
     "output_quantity": null
@@ -5484,7 +5572,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.015,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 0.015,
     "output_item_id": null,
     "output_quantity": null
@@ -5680,7 +5768,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.6472295434,
-    "chest_roll_worth": 0.6438005056,
+    "chest_roll_worth": 0.64412154,
     "fine_roll_worth": 10.1959117377,
     "output_item_id": null,
     "output_quantity": null
@@ -5804,7 +5892,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.4927272727,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 16.6381818182,
     "output_item_id": null,
     "output_quantity": null
@@ -5912,7 +6000,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 15.5,
-    "chest_roll_worth": 1.236134616,
+    "chest_roll_worth": 1.2302691712,
     "fine_roll_worth": 15.5,
     "output_item_id": null,
     "output_quantity": null
@@ -6003,7 +6091,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 6.0,
     "output_item_id": null,
     "output_quantity": null
@@ -6104,7 +6192,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0567375887,
-    "chest_roll_worth": 0.79137274,
+    "chest_roll_worth": 0.7916647056,
     "fine_roll_worth": 7.4028368794,
     "output_item_id": null,
     "output_quantity": null
@@ -6218,7 +6306,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.2404558405,
-    "chest_roll_worth": 0.510587504,
+    "chest_roll_worth": 0.510312536,
     "fine_roll_worth": 6.0267806268,
     "output_item_id": null,
     "output_quantity": null
@@ -6358,7 +6446,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.7906557604,
-    "chest_roll_worth": 1.36406748,
+    "chest_roll_worth": 1.3581452704,
     "fine_roll_worth": 20.0135865798,
     "output_item_id": null,
     "output_quantity": null
@@ -6472,7 +6560,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.1254545455,
-    "chest_roll_worth": 0.510587504,
+    "chest_roll_worth": 0.510312536,
     "fine_roll_worth": 1.4345454545,
     "output_item_id": null,
     "output_quantity": null
@@ -6592,7 +6680,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.5125473013,
-    "chest_roll_worth": 0.8198509096,
+    "chest_roll_worth": 0.81900546,
     "fine_roll_worth": 1.5125473013,
     "output_item_id": null,
     "output_quantity": null
@@ -6693,7 +6781,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 10.1311084625,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 42.1619487485,
     "output_item_id": null,
     "output_quantity": null
@@ -6764,7 +6852,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -6885,7 +6973,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.7546583851,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 7.5330079858,
     "output_item_id": null,
     "output_quantity": null
@@ -7041,7 +7129,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.0952380952,
-    "chest_roll_worth": 1.034908824,
+    "chest_roll_worth": 1.0303770992,
     "fine_roll_worth": 29.819047619,
     "output_item_id": null,
     "output_quantity": null
@@ -7133,7 +7221,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.6756756757,
-    "chest_roll_worth": 0.2895198904,
+    "chest_roll_worth": 0.2894490616,
     "fine_roll_worth": 9.3783783784,
     "output_item_id": null,
     "output_quantity": null
@@ -7251,7 +7339,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 15.3514261977,
-    "chest_roll_worth": 0.2983143512,
+    "chest_roll_worth": 0.2980158584,
     "fine_roll_worth": 21.3051786209,
     "output_item_id": null,
     "output_quantity": null
@@ -7378,7 +7466,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2811594203,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 4.0782608696,
     "output_item_id": null,
     "output_quantity": null
@@ -7486,7 +7574,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.15,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 40.9,
     "output_item_id": null,
     "output_quantity": null
@@ -7736,7 +7824,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.7106377678,
-    "chest_roll_worth": 0.6029839064,
+    "chest_roll_worth": 0.6026145848,
     "fine_roll_worth": 9.3708271051,
     "output_item_id": null,
     "output_quantity": null
@@ -7862,7 +7950,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2098039216,
-    "chest_roll_worth": 0.6532057896,
+    "chest_roll_worth": 0.648935372,
     "fine_roll_worth": 1.4843137255,
     "output_item_id": null,
     "output_quantity": null
@@ -8029,7 +8117,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.8,
-    "chest_roll_worth": 0.7040030984,
+    "chest_roll_worth": 0.699709156,
     "fine_roll_worth": 23.8,
     "output_item_id": null,
     "output_quantity": null
@@ -8160,7 +8248,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 8.3960869565,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 40.3473913043,
     "output_item_id": null,
     "output_quantity": null
@@ -8278,7 +8366,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 16.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -8395,7 +8483,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 7.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -8539,7 +8627,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 9.2985259809,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 50.7620254507,
     "output_item_id": null,
     "output_quantity": null
@@ -8653,7 +8741,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.3485714286,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 6.2985714286,
     "output_item_id": null,
     "output_quantity": null
@@ -8760,7 +8848,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 37.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -8884,7 +8972,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 10.3960869565,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 52.3473913043,
     "output_item_id": null,
     "output_quantity": null
@@ -9001,7 +9089,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 12.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -9125,7 +9213,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 7.3960869565,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 39.3473913043,
     "output_item_id": null,
     "output_quantity": null
@@ -9232,7 +9320,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 25.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -9346,7 +9434,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 25.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -9463,7 +9551,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 7.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -9594,7 +9682,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 10.3960869565,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 52.3473913043,
     "output_item_id": null,
     "output_quantity": null
@@ -9738,7 +9826,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.409010989,
-    "chest_roll_worth": 0.7448196976,
+    "chest_roll_worth": 0.7412161112,
     "fine_roll_worth": 25.8751282051,
     "output_item_id": null,
     "output_quantity": null
@@ -9859,7 +9947,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0417606602,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 4.3443741403,
     "output_item_id": null,
     "output_quantity": null
@@ -9986,7 +10074,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.637826685,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 15.8620357634,
     "output_item_id": null,
     "output_quantity": null
@@ -10140,7 +10228,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 9.8666666667,
-    "chest_roll_worth": 0.9363464288,
+    "chest_roll_worth": 0.9319879352,
     "fine_roll_worth": 49.3333333333,
     "output_item_id": null,
     "output_quantity": null
@@ -10225,7 +10313,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.5584,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 18.9696,
     "output_item_id": null,
     "output_quantity": null
@@ -10296,7 +10384,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.4113868312,
+    "chest_roll_worth": 0.4107631328,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -10427,7 +10515,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 8.9964,
-    "chest_roll_worth": 39.40000608,
+    "chest_roll_worth": 39.35876088,
     "fine_roll_worth": 40.2725,
     "output_item_id": null,
     "output_quantity": null
@@ -10548,7 +10636,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.5789752162,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 19.3489076241,
     "output_item_id": null,
     "output_quantity": null
@@ -10632,7 +10720,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -10716,7 +10804,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.4665112312,
+    "chest_roll_worth": 0.4658875328,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -10837,7 +10925,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.1990551002,
-    "chest_roll_worth": 0.578847532,
+    "chest_roll_worth": 0.578841804,
     "fine_roll_worth": 13.8535689891,
     "output_item_id": null,
     "output_quantity": null
@@ -10959,7 +11047,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.456252497,
-    "chest_roll_worth": 0.633971932,
+    "chest_roll_worth": 0.633966204,
     "fine_roll_worth": 12.5642229325,
     "output_item_id": null,
     "output_quantity": null
@@ -11061,7 +11149,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.6944444444,
-    "chest_roll_worth": 0.578847532,
+    "chest_roll_worth": 0.578841804,
     "fine_roll_worth": 13.7777777778,
     "output_item_id": null,
     "output_quantity": null
@@ -11255,7 +11343,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.6425187032,
-    "chest_roll_worth": 0.6800589728,
+    "chest_roll_worth": 0.6759926944,
     "fine_roll_worth": 31.6882793017,
     "output_item_id": null,
     "output_quantity": null
@@ -11355,7 +11443,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.5,
-    "chest_roll_worth": 26.26667072,
+    "chest_roll_worth": 26.23917392,
     "fine_roll_worth": 16.9,
     "output_item_id": null,
     "output_quantity": null
@@ -11481,7 +11569,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.0582427197,
-    "chest_roll_worth": 0.6027916576,
+    "chest_roll_worth": 0.6025582656,
     "fine_roll_worth": 18.0982752156,
     "output_item_id": null,
     "output_quantity": null
@@ -11565,7 +11653,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0936,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0936,
     "output_item_id": null,
     "output_quantity": null
@@ -11646,7 +11734,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -11699,7 +11787,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -11817,7 +11905,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 7.5015890821,
-    "chest_roll_worth": 0.2983143512,
+    "chest_roll_worth": 0.2980158584,
     "fine_roll_worth": 11.3116470368,
     "output_item_id": null,
     "output_quantity": null
@@ -11962,7 +12050,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.1374891399,
-    "chest_roll_worth": 0.2824592064,
+    "chest_roll_worth": 0.282170832,
     "fine_roll_worth": 2.0960034752,
     "output_item_id": null,
     "output_quantity": null
@@ -12139,7 +12227,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 10.8465463597,
-    "chest_roll_worth": 1.1843352312,
+    "chest_roll_worth": 1.1788616496,
     "fine_roll_worth": 56.1578095831,
     "output_item_id": null,
     "output_quantity": null
@@ -12220,7 +12308,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -12331,7 +12419,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.4441199078,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 10.6538816295,
     "output_item_id": null,
     "output_quantity": null
@@ -12419,7 +12507,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.4,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 33.2,
     "output_item_id": null,
     "output_quantity": null
@@ -12503,7 +12591,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0290322581,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 5.5451612903,
     "output_item_id": null,
     "output_quantity": null
@@ -12614,7 +12702,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 15.1222194451,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 103.9255186203,
     "output_item_id": null,
     "output_quantity": null
@@ -12731,7 +12819,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2661538462,
-    "chest_roll_worth": 0.4094050152,
+    "chest_roll_worth": 0.4097968784,
     "fine_roll_worth": 7.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -12812,7 +12900,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 1.0,
-    "chest_roll_worth": 0.4094050152,
+    "chest_roll_worth": 0.4097968784,
     "fine_roll_worth": 11.0,
     "output_item_id": null,
     "output_quantity": null
@@ -12937,7 +13025,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.1131284916,
-    "chest_roll_worth": 0.5519943488,
+    "chest_roll_worth": 0.5517844816,
     "fine_roll_worth": 2.8191620112,
     "output_item_id": null,
     "output_quantity": null
@@ -13044,7 +13132,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.2661538462,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 7.2084615385,
     "output_item_id": null,
     "output_quantity": null
@@ -13185,7 +13273,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.7061340942,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 38.9557774608,
     "output_item_id": null,
     "output_quantity": null
@@ -13316,7 +13404,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.5901394422,
-    "chest_roll_worth": 0.8145440784,
+    "chest_roll_worth": 0.8143223272,
     "fine_roll_worth": 8.8072709163,
     "output_item_id": null,
     "output_quantity": null
@@ -13454,7 +13542,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 0.18,
     "output_item_id": null,
     "output_quantity": null
@@ -13657,8 +13745,144 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 5.1919770774,
-    "chest_roll_worth": 0.5761307232,
+    "chest_roll_worth": 0.5755572624,
     "fine_roll_worth": 13.423495702,
+    "output_item_id": null,
+    "output_quantity": null
+  },
+  {
+    "id": "twophointoh_hunt",
+    "wiki_slug": "Special:MyLanguage/Twophointoh_hunt",
+    "name": "Twophointoh hunt",
+    "primary_skill": "hunting",
+    "locations": [
+      "cactus_canyon"
+    ],
+    "base_steps": 0,
+    "base_xp": 22.0,
+    "secondary_xp": {
+      "mining": 22.0
+    },
+    "max_efficiency": 2.4,
+    "requirements": [
+      {
+        "type": "skill_level",
+        "target": "hunting",
+        "value": 65,
+        "input_skill": null,
+        "input_level": null
+      }
+    ],
+    "faction_rewards": [],
+    "materials": [],
+    "loot_tables": [
+      {
+        "type": "main",
+        "drops": [
+          {
+            "item_id": "nothing",
+            "min_quantity": 0,
+            "max_quantity": 0,
+            "chance": 95.085,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "strange_fur",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 4.214,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "mysterious_chitin",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.701,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          }
+        ],
+        "rolls": 1
+      },
+      {
+        "type": "secondary",
+        "drops": [
+          {
+            "item_id": "hunting_chest",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.4,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "petrified_desert_flower",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.0379,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "fractured_compass",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.019,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "ancient_stone_tablet",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.0095,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "sand_globe",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.0047,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          },
+          {
+            "item_id": "artificial_sand_grain",
+            "min_quantity": 1,
+            "max_quantity": 1,
+            "chance": 0.0024,
+            "category": null,
+            "no_drop_chance": null,
+            "row_weight": null,
+            "table_weight": null
+          }
+        ],
+        "rolls": 1
+      }
+    ],
+    "modifiers": [],
+    "normal_roll_worth": 0.0,
+    "chest_roll_worth": 0.2559952408,
+    "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
   },
@@ -13812,7 +14036,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.3007692308,
-    "chest_roll_worth": 0.6740535384,
+    "chest_roll_worth": 0.673154872,
     "fine_roll_worth": 19.2453846154,
     "output_item_id": null,
     "output_quantity": null
@@ -13973,7 +14197,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.3058916591,
-    "chest_roll_worth": 0.3542806152,
+    "chest_roll_worth": 0.3546724784,
     "fine_roll_worth": 26.9133466088,
     "output_item_id": null,
     "output_quantity": null
@@ -14094,7 +14318,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0834160874,
-    "chest_roll_worth": 1.7724710696,
+    "chest_roll_worth": 1.762663392,
     "fine_roll_worth": 17.9582919563,
     "output_item_id": null,
     "output_quantity": null
@@ -14225,7 +14449,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 4.1882716049,
-    "chest_roll_worth": 0.6532057896,
+    "chest_roll_worth": 0.648935372,
     "fine_roll_worth": 22.2635802469,
     "output_item_id": null,
     "output_quantity": null
@@ -14343,7 +14567,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 21.5344,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 175.1986,
     "output_item_id": null,
     "output_quantity": null
@@ -14463,7 +14687,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.6666666667,
-    "chest_roll_worth": 0.2824592064,
+    "chest_roll_worth": 0.282170832,
     "fine_roll_worth": 8.0,
     "output_item_id": null,
     "output_quantity": null
@@ -14544,7 +14768,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.2626667072,
+    "chest_roll_worth": 0.2623917392,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -14625,7 +14849,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.3309057256,
+    "chest_roll_worth": 0.3306679432,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -14706,7 +14930,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0,
-    "chest_roll_worth": 0.313464016,
+    "chest_roll_worth": 0.3131655232,
     "fine_roll_worth": 0.0,
     "output_item_id": null,
     "output_quantity": null
@@ -14849,7 +15073,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 3.3250207814,
-    "chest_roll_worth": 1.1125138224,
+    "chest_roll_worth": 1.1063600032,
     "fine_roll_worth": 20.6264339152,
     "output_item_id": null,
     "output_quantity": null
@@ -14967,7 +15191,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 2.04,
-    "chest_roll_worth": 0.256287456,
+    "chest_roll_worth": 0.2559952408,
     "fine_roll_worth": 59.7,
     "output_item_id": null,
     "output_quantity": null
@@ -15068,7 +15292,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 0.0083003953,
-    "chest_roll_worth": 0.4113868312,
+    "chest_roll_worth": 0.4107631328,
     "fine_roll_worth": 4.7513833992,
     "output_item_id": null,
     "output_quantity": null
@@ -15238,7 +15462,7 @@
     ],
     "modifiers": [],
     "normal_roll_worth": 45.6460674157,
-    "chest_roll_worth": 1.9401377144,
+    "chest_roll_worth": 1.9299783272,
     "fine_roll_worth": 244.5224719101,
     "output_item_id": null,
     "output_quantity": null

@@ -19,7 +19,7 @@ from utils.constants import RequirementType
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 MATERIALS_URL = 'https://wiki.walkscape.app/wiki/Materials'
 CACHE_DIR = get_cache_dir('materials')
 CACHE_FILE = get_cache_file('materials_cache.html')

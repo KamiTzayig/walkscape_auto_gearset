@@ -20,7 +20,7 @@ from models import (
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 ACTIVITIES_URL = 'https://wiki.walkscape.app/wiki/Activities'
 CACHE_DIR = get_cache_dir('activities')
 OUTPUT_FILE = get_output_file('activities.json')

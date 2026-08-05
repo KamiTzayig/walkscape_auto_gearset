@@ -21,7 +21,7 @@ from models import (
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 COLLECTIBLES_URL = 'https://wiki.walkscape.app/wiki/Collectibles'
 CACHE_FILE = get_cache_file('collectibles_cache.html')
 OUTPUT_FILE = get_output_file('collectibles.json')

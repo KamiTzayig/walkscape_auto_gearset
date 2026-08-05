@@ -21,7 +21,7 @@ from models import (
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 CACHE_DIR = get_cache_dir('equipment')
 EQUIPMENT_URL = 'https://wiki.walkscape.app/wiki/Equipment'
 OUTPUT_FILE = get_output_file('equipment.json')
@@ -166,6 +166,9 @@ def parse_attribute_lines(lines, item_name="Unknown") -> list[Modifier]:
         if 'walk a total amount of steps' in line_lower:
             i += 1
             continue
+        if line_lower.startswith('explore ') and 'completely' in line_lower:
+            i += 1
+            continue
             
         conditions = []
         
@@ -180,6 +183,11 @@ def parse_attribute_lines(lines, item_name="Unknown") -> list[Modifier]:
             next_line = lines[next_i].strip()
             next_lower = next_line.lower()
             
+            # Skip exploration text when looking for conditions
+            if next_lower.startswith('explore ') and 'completely' in next_lower:
+                next_i += 1
+                continue
+
             # AP Check
             ap_match = re.search(r'[\(\[](\d+)[\)\]]\s*achievement point', next_lower)
             if ap_match:

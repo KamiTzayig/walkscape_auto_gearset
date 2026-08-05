@@ -39,34 +39,6 @@
     ]
   },
   {
-    "id": "ADVENTURERS_GUILD_BUCKLER",
-    "wiki_slug": "Special:MyLanguage/Adventurers%27_guild_buckler",
-    "name": "Adventurers' guild buckler",
-    "value": 0,
-    "keywords": [
-      "Achievement reward",
-      "Shield",
-      "exact_item_adventurers_guild_buckler"
-    ],
-    "uuid": "f4be2b79-f096-4ce0-944c-dd6589af11d9",
-    "slot": "secondary",
-    "quality": "None",
-    "requirements": [],
-    "modifiers": [
-      {
-        "stat": "find_adventurers_guild_token",
-        "value": 1.0,
-        "conditions": [
-          {
-            "type": "global",
-            "target": null,
-            "value": null
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "ADVENTURING_AMULET",
     "wiki_slug": "Special:MyLanguage/Adventuring_amulet",
     "name": "Adventuring amulet",
@@ -151,6 +123,34 @@
             "type": "set_equipped",
             "target": "adventuring tool set",
             "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ADVENTURING_BUCKLER",
+    "wiki_slug": "Special:MyLanguage/Adventuring_buckler",
+    "name": "Adventuring buckler",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Shield",
+      "exact_item_adventuring_buckler"
+    ],
+    "uuid": "f4be2b79-f096-4ce0-944c-dd6589af11d9",
+    "slot": "secondary",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "find_adventurers_guild_token",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
           }
         ]
       }
@@ -917,6 +917,55 @@
       {
         "stat": "steps_add",
         "value": -1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "BOULDER_BOOTS",
+    "wiki_slug": "Special:MyLanguage/Boulder_boots",
+    "name": "Boulder boots",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "exact_item_boulder_boots"
+    ],
+    "uuid": "bd5970a4-7d4d-4af8-8009-b04b95beee01",
+    "slot": "feet",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 30.0,
+        "conditions": [
+          {
+            "type": "skill_activity",
+            "target": "gathering",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "skill_activity",
+            "target": "gathering",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": -8.0,
         "conditions": [
           {
             "type": "global",
@@ -4057,6 +4106,133 @@
     ]
   },
   {
+    "id": "GLOBETROTTERS_BACKPACK",
+    "wiki_slug": "Special:MyLanguage/Globetrotter%27s_backpack",
+    "name": "Globetrotter's backpack",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Regional",
+      "exact_item_globetrotters_backpack"
+    ],
+    "uuid": "c35aafa7-930e-4605-af4f-e1454d2a4e8d",
+    "slot": "back",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "bonus_xp_percent",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "inventory_space",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "GRAPPLING_HOOK",
     "wiki_slug": "Special:MyLanguage/Grappling_hook",
     "name": "Grappling hook",
@@ -4219,6 +4395,44 @@
           {
             "type": "skill_activity",
             "target": "foraging",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HAT_OF_WISDOM",
+    "wiki_slug": "Special:MyLanguage/Hat_of_wisdom",
+    "name": "Hat of wisdom",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "exact_item_hat_of_wisdom"
+    ],
+    "uuid": "item-hat_of_wisdom-67d1339f-902d-46d1-a0c9-28a3a9bd39da",
+    "slot": "head",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "bonus_xp_percent",
+        "value": 15.0,
+        "conditions": [
+          {
+            "type": "skill_activity",
+            "target": "artisan",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "bonus_xp_percent",
+        "value": 5.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -10447,6 +10661,66 @@
           {
             "type": "skill_activity",
             "target": "carpentry",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ZORRES_DESERT_GOURDPACK",
+    "wiki_slug": "Special:MyLanguage/Zorre%27s_desert_gourdpack",
+    "name": "Zorre's desert gourdpack",
+    "value": 0,
+    "keywords": [
+      "Regional",
+      "exact_item_zorres_desert_gourdpack"
+    ],
+    "uuid": "d4f8c2b6-5c1a-4ed1-95d4-9892046779c4",
+    "slot": "back",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "chest_finding",
+        "value": 20.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 3.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "fine_material_finding",
+        "value": 20.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_rewards",
+        "value": 3.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
             "value": null
           }
         ]
@@ -40113,8 +40387,8 @@
   },
   {
     "id": "GEM_TIPPED_TWEEZERS",
-    "wiki_slug": "Special:MyLanguage/Gem-tipped_tweezers",
-    "name": "Gem-tipped tweezers",
+    "wiki_slug": "Special:MyLanguage/Gem_tipped_tweezers",
+    "name": "Gem tipped tweezers",
     "value": 10,
     "keywords": [
       "exact_item_gem_tipped_tweezers"
@@ -42845,6 +43119,133 @@
     ]
   },
   {
+    "id": "QUICKDRAW_MAP",
+    "wiki_slug": "Special:MyLanguage/Quickdraw_map",
+    "name": "Quickdraw map",
+    "value": 0,
+    "keywords": [
+      "Achievement reward",
+      "Regional",
+      "exact_item_quickdraw_map"
+    ],
+    "uuid": "1616511d-1165-4742-aacb-d93db3f811cd",
+    "slot": "tools",
+    "quality": "None",
+    "requirements": [],
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 16.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "jarvonia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "work_efficiency",
+        "value": 16.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "empire_of_wallisia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "work_efficiency",
+        "value": 16.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "work_efficiency",
+        "value": 16.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "syrenthia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "work_efficiency",
+        "value": 16.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "gdte",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 4.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "empire_of_wallisia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 4.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "gdte",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 4.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "jarvonia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 4.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "syrenthia",
+            "value": null
+          }
+        ]
+      },
+      {
+        "stat": "double_action",
+        "value": 4.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "wrentmark",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "RECIPE_BOOK",
     "wiki_slug": "Special:MyLanguage/Recipe_book",
     "name": "Recipe book",
@@ -44842,13 +45243,13 @@
     ]
   },
   {
-    "id": "TRAVELERS_KIT",
-    "wiki_slug": "Special:MyLanguage/Traveler%27s_kit",
-    "name": "Traveler's kit",
+    "id": "TRAVELLERS_KIT",
+    "wiki_slug": "Special:MyLanguage/Traveller%27s_kit",
+    "name": "Traveller's kit",
     "value": 0,
     "keywords": [
       "Achievement reward",
-      "exact_item_travelers_kit"
+      "exact_item_travellers_kit"
     ],
     "uuid": "item-travelers_kit-6fa9af97-63dd-4708-a8c3-2d5ccf0eb42a",
     "slot": "tools",
@@ -44860,8 +45261,8 @@
         "value": 30.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "traveling",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]
@@ -44871,8 +45272,8 @@
         "value": 10.0,
         "conditions": [
           {
-            "type": "skill_activity",
-            "target": "traveling",
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]

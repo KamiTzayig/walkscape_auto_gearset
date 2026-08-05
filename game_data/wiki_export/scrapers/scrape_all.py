@@ -82,7 +82,7 @@ def run_scraper(script_path):
     print(f"  Running: {script_path}")
     # Run from util/scrapers directory since all scrapers are there
     scrapers_dir = Path(__file__).parent
-    result = subprocess.run(['python3', script_path], capture_output=True, text=True, cwd=scrapers_dir)
+    result = subprocess.run([sys.executable, script_path], capture_output=True, text=True, cwd=scrapers_dir)
     
     if result.returncode != 0:
         print(f"  ❌ FAILED with exit code {result.returncode}")

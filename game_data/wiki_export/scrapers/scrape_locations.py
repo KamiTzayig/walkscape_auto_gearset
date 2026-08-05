@@ -18,7 +18,7 @@ from models import Location
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 SCAN_FOLDER_FOR_NEW_ITEMS = True
 
 # URLs and cache

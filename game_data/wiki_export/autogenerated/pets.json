@@ -758,6 +758,163 @@
     "use_pet_ability": false
   },
   {
+    "id": "golden_frog",
+    "wiki_slug": "Golden_Frog",
+    "name": "Golden Frog",
+    "egg_item_id": "golden_frog_egg",
+    "xp_requirement_desc": null,
+    "levels": [
+      {
+        "level": 1,
+        "total_xp": 35000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 1.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 2,
+        "total_xp": 85000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 2.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 2.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 3,
+        "total_xp": 150000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "bonus_xp_percent",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 4,
+        "total_xp": 250000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 5.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 5.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "bonus_xp_percent",
+            "value": 5.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "steps_add",
+            "value": -2.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "artisan",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": [
+          {
+            "name": "Lucky Day",
+            "effect": "Gives you a buff towards your Artisan Quality outcome.Effect lasts for: 20 actionsGlobal +20 Quality outcome While doing Artisan skills.",
+            "requirements": null,
+            "cooldown": "This ability is charged by using items. One full charge requires 10. 1 gained from 100 Coins",
+            "charges": 20
+          }
+        ]
+      }
+    ],
+    "active_level": 1,
+    "use_pet_ability": false
+  },
+  {
     "id": "mummy",
     "wiki_slug": "Mummy",
     "name": "Mummy",
@@ -890,7 +1047,18 @@
           },
           {
             "stat": "bonus_xp_percent",
-            "value": 4.0,
+            "value": 6.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "tailoring",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "steps_add",
+            "value": -3.0,
             "conditions": [
               {
                 "type": "skill_activity",
@@ -929,6 +1097,185 @@
             "requirements": null,
             "cooldown": null,
             "charges": 1
+          }
+        ]
+      }
+    ],
+    "active_level": 1,
+    "use_pet_ability": false
+  },
+  {
+    "id": "pet_rock",
+    "wiki_slug": "Pet_Rock",
+    "name": "Pet Rock",
+    "egg_item_id": "pet_rock_egg",
+    "xp_requirement_desc": null,
+    "levels": [
+      {
+        "level": 1,
+        "total_xp": 35000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 1.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "inventory_space",
+            "value": -2.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 2,
+        "total_xp": 85000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "bonus_xp_percent",
+            "value": 2.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "inventory_space",
+            "value": -1.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 3,
+        "total_xp": 150000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 5.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 2.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "bonus_xp_percent",
+            "value": 3.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": []
+      },
+      {
+        "level": 4,
+        "total_xp": 250000,
+        "modifiers": [
+          {
+            "stat": "work_efficiency",
+            "value": 10.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "chest_finding",
+            "value": 7.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "double_action",
+            "value": 2.0,
+            "conditions": [
+              {
+                "type": "global",
+                "target": null,
+                "value": null
+              }
+            ]
+          },
+          {
+            "stat": "bonus_xp_percent",
+            "value": 6.0,
+            "conditions": [
+              {
+                "type": "skill_activity",
+                "target": "trinketry",
+                "value": null
+              }
+            ]
+          }
+        ],
+        "abilities": [
+          {
+            "name": "Rockslide",
+            "effect": "Gives you some buffs toward Trinketry.Effect lasts for: 20 actions +10% Work efficiency While doing Trinketry. +3% Double action While doing Trinketry. +5% Chance to find 1 Rough gem While doing Trinketry.",
+            "requirements": null,
+            "cooldown": "This ability is charged by using items. One full charge requires 10. 1 gained from Stone 10 gained from Large stone",
+            "charges": 10
           }
         ]
       }

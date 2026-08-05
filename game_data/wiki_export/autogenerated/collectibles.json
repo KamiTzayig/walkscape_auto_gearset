@@ -35,6 +35,24 @@
     ]
   },
   {
+    "id": "ancient_stone_tablet",
+    "wiki_slug": "Ancient_stone_tablet",
+    "name": "Ancient stone tablet",
+    "modifiers": [
+      {
+        "stat": "work_efficiency",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "location",
+            "target": "desert",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "ancient_trident",
     "wiki_slug": "Ancient_trident",
     "name": "Ancient trident",
@@ -64,6 +82,24 @@
           {
             "type": "skill_activity",
             "target": "fishing",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "artificial_sand_grain",
+    "wiki_slug": "Artificial_sand_grain",
+    "name": "Artificial sand grain",
+    "modifiers": [
+      {
+        "stat": "double_rewards",
+        "value": 1.0,
+        "conditions": [
+          {
+            "type": "skill_activity",
+            "target": "foraging",
             "value": null
           }
         ]
@@ -268,6 +304,12 @@
     ]
   },
   {
+    "id": "fractured_compass",
+    "wiki_slug": "Fractured_compass",
+    "name": "Fractured compass",
+    "modifiers": []
+  },
+  {
     "id": "halfmaw_venom",
     "wiki_slug": "Halfmaw_venom",
     "name": "Halfmaw venom",
@@ -382,6 +424,12 @@
     "modifiers": []
   },
   {
+    "id": "petrified_desert_flower",
+    "wiki_slug": "Petrified_desert_flower",
+    "name": "Petrified desert flower",
+    "modifiers": []
+  },
+  {
     "id": "rose_quartz",
     "wiki_slug": "Rose_quartz",
     "name": "Rose quartz",
@@ -393,6 +441,24 @@
           {
             "type": "skill_activity",
             "target": "trinketry",
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sand_globe",
+    "wiki_slug": "Sand_globe",
+    "name": "Sand globe",
+    "modifiers": [
+      {
+        "stat": "find_collectibles",
+        "value": 2.0,
+        "conditions": [
+          {
+            "type": "global",
+            "target": null,
             "value": null
           }
         ]

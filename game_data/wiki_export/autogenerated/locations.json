@@ -71,6 +71,14 @@
     ]
   },
   {
+    "id": "blackwater_lake",
+    "wiki_slug": "Blackwater_Lake",
+    "name": "Blackwater Lake",
+    "tags": [
+      "empire_of_wallisia"
+    ]
+  },
+  {
     "id": "bog_bottom",
     "wiki_slug": "Bog_Bottom",
     "name": "Bog Bottom",
@@ -87,6 +95,14 @@
     "tags": [
       "gdte",
       "halfling_rebels"
+    ]
+  },
+  {
+    "id": "cactus_canyon",
+    "wiki_slug": "Cactus_Canyon",
+    "name": "Cactus Canyon",
+    "tags": [
+      "desert"
     ]
   },
   {
