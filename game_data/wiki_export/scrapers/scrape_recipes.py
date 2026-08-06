@@ -19,7 +19,7 @@ from models import Recipe, SkillName
 from scraper_utils import *
 
 # Configuration
-RESCRAPE = False
+RESCRAPE = True
 RECIPES_URL = 'https://wiki.walkscape.app/wiki/Recipes'
 CACHE_DIR = get_cache_dir('recipes')
 OUTPUT_FILE = get_output_file('recipes.json')
