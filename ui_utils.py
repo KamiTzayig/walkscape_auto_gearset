@@ -327,6 +327,10 @@ def can_use_pet_ability(ability_name: str, node: CraftingNode, game_data_dict: d
         
         if reqs.get("skill") and recipe.skill.lower() != reqs["skill"].lower():
             return False
+        if reqs.get("skill_category") == "artisan" and recipe.skill.lower() not in ARTISAN_SKILLS:
+            return False
+        if reqs.get("skill_category") == "gathering" and recipe.skill.lower() not in GATHERING_SKILLS:
+            return False
         if reqs.get("recipe_name_contains") and reqs["recipe_name_contains"].lower() not in recipe.name.lower():
             return False
             
@@ -335,6 +339,10 @@ def can_use_pet_ability(ability_name: str, node: CraftingNode, game_data_dict: d
         if not activity: return False
         
         if reqs.get("skill") and activity.primary_skill.lower() != reqs["skill"].lower():
+            return False
+        if reqs.get("skill_category") == "artisan" and activity.primary_skill.lower() not in ARTISAN_SKILLS:
+            return False
+        if reqs.get("skill_category") == "gathering" and activity.primary_skill.lower() not in GATHERING_SKILLS:
             return False
             
     return True

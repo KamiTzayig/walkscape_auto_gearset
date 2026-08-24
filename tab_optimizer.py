@@ -5,7 +5,7 @@ import time
 import pandas as pd
 from collections import defaultdict
 
-from utils.constants import StatName, PERCENTAGE_STATS, QUALITY_NAMES, BUFF_PET_ABILITIES, ARTISAN_SKILLS
+from utils.constants import StatName, PERCENTAGE_STATS, QUALITY_NAMES, BUFF_PET_ABILITIES, ARTISAN_SKILLS, GATHERING_SKILLS
 from utils.export import export_gearset
 from calculations import calculate_passive_stats, calculate_score, analyze_score, calculate_quality_probabilities, _calculate_single_target_score
 from gear_optimizer import GearOptimizer, OPTIMAZATION_TARGET
@@ -835,8 +835,15 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                         for ab in lvl_obj.abilities:
                             if ab.name in BUFF_PET_ABILITIES:
                                 reqs = BUFF_PET_ABILITIES[ab.name]
-                                act_skill = getattr(saved_activity, 'primary_skill', '').lower()
-                                if not reqs.get("skill") or act_skill == reqs["skill"].lower():
+                                act_skill = getattr(saved_activity, 'primary_skill', getattr(saved_activity, 'skill', '')).lower()
+                                is_valid = True
+                                if reqs.get("skill") and act_skill != reqs["skill"].lower():
+                                    is_valid = False
+                                if reqs.get("skill_category") == "artisan" and act_skill not in ARTISAN_SKILLS:
+                                    is_valid = False
+                                if reqs.get("skill_category") == "gathering" and act_skill not in GATHERING_SKILLS:
+                                    is_valid = False
+                                if is_valid:
                                     buff_stats = reqs.get("modifiers", {})
                                     for k, v in buff_stats.items():
                                         passive_stats[k] = passive_stats.get(k, 0.0) + v
@@ -1090,10 +1097,22 @@ def render_optimizer_tab(is_mobile, user_state, all_items_raw, activities, recip
                             for ab in eval_lvl.abilities:
                                 if ab.name in BUFF_PET_ABILITIES:
                                     reqs = BUFF_PET_ABILITIES[ab.name]
-                                    act_skill = getattr(saved_activity, 'primary_skill', '').lower()
+                                    act_skill = getattr(saved_activity, 'primary_skill', getattr(saved_activity, 'skill', '')).lower()
+                                    is_valid = True
+                                    fail_msg = ""
                                     if reqs.get("skill") and act_skill != reqs["skill"].lower():
+                                        is_valid = False
+                                        fail_msg = f"Requires {reqs.get('skill', '').title()}"
+                                    elif reqs.get("skill_category") == "artisan" and act_skill not in ARTISAN_SKILLS:
+                                        is_valid = False
+                                        fail_msg = "Requires Artisan Skill"
+                                    elif reqs.get("skill_category") == "gathering" and act_skill not in GATHERING_SKILLS:
+                                        is_valid = False
+                                        fail_msg = "Requires Gathering Skill"
+
+                                    if not is_valid:
                                         html_mods += f"<div class='mod-inactive'>❌ <b>⚡ {ab.name}</b>: Wrong Skill</div>"
-                                        html_mods += f"<div class='mod-condition'>↳ Requires {reqs.get('skill', '').title()}</div>"
+                                        html_mods += f"<div class='mod-condition'>↳ {fail_msg}</div>"
                                     else:
                                         buff_stats = reqs.get("modifiers", {})
                                         for k, v in buff_stats.items():

@@ -86,9 +86,13 @@ class GearOptimizer:
                 for ab in lvl_obj.abilities:
                     if ab.name in BUFF_PET_ABILITIES:
                         reqs = BUFF_PET_ABILITIES[ab.name]
-                        act_skill = getattr(activity, 'primary_skill', '').lower()
+                        act_skill = getattr(activity, 'primary_skill', getattr(activity, 'skill', '')).lower()
                         
                         if reqs.get("skill") and act_skill != reqs["skill"].lower():
+                            continue
+                        if reqs.get("skill_category") == "artisan" and act_skill not in ARTISAN_SKILLS:
+                            continue
+                        if reqs.get("skill_category") == "gathering" and act_skill not in GATHERING_SKILLS:
                             continue
                             
                         buff_stats = reqs.get("modifiers", {})

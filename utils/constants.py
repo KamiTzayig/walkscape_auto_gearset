@@ -425,4 +425,12 @@ BUFF_PET_ABILITIES = {
             "find_collectibles": 0.20
         }
     },
+    "Lucky Day": { # Golden Frog
+        "allowed_source_types": ["activity", "recipe"],
+        "skill": None,
+        "skill_category": "artisan",
+        "modifiers": {
+            "quality_outcome": 20
+        }
+    },
 }
